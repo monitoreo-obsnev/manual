@@ -1,1 +1,3 @@
 # Métricas de agregación espacial
+
+xxx
