@@ -1,1 +1,1 @@
-# Generar mapas y gráficos de resultados
+# Generar mapas y graficos de resultados
