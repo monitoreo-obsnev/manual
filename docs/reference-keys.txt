@@ -6,8 +6,8 @@ fechas-de-inicio-y-fin
 selección-de-un-intervalo-específico
 tipo-de-variable-de-interés
 variable-específica
-unidad-temporal-de-agregación
 sensor-satelital
+unidad-temporal-de-agregación
 métricas-de-agregación-espacial
 filtrado-de-nubes
 generar-mapas-y-gráficos-de-resultados
