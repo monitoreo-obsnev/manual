@@ -1,4 +1,4 @@
-introducción
+introduccion
 interfaz-grafica
 idiomas
 area-de-estudio
