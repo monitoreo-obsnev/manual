@@ -1,3 +1,22 @@
 # Tipo de variable de interés {#tipo-variable}
 
-xxx
+Selecciona la variable de estudio. Las variables se clasifican en grandes categorías de [EBVs](https://geobon.org/ebvs/what-are-ebvs/) **(Variables Esenciales de Biodiversidad)**, relacionadas con el funcionamiento y estructura de los ecosistemas. **MonitorEO-OBSNEV** incluye:
+
+* **Carbono Orgánico (Producción Primaria):**   
+  * **NDVI** \- Normalized Difference Vegetation Index.  
+  * **EVI** \- Índice de Vegetación Mejorado.  
+  * **Chl-a** \- Concentración de clorofila.  
+* **Balance de Radiación:**   
+  * **ALB** \- Albedo.  
+* **Balance de Agua:**   
+  * **ET** \- Evapotranspiración  
+  * **LE** \- Calor Latente  
+  * **LSWI** \- Índice de Agua Superficial Terrestre  
+  * **NDWI** \- Índice de Agua de Diferencia Normalizada  
+  * **NDSI** \- Índice de Nieve de Diferencia Normalizada  
+* **Calor Sensible:**  
+  *  **LST** \-Temperatura Superficial.  
+* **Nutrientes / Aerosoles:**  
+  * **ARSL** \- Profundidad óptica atmosférica de aerosoles.
+
+Añadimos la descripción detallada de cada índice? la tengo [**aquí**](https://docs.google.com/document/d/1iYMDXfh4uQ9vuNyansFqoBuk0M9Hi5Vo_4U-cOyEGcY/edit?tab=t.0)

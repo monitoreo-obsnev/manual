@@ -1,1 +1,10 @@
 # Generar mapas y gráficos de resultados {#mapas-graficos}
+
+Al hacer clic en el botón **"Calcular"**, se generará el resultado según tu selección previa.
+
+En la sección **"Set.Layer"**, aparecerán todas las capas o mapas generados durante el cálculo. Para visualizar una capa específica, selecciónala en **"Set.Layer"** y haz clic en **"Añadir"**.
+
+Para ver los gráficos asociados a los resultados, selecciona la opción **"Chart"**.
+
+
+Por completar, aclarar con Pablo cómo se le daba para mostrar cada tipo de gráfico

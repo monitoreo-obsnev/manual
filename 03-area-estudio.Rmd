@@ -1,3 +1,13 @@
 # Área de estudio {#area-estudio}
 
-xxx
+**Selecciona ROI:** Elige tu área de estudio. Dentro de esta sección podrás:
+
+* **Dibujar tu región de interés (ROI \- Region of Interest).** Puedes dibujar regiones manualmente usando esta opción. Cuando dibujas una región (punto, línea o polígono), esta se almacena como un objeto Geometry que aparecerá como capa en la parte superior izquierda del mapa.  
+* **Punto específico y radio.** Puedes introducir las coordenadas de latitud y longitud de una ubicación específica en la superficie terrestre. El radio se usa comúnmente en buffers, que son áreas circulares alrededor de un punto. MonitorEO-OBSNEV permite crear un buffer alrededor de un punto con un radio específico en kilómetros.  
+* **Elige un proyecto.** Puedes utilizar el área de estudio de los distintos proyectos de OBSNEV.   
+  * **EarthCul:** Área de influencia socioeconómica de Parques Nacionales de Montaña de España y Portugal.  
+  * **EVEREST**: Parques Nacionales de Montaña de España y Portugal.  
+  * **PRESINMED**:   
+  * **BioRefuges**
+
+Hay que añadir las áreas de estudio PRESINMED y BioRefuges
