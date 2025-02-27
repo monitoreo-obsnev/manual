@@ -5,7 +5,7 @@ bookdown::gitbook:
       before: |
         <li><a href="./">MonitorEO-OBSNEV (v0.1)</a></li>
       after: |
-        <li><a href="https://obsnev.es/" target="blank">OBSNEV</a></li>
+        <li><a href="https://obsnev.es/" target="blank">MonitorEO-OBSNEV</a></li>
     edit: https://github.com/monitoreo-obsnev/manual%s
     download: ["pdf", "epub"]
 bookdown::pdf_book:
