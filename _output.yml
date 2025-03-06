@@ -3,10 +3,10 @@ bookdown::gitbook:
   config:
     toc:
       before: |
-        <li><a href="./">MonitorEO-OBSNEV (v0.1)</a></li>
+        <li><a href="./">MonitorEO-OBSNEV</a></li>
       after: |
         <li><a href="https://obsnev.es/" target="blank">MonitorEO-OBSNEV</a></li>
-    edit: https://github.com/monitoreo-obsnev/manual%s
+    edit: https://github.com/monitoreo-obsnev/manual/issues%s
     download: ["pdf", "epub"]
 bookdown::pdf_book:
   includes:

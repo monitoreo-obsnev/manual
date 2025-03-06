@@ -1,5 +1,5 @@
 # Interfaz gráfica {#interfaz}
 
-Estás dentro del **Laboratorio de Investigación Virtual MonitorEO-OBSNEV** (Monitoring with Earth Observations del OBServatorio de Cambio Global de Sierra NEVada), un **sistema de seguimiento y alerta basado en teledetección,** diseñado para monitorizar cambios en **variables esenciales de la biodiversidad** relacionadas con el funcionamiento y la estructura de los ecosistemas en cualquier parte del mundo.
+Estás dentro del **Laboratorio de Investigación Virtual MonitorEO-OBSNEV** (Monitoring using Earth Observations del OBServatorio de Cambio Global de Sierra NEVada), un **sistema de seguimiento y alerta basado en teledetección,** diseñado para monitorizar cambios en **variables esenciales de la biodiversidad** relacionadas con el funcionamiento y la estructura de los ecosistemas en cualquier parte del mundo.
 
-![](assets/annotated_playground.png)
+![](assets/interface.png)
