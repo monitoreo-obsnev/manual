@@ -14,4 +14,6 @@ description: "Documentación de la herramienta MonitorEO-OBSNEV."
 
 # Introducción {#intro}
 
+Texto de ejemplo
+
 [MonitorEO-OBSNEV](https://sl.ugr.es/monitoreoobsnev){target="_blank"} es una herramienta de análisis de variables derivadas de teledetección satelital basada en Google Earth Engine desarrollada por el Observatorio de Cambio Global de Sierra Nevada (Universidad de Granada).
