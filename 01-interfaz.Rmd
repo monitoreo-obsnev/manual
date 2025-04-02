@@ -1,5 +1,9 @@
-# Interfaz gráfica {#interfaz}
+# 🖥️ Interfaz gráfica {#interfaz}
 
-Estás dentro del **Laboratorio de Investigación Virtual MonitorEO-OBSNEV** (Monitoring using Earth Observations del OBServatorio de Cambio Global de Sierra NEVada), un **sistema de seguimiento y alerta basado en teledetección,** diseñado para monitorizar cambios en **variables esenciales de la biodiversidad** relacionadas con el funcionamiento y la estructura de los ecosistemas en cualquier parte del mundo.
+La interfaz gráfica del **Laboratorio de Investigación Virtual MonitorEO-OBSNEV** (*Monitoring with Earth Observations* del **Observatorio de Cambio Global de Sierra Nevada**) proporciona acceso a un sistema avanzado de monitoreo y alerta basado en datos de teledetección.
 
-![](assets/interface.png)
+Este sistema ha sido diseñado para la observación, análisis y evaluación de **variables esenciales de la biodiversidad (Essential Biodiversity Variables, EBVs)** vinculadas al funcionamiento y la estructura de los ecosistemas. La interfaz permite la exploración espacial y temporal de estas variables en diferentes regiones del planeta, con especial énfasis en áreas protegidas de montaña.
+
+MonitorEO-OBSNEV integra colecciones de datos satelitales, herramientas de análisis geoespacial y una interfaz interactiva que facilita su uso tanto en estudios científicos como en aplicaciones de gestión.
+
+![](assets/InterfazNew.png)
