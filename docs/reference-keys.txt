@@ -1,0 +1,13 @@
+intro
+interfaz
+idiomas
+area-estudio
+fechas
+periodo
+tipo-variable
+variable-especifica
+sensor
+agregacion-temporal
+agregacion-espacial
+filtrado-nubes
+mapas-graficos

@@ -1,4 +1,4 @@
-# 🖥️ Interfaz gráfica {#interfaz}
+# Interfaz de MonitorEO-OBSNEV {#interfaz}
 
 La interfaz gráfica del **Laboratorio de Investigación Virtual MonitorEO-OBSNEV** (*Monitoring with Earth Observations* del **Observatorio de Cambio Global de Sierra Nevada**) proporciona acceso a un sistema avanzado de monitoreo y alerta basado en datos de teledetección.
 
@@ -6,4 +6,4 @@ Este sistema ha sido diseñado para la observación, análisis y evaluación de 
 
 MonitorEO-OBSNEV integra colecciones de datos satelitales, herramientas de análisis geoespacial y una interfaz interactiva que facilita su uso tanto en estudios científicos como en aplicaciones de gestión.
 
-![](assets/InterfazNew.png)
+![](assets/InterfazMonitorEO.png)
