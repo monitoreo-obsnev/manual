@@ -1,0 +1,16 @@
+intro
+interfaz
+idiomas
+area-estudio
+fechas
+periodo
+tipo-variable
+sensor
+modis-moderate-resolution-imaging-spectroradiometer-es-un-sensor-a-bordo-de-los-satélites-terra-y-aqua-de-la-nasa.-resolución-espacial-250-metros-m.-resolución-temporal-16-días-se-compilan-imágenes-cada-16-días-en-productos-de-composición.-para-esta-interfaz-se-han-utilizado-los-datos-de-las-colecciones-mod13q1-006-satélite-modis-terra-y-myd13q1-006-satélite-modis-aqua.-estos-satélites-proporcionan-datos-desde-el-24022000-hasta-la-actualidad-aunque-la-disponibilidad-puede-variar-según-la-variable-seleccionada.
+la-serie-landsat-es-operada-por-la-nasa-y-el-usgs.-estos-datos-incluyen-landsat-5-6-8-y-9.-resolución-espacial-30-metros.-resolución-temporal-mayor-a-8-días-ya-que-dependiendo-del-satélite-tienen-un-período-de-revisita-de-8-o-16-días-cada-uno.-el-rango-de-fechas-cubierto-va-desde-1984-hasta-la-actualidad-dependiendo-de-la-disponibilidad-de-cada-satélite-landsat-5-16031984---05052012-landsat-7-28051999---actualidad-con-limitaciones-desde-31052003-por-la-falla-del-etm-landsat-8-18032013---presente-y-landsat-9-31102021---presente.-entre-el-05052012-y-el-18032013-no-hay-datos-disponibles-debido-a-la-interrupción-en-la-captura-de-imágenes-de-landsat-7.-aunque-este-satélite-siguió-operando-su-utilidad-estaba-limitada-desde-2003-por-una-falla-en-el-escáner-de-línea-de-mejora-etm.-debido-a-esta-limitación-a-partir-de-2003-sus-datos-no-se-consideran-en-el-rango-completo-de-fechas-disponibles.
+el-programa-sentinel-2-es-operado-por-la-agencia-espacial-europea-esa-y-forma-parte-del-programa-copernicus.-resolución-espacial-10-metros.-resolución-temporal-5-días.-en-esta-interfaz-utilizamos-el-producto-sr-harmonized-un-producto-de-reflectancia-de-superficie-sr-ajustado-para-garantizar-la-coherencia-entre-los-sensores-de-sentinel-2a-y-sentinel-2b-mediante-corrección-atmosférica-ajuste-espectral-y-normalización-de-datos.-el-rango-de-fechas-de-este-sensor-va-desde-28032017-hasta-la-actualidad.
+ud-agregacion-temporal
+agregacion-temporal
+agregacion-temporal-interanual
+filtrado-nubes
+mapas-graficos
