@@ -1,12 +1,12 @@
 # Tipo de variable de interés {#tipo-variable}
 
-Selecciona la variable de estudio. Las variables se clasifican en grandes categorías de [EBVs](https://geobon.org/ebvs/what-are-ebvs/) {target="_blank"} **(Variables Esenciales de Biodiversidad)**, relacionadas con el funcionamiento y estructura de los ecosistemas. **MonitorEO-OBSNEV** incluye:
+Selecciona la variable de estudio. Las variables se clasifican en grandes categorías de [EBVs](https://geobon.org/ebvs/what-are-ebvs/) {target=_blank} **(Variables Esenciales de Biodiversidad)**, relacionadas con el funcionamiento y estructura de los ecosistemas. **MonitorEO-OBSNEV** incluye:
 
-![](assets/variables.png)
+![](assets/variables_es.png)
 
-* #### **Carbono Orgánico (Producción Primaria):** 
+## **Carbono Orgánico (Producción Primaria)** 
 
-  * **NDVI** \- Índice de Vegetación de Diferencia Normalizada
+### **NDVI** \- Índice de Vegetación de Diferencia Normalizada
 
 El Índice de Vegetación de Diferencia Normalizada (NDVI, por sus siglas en inglés; Tucker y Sellers, 1986\) es un indicador espectral ampliamente utilizado para cuantificar la cobertura y el estado de la vegetación mediante sensores remotos. Se calcula a partir de la diferencia entre la reflectancia en el infrarrojo cercano (NIR) y la reflectancia en el rojo (RED), normalizada por su suma:
 
@@ -14,7 +14,7 @@ NDV I= NIR- RED / NIR \+ RED
 
 Este índice toma valores entre \-1 y 1\. Valores cercanos a 1 indican vegetación densa y vigorosa, mientras que valores cercanos a \-1 corresponden a superficies no vegetadas, como cuerpos de agua, nieve o áreas urbanas. 
 
-* **EVI** \- Índice de Vegetación Mejorado.
+### **EVI** \- Índice de Vegetación Mejorado
 
 El Índice de Vegetación Mejorado (EVI, por sus siglas en inglés; Huete et al., 1999\) es un indicador espectral desarrollado para optimizar la estimación de la cobertura y condición de la vegetación a partir de datos de teledetección. A diferencia de índices tradicionales como el NDVI, el EVI incorpora factores de corrección atmosférica y una compensación por la influencia del fondo del suelo, lo que mejora su sensibilidad en áreas con alta densidad de vegetación, baja cobertura vegetal o condiciones atmosféricas complejas.
 
@@ -43,28 +43,32 @@ Los valores del EVI varían entre \-1 y 1\. Valores cercanos a 1 indican una veg
 | **0.5 – 0.7** | Bosques templados densos, cultivos con alta cobertura vegetal |
 | **\> 0.7** | Bosques tropicales, selvas, vegetación muy densa |
 
-* **Chl-a** \- Concentración de clorofila.
+### **Chl-a** \- Concentración de clorofila
 
 El índice de clorofila-a se utiliza para estimar la concentración de clorofila-a en cuerpos de agua como océanos, lagos y ríos. La clorofila-a es el principal pigmento fotosintético presente en el fitoplancton, por lo que su concentración actúa como un indicador indirecto de la biomasa algal y de la productividad primaria en ecosistemas acuáticos, siendo un indicador clave para evaluar la calidad del agua y la salud de los ecosistemas acuáticos (Gitelson et al., 1993; IOCCG, 2000).
 
-* #### **Balance de Radiación:** 
 
-  * **ALB** \- Albedo.
+## **Balance de Radiación** 
+
+
+### **ALB** \- Albedo
 
 El albedo es la fracción de la radiación solar incidente que es reflejada por una superficie sin ser absorbida. Se trata de un parámetro adimensional que varía entre 0 (absorción total) y 1 (reflexión total). Un albedo elevado indica que la superficie refleja una gran proporción de la energía solar recibida, como ocurre en superficies altamente reflectantes como la nieve o el hielo. En contraste, un albedo bajo implica una mayor absorción de radiación, característica de superficies oscuras como áreas urbanas, suelos húmedos o cuerpos de agua.  
 El albedo desempeña un papel clave en el balance energético terrestre y en procesos relacionados con el clima global, ya que influye directamente en la cantidad de energía que entra y se retiene en el sistema climático.
 
-* #### **Balance de Agua:** 
 
-  * **ET** \- Evapotranspiración
+## **Balance de Agua** 
+
+
+### **ET** \- Evapotranspiración
 
 Estimación de la cantidad de agua que se evapora de la superficie terrestre y se transpira por las plantas. Generada a partir del modelo Mu et al. (2011), que implementa un enfoque basado en la ecuación de Penman-Monteith, adaptada para sensores remotos. Permite comprender el ciclo del agua, evaluar la disponibilidad de agua en una región y monitorear los recursos hídricos. 
 
-* **LE** \- Calor Latente
+### **LE** \- Calor Latente
 
 Estimación indirecta de la energía consumida por la evapotranspiración. Durante el proceso, se requiere energía para romper o formar enlaces entre las moléculas de la sustancia, lo que resulta en la liberación o absorción de calor. El calor latente desempeña un papel fundamental en el ciclo del agua, ya que la evaporación y la condensación son procesos clave en la formación de nubes, la precipitación y la regulación del clima.
 
-* **LSWI** \- Índice de Agua Superficial Terrestre
+### **LSWI** \- Índice de Agua Superficial Terrestre
 
 El LSWI (Land Surface Water Index) es un índice espectral utilizado para detectar y evaluar la presencia de humedad en la superficie terrestre, particularmente en la vegetación y el suelo. Se basa en la diferencia entre la reflectancia en el infrarrojo cercano (NIR) y el infrarrojo de onda corta (SWIR), que son sensibles al contenido de agua en la vegetación y el suelo.
 
@@ -78,7 +82,7 @@ LSWI \= NIR- SWIR / NIR \+ SWIR​
 
 **Valores bajos** → condiciones secas, vegetación estresada o suelos áridos.
 
-* **NDWI** \- Índice de Agua de Diferencia Normalizada
+### **NDWI** \- Índice de Agua de Diferencia Normalizada
 
 El NDWI es un índice espectral diseñado para detectar y cuantificar la presencia de agua en la superficie terrestre. Se basa en la diferencia de reflectancia entre el infrarrojo cercano (NIR) y el verde (Green), aprovechando la fuerte absorción del agua en el NIR y su alta reflectancia en el visible.
 
@@ -90,7 +94,7 @@ NDWI \= Green \- NIR / Green \+ NIR​
 **NDWI \> 0** → presencia de **agua superficial** (ríos, lagos, embalses, zonas inundadas)  
 **NDWI \< 0** → superficies **terrestres sin agua** (vegetación, suelo desnudo, áreas urbanas)
 
-* **NDSI** \- Índice de Nieve de Diferencia Normalizada
+### **NDSI** \- Índice de Nieve de Diferencia Normalizada
 
 El NDSI es un indicador espectral utilizado para detectar la presencia y extensión de nieve en la superficie terrestre. Se basa en las características reflectivas distintivas de la nieve, que refleja fuertemente en el espectro visible (banda verde) y absorbe significativamente en el infrarrojo de onda corta (SWIR), en contraste con la mayoría de los demás tipos de cobertura terrestre.
 
@@ -104,11 +108,14 @@ NDSI \= Green \- SWIR / Green \+ SWIR​
 
 Estos umbrales pueden ajustarse según la resolución y el sensor utilizado.
 
-* #### **Calor Sensible:**
 
-  *  **LST** \-Temperatura Superficial.
+## **Calor Sensible**
+###  **LST** \-Temperatura Superficial
 
 La temperatura de la superficie terrestre (LST, por sus siglas en inglés) se refiere a la temperatura registrada en la capa superior de la superficie terrestre o de los cuerpos de agua, tal como es detectada por sensores remotos. LST se estima a partir de la radiancia térmica captada en el espectro del infrarrojo térmico, y es una variable clave en el análisis de procesos como el balance energético, la evapotranspiración, la sequía, el estrés hídrico y el monitoreo urbano y agrícola.
 
-* **Nutrientes / Aerosoles:**  
-  * **ARSL** \- Profundidad óptica atmosférica de aerosoles.
+
+## **Nutrientes / Aerosoles** 
+### **ARSL** \- Profundidad óptica atmosférica de aerosoles
+
+Cantidad de aerosoles en la columna total atmosférica. Sirve para cuantificar cuánta carga de aerosoles hay en la atmósfera. El espesor óptico total de los aerosoles se refiere a todos los tipos de aerosol mientras que algunos productos de satélite dan información sobre el espesor óptico de un tipo de aerosol en concreto, como por ejemplo, el espesor óptico debido al polvo, que cuantifica la carga de polvo en la columna atmosférica. 

@@ -4,17 +4,17 @@
 
 En esta sección puedes definir la **región de interés (ROI)** sobre la que se realizará el análisis. Tienes varias opciones disponibles para seleccionar o cargar tu área de estudio:
 
-![](assets/ROI.png)
+![](assets/ROI_es.png)
 
 
-**4.1. 🖊️ Dibujar tu región de interés (ROI \- Region of Interest)**
+## **🖊️ Dibujar tu región de interés (ROI \- Region of Interest)**
 
 Puedes dibujar regiones manualmente usando esta opción. Cuando dibujas una región (punto, línea o polígono), esta se almacena como un objeto Geometry que aparecerá como capa en la parte superior izquierda del mapa.
 
-![](assets/Drawing.png)
+![](assets/dibujado.png)
 
 
-**4.2. 📂 Asset público**
+## **📂 Asset público**
 
 Puedes cargar un área de estudio que haya sido previamente subida a Google Earth Engine, indicando en la app la ruta del asset, es decir, la dirección única donde se encuentra almacenado el recurso dentro de tu cuenta de GEE (puede tratarse de una imagen, colección, tabla o carpeta).
 
@@ -22,37 +22,40 @@ Esta ruta suele tener el siguiente formato:
 
 * **`users/tu_usuario/nombre_del_asset`**
 
-![](assets/asset.png)
+![](assets/asset_es.png)
 Debes asegurarte de:	
 
 * Copiar y pegar correctamente esta ruta en la app o en el script para que el recurso pueda cargarse sin errores.
 
-![](assets/asset1.png)
+![](assets/asset1_es.png)
 
 * Compartir el asset como público.
 
 
 ![](assets/asset_2.png)
 
-**4.3. 📌Punto específico y radio**
+## **📌Punto específico y radio**
 
 Puedes introducir coordenadas de **latitud** y **longitud** para definir una ubicación exacta sobre la superficie terrestre. A partir de ese punto, se puede generar un área circular (**buffer**) cuyo **radio, en metros, es definido por el usuario**. Esta funcionalidad permite delimitar zonas de interés alrededor de un punto específico para su análisis. 
 
-![](assets/buffer.png)
-**4.4. 🏞️ Parque Nacional**
+![](assets/buffer_es.png)
+
+## **🏞️ Parque Nacional**
 
 Puedes seleccionar como área de estudio cualquiera de los **Parques Nacionales de España y Portugal** disponibles en la plataforma.
 
-![](assets/np.png)
-**4.5. 🌍 Base de datos mundial sobre zonas protegidas WDPA** 
+![](assets/np_es.png)
+
+## **🌍 Base de datos mundial sobre zonas protegidas WDPA** 
 
 World Database on Protected Areas (WDPA), es la fuente más completa y actualizada de información geoespacial sobre áreas protegidas a nivel global. Gestionada por ONU Medio Ambiente y el Centro de Monitoreo de la Conservación del Medio Ambiente (UNEP-WCMC), proporciona datos detallados sobre parques nacionales, reservas naturales y otras zonas protegidas.
 
 Para seleccionar un área protegida mediante su ID, puedes acceder a la base de datos a través del sitio web oficial de Protected Planet ([🔗 protectedplanet.net](https://www.protectedplanet.net/)). Allí, puedes buscar áreas protegidas por nombre, país o categoría de protección y obtener su identificador único (WDPA ID).
 
-![](assets/WDPA.png)
+![](assets/WDPA_es.png)
 ![](assets/WDPA2.png)
-**4.6. 📁 Elige un proyecto**
+
+## **📁 Elige un proyecto**
 
 Puedes seleccionar como área de estudio las zonas asociadas a los distintos proyectos desarrollados en el marco de **OBSNEV**. Cada uno de ellos define áreas específicas con distintos enfoques temáticos:
 
@@ -61,4 +64,4 @@ Puedes seleccionar como área de estudio las zonas asociadas a los distintos pro
 * **PRESINMED**  
 * **BioRefuges**
 
-![](assets/PROJECTS.png)
+![](assets/PROJECTS_es.png)
