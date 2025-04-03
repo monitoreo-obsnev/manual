@@ -1,5 +1,0 @@
-# Unidad temporal de agregación {#agregacion-temporal}
-
-Elige la resolución temporal para tus cálculos: puedes mantener la resolución original del sensor, cada 16 días, agrupar los datos por mes o por año.
-
-

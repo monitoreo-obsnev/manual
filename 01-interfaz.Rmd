@@ -5,5 +5,4 @@ La interfaz gráfica del **Laboratorio de Investigación Virtual MonitorEO-OBSNE
 Este sistema ha sido diseñado para la observación, análisis y evaluación de **variables esenciales de la biodiversidad (Essential Biodiversity Variables, EBVs)** vinculadas al funcionamiento y la estructura de los ecosistemas. La interfaz permite la exploración espacial y temporal de estas variables en diferentes regiones del planeta, con especial énfasis en áreas protegidas de montaña.
 
 MonitorEO-OBSNEV integra colecciones de datos satelitales, herramientas de análisis geoespacial y una interfaz interactiva que facilita su uso tanto en estudios científicos como en aplicaciones de gestión.
-
-![](assets/InterfazMonitorEO.png)
+![](assets/InterfazMonitorEO_es.png)

@@ -1,7 +1,0 @@
-# Sensor satelital {#sensor}
-
-Selecciona con qué sensor quieres trabajar. Los sensores disponibles poseen distinta resolución temporal y espacial. Dependiendo de la variable elegida, obtendrás disponibilidad de datos para unos u otros sensores. Todos sensores disponibles son:
-
-* **MODIS 250 m, 16 días.** MODIS (*Moderate Resolution Imaging Spectroradiometer*) es un sensor a bordo de los satélites Terra y Aqua de la NASA. **Resolución espacial:** 250 metros (m). **Resolución temporal:** 16 días (se compilan imágenes cada 16 días en productos de composición).   
-* **Landsat 30 m, \> 8 días.** La serie **Landsat** es operada por la NASA y el USGS. Estos datos incluyen Landsat 5, 6, 8 y 9\. **Resolución espacial:** 30 metros. **Resolución temporal:** Mayor a 8 días, ya que dependiendo del satélite tienen un período de revisita de 8 o 16 días cada uno.  
-* **Sentinel-2 10m, 5 días**. El programa **Sentinel-2** es operado por la Agencia Espacial Europea (ESA) y forma parte del programa Copernicus. **Resolución espacial:** 10 metros. **Resolución temporal:** 5 días.

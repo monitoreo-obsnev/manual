@@ -1,3 +1,7 @@
 # Filtrado de nubes {#filtrado-nubes}
 
 Al activar esta casilla, se aplicará un **filtrado de nubes por escena**.  El filtrado de nubes por escena es un proceso utilizado en el análisis de imágenes satelitales para eliminar o reducir la interferencia causada por la presencia de nubes en cada imagen, mejorando la calidad de los datos. Como resultado, los análisis reflejarán con mayor precisión las características reales de la superficie terrestre.
+
+Puedes establecer un % de nubosidad, que eliminará las escenas o imágenes que superen el umbral establecido.
+
+![](assets/filter.png)

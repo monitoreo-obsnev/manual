@@ -1,3 +1,11 @@
 # Idiomas {#idiomas}
 
-**Selecciona el idioma** de la interfaz: encontrarás disponibles es-español, en-english y ds-alemán.
+🌐 Selecciona el idioma de la interfaz. Están disponibles las siguientes opciones:
+
+* **es** – Español
+
+* **en** – English
+
+* **de** – Alemán
+
+![](assets/Language.png)
