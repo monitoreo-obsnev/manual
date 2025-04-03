@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>9 Métrica de agregación temporal | Manual de usuario de MonitorEO-OBSNEV</title>
+  <title>9 Métrica de agregación temporal | 12-references</title>
   <meta name="description" content="Documentación de la herramienta MonitorEO-OBSNEV." />
   <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="9 Métrica de agregación temporal | Manual de usuario de MonitorEO-OBSNEV" />
+  <meta property="og:title" content="9 Métrica de agregación temporal | 12-references" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Documentación de la herramienta MonitorEO-OBSNEV." />
   <meta name="github-repo" content="monitoreo-obsnev/manual" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="9 Métrica de agregación temporal | Manual de usuario de MonitorEO-OBSNEV" />
+  <meta name="twitter:title" content="9 Métrica de agregación temporal | 12-references" />
   
   <meta name="twitter:description" content="Documentación de la herramienta MonitorEO-OBSNEV." />
   
@@ -80,10 +80,10 @@
 <li class="chapter" data-level="2" data-path="interfaz.html"><a href="interfaz.html"><i class="fa fa-check"></i><b>2</b> Interfaz de MonitorEO-OBSNEV</a></li>
 <li class="chapter" data-level="3" data-path="idiomas.html"><a href="idiomas.html"><i class="fa fa-check"></i><b>3</b> Idiomas</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="idiomas.html"><a href="idiomas.html#es"><i class="fa fa-check"></i><b>3.1</b> es</a></li>
-<li class="chapter" data-level="3.2" data-path="idiomas.html"><a href="idiomas.html#en"><i class="fa fa-check"></i><b>3.2</b> en</a></li>
-<li class="chapter" data-level="3.3" data-path="idiomas.html"><a href="idiomas.html#fr"><i class="fa fa-check"></i><b>3.3</b> fr</a></li>
-<li class="chapter" data-level="3.4" data-path="idiomas.html"><a href="idiomas.html#de"><i class="fa fa-check"></i><b>3.4</b> de</a></li>
+<li class="chapter" data-level="3.1" data-path="idiomas.html"><a href="idiomas.html#es"><i class="fa fa-check"></i><b>3.1</b> <strong>es</strong></a></li>
+<li class="chapter" data-level="3.2" data-path="idiomas.html"><a href="idiomas.html#en"><i class="fa fa-check"></i><b>3.2</b> <strong>en</strong></a></li>
+<li class="chapter" data-level="3.3" data-path="idiomas.html"><a href="idiomas.html#fr"><i class="fa fa-check"></i><b>3.3</b> <strong>fr</strong></a></li>
+<li class="chapter" data-level="3.4" data-path="idiomas.html"><a href="idiomas.html#de"><i class="fa fa-check"></i><b>3.4</b> <strong>de</strong></a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="area-estudio.html"><a href="area-estudio.html"><i class="fa fa-check"></i><b>4</b> Área de estudio</a>
 <ul>
@@ -167,6 +167,7 @@
 <li class="chapter" data-level="12.4" data-path="mapas-graficos.html"><a href="mapas-graficos.html#gráfico-roi"><i class="fa fa-check"></i><b>12.4</b> <strong>Gráfico ROI</strong></a></li>
 <li class="chapter" data-level="12.5" data-path="mapas-graficos.html"><a href="mapas-graficos.html#gráfico-pixel"><i class="fa fa-check"></i><b>12.5</b> <strong>Gráfico Pixel</strong></a></li>
 </ul></li>
+<li class="chapter" data-level="13" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i><b>13</b> Referencias</a></li>
 <li class="divider"></li>
 <li><a href="https://obsnev.es/" target="blank">MonitorEO-OBSNEV</a></li>
 
@@ -179,7 +180,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Manual de usuario de MonitorEO-OBSNEV</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">12-references</a>
           </h1>
         </div>
 
@@ -190,6 +191,7 @@
 <div id="agregacion-temporal" class="section level1 hasAnchor" number="9">
 <h1><span class="header-section-number">9</span> Métrica de agregación temporal<a href="agregacion-temporal.html#agregacion-temporal" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>Selecciona el <strong>método de agregación temporal</strong> que se aplicará al conjunto de datos. Esta opción permite <strong>resumir series temporales</strong> utilizando funciones estadísticas denominadas <strong>reductores</strong> (<em>reducers</em>), entre los que se encuentran:</p>
+<p><img src="assets/aggregationTime.png" /></p>
 <div id="media" class="section level2 hasAnchor" number="9.1">
 <h2><span class="header-section-number">9.1</span> <strong>Media</strong><a href="agregacion-temporal.html#media" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Calcula el <strong>promedio</strong> de los valores dentro del período de tiempo seleccionado.</p>
@@ -217,7 +219,6 @@
 <div id="percentil-90" class="section level2 hasAnchor" number="9.7">
 <h2><span class="header-section-number">9.7</span> <strong>Percentil 90</strong><a href="agregacion-temporal.html#percentil-90" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Encuentra el valor por debajo del cual está el <strong>90% de los datos</strong>. Se usa para medir <strong>valores altos</strong> o eventos extremos.</p>
-<p><img src="assets/aggregationTime.png" /></p>
 
 </div>
 </div>

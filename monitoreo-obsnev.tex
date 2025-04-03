@@ -80,12 +80,12 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
-  pdftitle={Manual de usuario de MonitorEO-OBSNEV},
+  pdftitle={12-references},
   pdfauthor={Observatorio de Cambio Global de Sierra Nevada (Universidad de Granada)},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
-\title{Manual de usuario de MonitorEO-OBSNEV}
+\title{12-references}
 \author{Observatorio de Cambio Global de Sierra Nevada (Universidad de Granada)}
 \date{2025-04-03}
 
@@ -122,23 +122,23 @@ MonitorEO-OBSNEV integra colecciones de datos satelitales, herramientas de anál
 
 🌐 Selecciona el idioma de la interfaz. Están disponibles las siguientes opciones:
 
-\section{es}\label{es}
+\includegraphics{assets/Idiomas.png}
+
+\section{\texorpdfstring{\textbf{es}}{es}}\label{es}
 
 Español
 
-\section{en}\label{en}
+\section{\texorpdfstring{\textbf{en}}{en}}\label{en}
 
-Inglés
+English
 
-\section{fr}\label{fr}
+\section{\texorpdfstring{\textbf{fr}}{fr}}\label{fr}
 
-Francés
+Français
 
-\section{de}\label{de}
+\section{\texorpdfstring{\textbf{de}}{de}}\label{de}
 
-Alemán
-
-\includegraphics{assets/Idiomas.png}
+Deutsch
 
 \chapter{Área de estudio}\label{area-estudio}
 
@@ -440,6 +440,8 @@ El \textbf{rango de fechas} de este sensor va desde \textbf{28/03/2017 hasta la 
 
 Selecciona el intervalo temporal sobre el cual deseas realizar los cálculos. Puedes mantener la \textbf{resolución temporal original del sensor} o aplicar una \textbf{agregación periódica} para facilitar el análisis:
 
+\includegraphics{assets/aggregation_es.png}
+
 \section{\texorpdfstring{\textbf{Original}}{Original}}\label{original}
 
 Utiliza la frecuencia nativa del sensor (por ejemplo, diaria, 5 días, 16 días, etc.).
@@ -458,11 +460,11 @@ Genera una única observación agregada por año.
 
 La agregación temporal permite suavizar variaciones de corto plazo, facilitar comparaciones entre periodos y reducir la influencia de datos atípicos o nublados.
 
-\includegraphics{assets/aggregation_es.png}
-
 \chapter{Métrica de agregación temporal}\label{agregacion-temporal}
 
 Selecciona el \textbf{método de agregación temporal} que se aplicará al conjunto de datos. Esta opción permite \textbf{resumir series temporales} utilizando funciones estadísticas denominadas \textbf{reductores} (\emph{reducers}), entre los que se encuentran:
+
+\includegraphics{assets/aggregationTime.png}
 
 \section{\texorpdfstring{\textbf{Media}}{Media}}\label{media}
 
@@ -492,11 +494,11 @@ Encuentra el valor por debajo del cual está el \textbf{10\% de los datos}. Se u
 
 Encuentra el valor por debajo del cual está el \textbf{90\% de los datos}. Se usa para medir \textbf{valores altos} o eventos extremos.
 
-\includegraphics{assets/aggregationTime.png}
-
 \chapter{Métrica de agregación temporal interanual}\label{agregacion-temporal-interanual}
 
 Selecciona el método de agregación temporal para ejecutar tu análisis. Los métodos de \textbf{agregación temporal} permiten \textbf{resumir datos} en períodos de tiempo utilizando diferentes técnicas estadísticas llamadas \textbf{reductores}.
+
+\includegraphics{assets/interannualAggregation.png}
 
 \section{\texorpdfstring{\textbf{Media}}{Media}}\label{media-1}
 
@@ -518,15 +520,13 @@ Calcula el \textbf{valor más alto} por año en un periodo de tiempo.
 
 No calcula agregaciones temporales por años.
 
-\includegraphics{assets/interannualAggregation.png}
-
 \chapter{Filtrado de nubes}\label{filtrado-nubes}
+
+\includegraphics{assets/filter.png}
 
 Al activar esta casilla, se aplicará un \textbf{filtrado de nubes por escena}. El filtrado de nubes por escena es un proceso utilizado en el análisis de imágenes satelitales para eliminar o reducir la interferencia causada por la presencia de nubes en cada imagen, mejorando la calidad de los datos. Como resultado, los análisis reflejarán con mayor precisión las características reales de la superficie terrestre.
 
 Puedes establecer un \% de nubosidad, que eliminará las escenas o imágenes que superen el umbral establecido.
-
-\includegraphics{assets/filter.png}
 
 \chapter{Generar mapas y gráficos de resultados}\label{mapas-graficos}
 
@@ -560,6 +560,10 @@ Genera y visualiza los gráficos asociados a los mapas resultantes de tu Región
 Genera y visualiza los gráficos asociados a un píxel seleccionado con tu cursor. Cuando pinchas en un punto de tu área de estudio, esta opción te mostrará los datos correspondientes a su Latitud, Longitud, m/píxel (muestra la resolución del mapa en ese nivel de zoom, en metros por píxel) y el nombre de la capa que estás visualizando.
 
 \includegraphics{assets/chart_pixel_es.png}
+
+\chapter{Referencias}\label{referencias}
+
+completar
 
   \bibliography{book.bib,packages.bib}
 

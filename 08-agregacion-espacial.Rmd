@@ -2,6 +2,8 @@
 
 Selecciona el **método de agregación temporal** que se aplicará al conjunto de datos. Esta opción permite **resumir series temporales** utilizando funciones estadísticas denominadas **reductores** (*reducers*), entre los que se encuentran:
 
+![](assets/aggregationTime.png)
+
 ## **Media** 
 
 Calcula el **promedio** de los valores dentro del período de tiempo seleccionado.  
@@ -30,4 +32,4 @@ Encuentra el valor por debajo del cual está el **10% de los datos**. Se usa par
 
 Encuentra el valor por debajo del cual está el **90% de los datos**. Se usa para medir **valores altos** o eventos extremos.
 
-![](assets/aggregationTime.png)
+
