@@ -2,13 +2,21 @@
 
 Selecciona el intervalo temporal sobre el cual deseas realizar los cálculos. Puedes mantener la **resolución temporal original del sensor** o aplicar una **agregación periódica** para facilitar el análisis:
 
-## **Original**: utiliza la frecuencia nativa del sensor (por ejemplo, diaria, 5 días, 16 días, etc.).
+## **Original**
 
-## **Cada 16 días**: agrupa las observaciones disponibles en intervalos de 16 días.
+Utiliza la frecuencia nativa del sensor (por ejemplo, diaria, 5 días, 16 días, etc.).
 
-## **Mensual**: resume los datos por mes.
+## **Cada 16 días**
 
-## **Anual**: genera una única observación agregada por año.
+Agrupa las observaciones disponibles en intervalos de 16 días.
+
+## **Mensual**
+
+Resume los datos por mes.
+
+## **Anual**
+
+Genera una única observación agregada por año.
 
 La agregación temporal permite suavizar variaciones de corto plazo, facilitar comparaciones entre periodos y reducir la influencia de datos atípicos o nublados.
 

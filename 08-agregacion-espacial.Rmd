@@ -2,12 +2,32 @@
 
 Selecciona el **método de agregación temporal** que se aplicará al conjunto de datos. Esta opción permite **resumir series temporales** utilizando funciones estadísticas denominadas **reductores** (*reducers*), entre los que se encuentran:
 
-## **Media:** Calcula el **promedio** de los valores dentro del período de tiempo seleccionado.  
-## **Mediana**: Calcula el **valor central** en un conjunto de datos ordenados. Es más resistente a valores extremos que la media.  
-## **Moda:** Calcula el **valor más frecuente** en un conjunto de datos.  
-## **Mínimo:** Calcula el **valor más bajo** en un período de tiempo.  
-## **Máximo:** Calcula el **valor más alto** en un período de tiempo.  
-## **Percentil 10:** Encuentra el valor por debajo del cual está el **10% de los datos**. Se usa para medir **valores bajos** o eventos extremos.  
-## **Percentil 90:** Encuentra el valor por debajo del cual está el **90% de los datos**. Se usa para medir **valores altos** o eventos extremos.
+## **Media** 
+
+Calcula el **promedio** de los valores dentro del período de tiempo seleccionado.  
+
+## **Mediana**
+
+Calcula el **valor central** en un conjunto de datos ordenados. Es más resistente a valores extremos que la media.  
+
+## **Moda** 
+
+Calcula el **valor más frecuente** en un conjunto de datos.  
+
+## **Mínimo**
+
+Calcula el **valor más bajo** en un período de tiempo.  
+
+## **Máximo** 
+
+Calcula el **valor más alto** en un período de tiempo.  
+
+## **Percentil 10** 
+
+Encuentra el valor por debajo del cual está el **10% de los datos**. Se usa para medir **valores bajos** o eventos extremos.  
+
+## **Percentil 90** 
+
+Encuentra el valor por debajo del cual está el **90% de los datos**. Se usa para medir **valores altos** o eventos extremos.
 
 ![](assets/aggregationTime.png)

@@ -2,10 +2,12 @@
 
 🌐 Selecciona el idioma de la interfaz. Están disponibles las siguientes opciones:
 
-##* **es** – Español
+## **es** – Español
 
-##* **en** – English
+## **en** – Inglés
 
-##* **de** – Alemán
+## **fr** – Francés
+
+## **de** – Alemán
 
 ![](assets/Idiomas.png)

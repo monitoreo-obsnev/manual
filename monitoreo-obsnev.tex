@@ -118,11 +118,13 @@ MonitorEO-OBSNEV integra colecciones de datos satelitales, herramientas de anál
 
 🌐 Selecciona el idioma de la interfaz. Están disponibles las siguientes opciones:
 
-\#\#* \textbf{es} -- Español
+\section{\texorpdfstring{\textbf{es} -- Español}{es -- Español}}\label{es-espauxf1ol}
 
-\#\#* \textbf{en} -- English
+\section{\texorpdfstring{\textbf{en} -- Inglés}{en -- Inglés}}\label{en-ingluxe9s}
 
-\#\#* \textbf{de} -- Alemán
+\section{\texorpdfstring{\textbf{fr} -- Francés}{fr -- Francés}}\label{fr-francuxe9s}
+
+\section{\texorpdfstring{\textbf{de} -- Alemán}{de -- Alemán}}\label{de-alemuxe1n}
 
 \includegraphics{assets/Idiomas.png}
 
@@ -396,13 +398,21 @@ El programa \textbf{Sentinel-2} es operado por la Agencia Espacial Europea (ESA)
 
 Selecciona el intervalo temporal sobre el cual deseas realizar los cálculos. Puedes mantener la \textbf{resolución temporal original del sensor} o aplicar una \textbf{agregación periódica} para facilitar el análisis:
 
-\#\#* \textbf{Original}: utiliza la frecuencia nativa del sensor (por ejemplo, diaria, 5 días, 16 días, etc.).
+\section{\texorpdfstring{\textbf{Original}}{Original}}\label{original}
 
-\#\#* \textbf{Cada 16 días}: agrupa las observaciones disponibles en intervalos de 16 días.
+Utiliza la frecuencia nativa del sensor (por ejemplo, diaria, 5 días, 16 días, etc.).
 
-\#\#* \textbf{Mensual}: resume los datos por mes.
+\section{\texorpdfstring{\textbf{Cada 16 días}}{Cada 16 días}}\label{cada-16-duxedas}
 
-\#\#* \textbf{Anual}: genera una única observación agregada por año.
+Agrupa las observaciones disponibles en intervalos de 16 días.
+
+\section{\texorpdfstring{\textbf{Mensual}}{Mensual}}\label{mensual}
+
+Resume los datos por mes.
+
+\section{\texorpdfstring{\textbf{Anual}}{Anual}}\label{anual}
+
+Genera una única observación agregada por año.
 
 La agregación temporal permite suavizar variaciones de corto plazo, facilitar comparaciones entre periodos y reducir la influencia de datos atípicos o nublados.
 
@@ -412,13 +422,33 @@ La agregación temporal permite suavizar variaciones de corto plazo, facilitar c
 
 Selecciona el \textbf{método de agregación temporal} que se aplicará al conjunto de datos. Esta opción permite \textbf{resumir series temporales} utilizando funciones estadísticas denominadas \textbf{reductores} (\emph{reducers}), entre los que se encuentran:
 
-\#\#* \textbf{Media:} Calcula el \textbf{promedio} de los valores dentro del período de tiempo seleccionado.\\
-\#\#* \textbf{Mediana}: Calcula el \textbf{valor central} en un conjunto de datos ordenados. Es más resistente a valores extremos que la media.\\
-\#\#* \textbf{Moda:} Calcula el \textbf{valor más frecuente} en un conjunto de datos.\\
-\#\#* \textbf{Mínimo:} Calcula el \textbf{valor más bajo} en un período de tiempo.\\
-\#\#* \textbf{Máximo:} Calcula el \textbf{valor más alto} en un período de tiempo.\\
-\#\#* \textbf{Percentil 10:} Encuentra el valor por debajo del cual está el \textbf{10\% de los datos}. Se usa para medir \textbf{valores bajos} o eventos extremos.\\
-\#\#* \textbf{Percentil 90:} Encuentra el valor por debajo del cual está el \textbf{90\% de los datos}. Se usa para medir \textbf{valores altos} o eventos extremos.
+\section{\texorpdfstring{\textbf{Media}}{Media}}\label{media}
+
+Calcula el \textbf{promedio} de los valores dentro del período de tiempo seleccionado.
+
+\section{\texorpdfstring{\textbf{Mediana}}{Mediana}}\label{mediana}
+
+Calcula el \textbf{valor central} en un conjunto de datos ordenados. Es más resistente a valores extremos que la media.
+
+\section{\texorpdfstring{\textbf{Moda}}{Moda}}\label{moda}
+
+Calcula el \textbf{valor más frecuente} en un conjunto de datos.
+
+\section{\texorpdfstring{\textbf{Mínimo}}{Mínimo}}\label{muxednimo}
+
+Calcula el \textbf{valor más bajo} en un período de tiempo.
+
+\section{\texorpdfstring{\textbf{Máximo}}{Máximo}}\label{muxe1ximo}
+
+Calcula el \textbf{valor más alto} en un período de tiempo.
+
+\section{\texorpdfstring{\textbf{Percentil 10}}{Percentil 10}}\label{percentil-10}
+
+Encuentra el valor por debajo del cual está el \textbf{10\% de los datos}. Se usa para medir \textbf{valores bajos} o eventos extremos.
+
+\section{\texorpdfstring{\textbf{Percentil 90}}{Percentil 90}}\label{percentil-90}
+
+Encuentra el valor por debajo del cual está el \textbf{90\% de los datos}. Se usa para medir \textbf{valores altos} o eventos extremos.
 
 \includegraphics{assets/aggregationTime.png}
 
@@ -426,11 +456,25 @@ Selecciona el \textbf{método de agregación temporal} que se aplicará al conju
 
 Selecciona el método de agregación temporal para ejecutar tu análisis. Los métodos de \textbf{agregación temporal} permiten \textbf{resumir datos} en períodos de tiempo utilizando diferentes técnicas estadísticas llamadas \textbf{reductores}.
 
-\#\#* \textbf{Media:} Calcula el \textbf{promedio} de los valores por año dentro del periodo de tiempo seleccionado.\\
-\#\#* \textbf{Mediana}: Calcula el \textbf{valor central} de los valores por año dentro del periodo de tiempo seleccionado. Es más resistente a valores extremos que la media.\\
-\#\#* \textbf{Mínimo:} Calcula el \textbf{valor más bajo} por año en un periodo de tiempo.\\
-\#\#* \textbf{Máximo:} Calcula el \textbf{valor más alto} por año en un periodo de tiempo.\\
-\#\#* \textbf{No calcular:} No calcula agregaciones temporales por años.
+\section{\texorpdfstring{\textbf{Media}}{Media}}\label{media-1}
+
+Calcula el \textbf{promedio} de los valores por año dentro del periodo de tiempo seleccionado.
+
+\section{\texorpdfstring{\textbf{Mediana}}{Mediana}}\label{mediana-1}
+
+Calcula el \textbf{valor central} de los valores por año dentro del periodo de tiempo seleccionado. Es más resistente a valores extremos que la media.
+
+\section{\texorpdfstring{\textbf{Mínimo}}{Mínimo}}\label{muxednimo-1}
+
+Calcula el \textbf{valor más bajo} por año en un periodo de tiempo.
+
+\section{\texorpdfstring{\textbf{Máximo}}{Máximo}}\label{muxe1ximo-1}
+
+Calcula el \textbf{valor más alto} por año en un periodo de tiempo.
+
+\section{\texorpdfstring{\textbf{No calcular}}{No calcular}}\label{no-calcular}
+
+No calcula agregaciones temporales por años.
 
 \includegraphics{assets/interannualAggregation.png}
 
@@ -444,24 +488,32 @@ Puedes establecer un \% de nubosidad, que eliminará las escenas o imágenes que
 
 \chapter{Generar mapas y gráficos de resultados}\label{mapas-graficos}
 
-\#\#\textbf{1 - Calcular:} Al hacer clic en el botón se generará el resultado según tu selección previa.
+\section{\texorpdfstring{\textbf{Calcular}}{Calcular}}\label{calcular}
+
+Al hacer clic en el botón se generará el resultado según tu selección previa.
 
 \includegraphics{assets/message_es.png}
 
-\#\#\textbf{2- Seleccionar capa}: En la sección aparecerán todas las capas/mapas generados durante el cálculo. Para visualizar una capa específica, selecciónala en \textbf{``2- Seleccionar capa''} y haz clic en \textbf{``3 - Añadir al mapa''}.
+\section{\texorpdfstring{\textbf{Seleccionar capa}}{Seleccionar capa}}\label{seleccionar-capa}
+
+En la sección aparecerán todas las capas/mapas generados durante el cálculo. Para visualizar una capa específica, selecciónala en \textbf{``2- Seleccionar capa''} y haz clic en \textbf{``3 - Añadir al mapa''}.
 
 \includegraphics{assets/layers_es.png}
 
-\#\#\textbf{3 - Añadir al mapa:} Dibuja en el mapa la capa seleccionada.
+\section{\texorpdfstring{\textbf{Añadir al mapa}}{Añadir al mapa}}\label{auxf1adir-al-mapa}
+
+Dibuja en el mapa la capa seleccionada.
 
 \includegraphics{assets/layers_es2.png}
 \includegraphics{assets/leyenda_es.png}
 
-\#\#\textbf{4 -} \textbf{Gráfico} \textbf{ROI.} Genera y visualiza los gráficos asociados a los mapas resultantes de tu Región de Interés (ROI por su siglas en inglés).
+\section{\texorpdfstring{\textbf{Gráfico ROI}}{Gráfico ROI}}\label{gruxe1fico-roi}
+
+Genera y visualiza los gráficos asociados a los mapas resultantes de tu Región de Interés (ROI por su siglas en inglés).
 
 \includegraphics{assets/graphs_es.png}
 
-\#\#\textbf{5 -} \textbf{Gráfico Pixel.} Genera y visualiza los gráficos asociados a un píxel seleccionado con tu cursor. Cuando pinchas en un punto de tu área de estudio, esta opción te mostrará los datos correspondientes a su Latitud, Longitud, m/píxel (muestra la resolución del mapa en ese nivel de zoom, en metros por píxel) y el nombre de la capa que estás visualizando.
+\section{\texorpdfstring{\textbf{Gráfico Pixel} Genera y visualiza los gráficos asociados a un píxel seleccionado con tu cursor. Cuando pinchas en un punto de tu área de estudio, esta opción te mostrará los datos correspondientes a su Latitud, Longitud, m/píxel (muestra la resolución del mapa en ese nivel de zoom, en metros por píxel) y el nombre de la capa que estás visualizando.}{Gráfico Pixel Genera y visualiza los gráficos asociados a un píxel seleccionado con tu cursor. Cuando pinchas en un punto de tu área de estudio, esta opción te mostrará los datos correspondientes a su Latitud, Longitud, m/píxel (muestra la resolución del mapa en ese nivel de zoom, en metros por píxel) y el nombre de la capa que estás visualizando.}}\label{gruxe1fico-pixel-genera-y-visualiza-los-gruxe1ficos-asociados-a-un-puxedxel-seleccionado-con-tu-cursor.-cuando-pinchas-en-un-punto-de-tu-uxe1rea-de-estudio-esta-opciuxf3n-te-mostraruxe1-los-datos-correspondientes-a-su-latitud-longitud-mpuxedxel-muestra-la-resoluciuxf3n-del-mapa-en-ese-nivel-de-zoom-en-metros-por-puxedxel-y-el-nombre-de-la-capa-que-estuxe1s-visualizando.}
 
 \includegraphics{assets/chart_pixel_es.png}
 

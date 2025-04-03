@@ -2,10 +2,24 @@
 
 Selecciona el método de agregación temporal para ejecutar tu análisis. Los métodos de **agregación temporal** permiten **resumir datos** en períodos de tiempo utilizando diferentes técnicas estadísticas llamadas **reductores**. 
 
-## **Media:** Calcula el **promedio** de los valores por año dentro del periodo de tiempo seleccionado.  
-## **Mediana**: Calcula el **valor central** de los valores por año dentro del periodo de tiempo seleccionado. Es más resistente a valores extremos que la media.   
-## **Mínimo:** Calcula el **valor más bajo** por año en un periodo de tiempo.  
-## **Máximo:** Calcula el **valor más alto** por año en un periodo de tiempo.  
-## **No calcular:** No calcula agregaciones temporales por años.
+## **Media**
+
+Calcula el **promedio** de los valores por año dentro del periodo de tiempo seleccionado.  
+
+## **Mediana**
+
+Calcula el **valor central** de los valores por año dentro del periodo de tiempo seleccionado. Es más resistente a valores extremos que la media.   
+
+## **Mínimo** 
+
+Calcula el **valor más bajo** por año en un periodo de tiempo.  
+
+## **Máximo** 
+
+Calcula el **valor más alto** por año en un periodo de tiempo.  
+
+## **No calcular** 
+
+No calcula agregaciones temporales por años.
 
 ![](assets/interannualAggregation.png)
