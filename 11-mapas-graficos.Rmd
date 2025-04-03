@@ -26,7 +26,9 @@ Genera y visualiza los gráficos asociados a los mapas resultantes de tu Región
 ![](assets/graphs_es.png)
 
 
-## **Gráfico Pixel** Genera y visualiza los gráficos asociados a un píxel seleccionado con tu cursor. Cuando pinchas en un punto de tu área de estudio, esta opción te mostrará los datos correspondientes a su Latitud, Longitud, m/píxel (muestra la resolución del mapa en ese nivel de zoom, en metros por píxel) y el nombre de la capa que estás visualizando.
+## **Gráfico Pixel** 
+
+Genera y visualiza los gráficos asociados a un píxel seleccionado con tu cursor. Cuando pinchas en un punto de tu área de estudio, esta opción te mostrará los datos correspondientes a su Latitud, Longitud, m/píxel (muestra la resolución del mapa en ese nivel de zoom, en metros por píxel) y el nombre de la capa que estás visualizando.
 
 ![](assets/chart_pixel_es.png)
 

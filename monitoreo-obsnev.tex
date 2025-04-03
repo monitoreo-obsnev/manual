@@ -104,6 +104,10 @@ Este manual de usuario proporciona una guía completa para el uso de MonitorEO-O
 
 Este proyecto ha sido desarrollado en el marco del trabajo del Observatorio de Cambio Global de Sierra Nevada, de la Universidad de Granada, a través del proyecto EVEREST (PID2023-151939OB-I00), financiado por el Ministerio de Ciencia, Innovación y Universidades (MICIU) / Agencia Estatal de Investigación (AEI) 10.13039/501100011033, y cofinanciado por el Fondo Europeo de Desarrollo Regional (FEDER/ERDF -- Unión Europea).
 
+\includegraphics{assets/logo-obs.png}
+\includegraphics{assets/logo-ugr.png}
+\includegraphics{assets/logo-ministerio.png}
+
 \chapter{Interfaz de MonitorEO-OBSNEV}\label{interfaz}
 
 La interfaz gráfica del \textbf{Laboratorio de Investigación Virtual MonitorEO-OBSNEV} (\emph{Monitoring with Earth Observations} del \textbf{Observatorio de Cambio Global de Sierra Nevada}) proporciona acceso a un sistema avanzado de monitoreo y alerta basado en datos de teledetección.
@@ -118,13 +122,21 @@ MonitorEO-OBSNEV integra colecciones de datos satelitales, herramientas de anál
 
 🌐 Selecciona el idioma de la interfaz. Están disponibles las siguientes opciones:
 
-\section{\texorpdfstring{\textbf{es} -- Español}{es -- Español}}\label{es-espauxf1ol}
+\section{es}\label{es}
 
-\section{\texorpdfstring{\textbf{en} -- Inglés}{en -- Inglés}}\label{en-ingluxe9s}
+Español
 
-\section{\texorpdfstring{\textbf{fr} -- Francés}{fr -- Francés}}\label{fr-francuxe9s}
+\section{en}\label{en}
 
-\section{\texorpdfstring{\textbf{de} -- Alemán}{de -- Alemán}}\label{de-alemuxe1n}
+Inglés
+
+\section{fr}\label{fr}
+
+Francés
+
+\section{de}\label{de}
+
+Alemán
 
 \includegraphics{assets/Idiomas.png}
 
@@ -216,13 +228,31 @@ Puedes seleccionar como área de estudio las zonas asociadas a los distintos pro
 
 Elige el rango de fechas para realizar tus cálculos. Primero, establece el \textbf{año de inicio} y el \textbf{año de fin}. Luego, selecciona el \textbf{mes y día de inicio}, así como el \textbf{mes y día de finalización} para definir el período de análisis.
 
-\includegraphics{assets/dates.png}
-
-\section{\texorpdfstring{\textbf{Selección de un intervalo específico}}{Selección de un intervalo específico}}\label{selecciuxf3n-de-un-intervalo-especuxedfico}
-
-Al activar la casilla \textbf{``Utilice sólo los días de este periodo del año''} se realiza un \textbf{cómputo estacional}, es decir, se establece un rango temporal específico dentro del periodo de años seleccionado previamente. P.ej. todas las primaveras de 2001 a 2020 (Año inicio 2001 - Año fin 2020, Desde 21/03 - Hasta 21-09).
-
 \includegraphics{assets/dates_es.png}
+
+\section{\texorpdfstring{\textbf{📆Selección de un intervalo específico}}{📆Selección de un intervalo específico}}\label{selecciuxf3n-de-un-intervalo-especuxedfico}
+
+La herramienta permite seleccionar un \textbf{intervalo específico dentro del año} para realizar un análisis estacional.
+
+Al activar la opción \textbf{``Utilice solo los días de este periodo del año''}, se delimita un rango de fechas (por ejemplo, del \textbf{21 de marzo al 21 de septiembre)} que se aplicará a \textbf{cada año} del periodo seleccionado (por ejemplo, de 2001 a 2020).
+
+Esto permite analizar únicamente ciertos meses o estaciones, como \textbf{primaveras, veranos, o estaciones de crecimiento.}
+
+Si seleccionas:
+
+\begin{itemize}
+\tightlist
+\item
+  Año inicio: 2001\\
+\item
+  Año fin: 2020\\
+\item
+  Desde: 21/03\\
+\item
+  Hasta: 21/09
+\end{itemize}
+
+Se analizarán sólo los días comprendidos entre el 21 de marzo y el 21 de septiembre en cada uno de esos años, excluyendo el resto.
 
 \chapter{Tipo de variable de interés}\label{tipo-variable}
 
@@ -230,7 +260,7 @@ Selecciona la variable de estudio. Las variables se clasifican en grandes catego
 
 \includegraphics{assets/variables_es.png}
 
-\section{\texorpdfstring{\textbf{Carbono Orgánico (Producción Primaria)}}{Carbono Orgánico (Producción Primaria)}}\label{carbono-orguxe1nico-producciuxf3n-primaria}
+\section{\texorpdfstring{\textbf{🌱 Carbono Orgánico (Producción Primaria)}}{🌱 Carbono Orgánico (Producción Primaria)}}\label{carbono-orguxe1nico-producciuxf3n-primaria}
 
 \subsection{\texorpdfstring{\textbf{NDVI} - Índice de Vegetación de Diferencia Normalizada}{NDVI - Índice de Vegetación de Diferencia Normalizada}}\label{ndvi---uxedndice-de-vegetaciuxf3n-de-diferencia-normalizada}
 
@@ -294,14 +324,14 @@ Interpretación ecológica
 
 El índice de clorofila-a se utiliza para estimar la concentración de clorofila-a en cuerpos de agua como océanos, lagos y ríos. La clorofila-a es el principal pigmento fotosintético presente en el fitoplancton, por lo que su concentración actúa como un indicador indirecto de la biomasa algal y de la productividad primaria en ecosistemas acuáticos, siendo un indicador clave para evaluar la calidad del agua y la salud de los ecosistemas acuáticos (Gitelson et al., 1993; IOCCG, 2000).
 
-\section{\texorpdfstring{\textbf{Balance de Radiación}}{Balance de Radiación}}\label{balance-de-radiaciuxf3n}
+\section{\texorpdfstring{\textbf{🌞 Balance de Radiación}}{🌞 Balance de Radiación}}\label{balance-de-radiaciuxf3n}
 
 \subsection{\texorpdfstring{\textbf{ALB} - Albedo}{ALB - Albedo}}\label{alb---albedo}
 
 El albedo es la fracción de la radiación solar incidente que es reflejada por una superficie sin ser absorbida. Se trata de un parámetro adimensional que varía entre 0 (absorción total) y 1 (reflexión total). Un albedo elevado indica que la superficie refleja una gran proporción de la energía solar recibida, como ocurre en superficies altamente reflectantes como la nieve o el hielo. En contraste, un albedo bajo implica una mayor absorción de radiación, característica de superficies oscuras como áreas urbanas, suelos húmedos o cuerpos de agua.\\
 El albedo desempeña un papel clave en el balance energético terrestre y en procesos relacionados con el clima global, ya que influye directamente en la cantidad de energía que entra y se retiene en el sistema climático.
 
-\section{\texorpdfstring{\textbf{Balance de Agua}}{Balance de Agua}}\label{balance-de-agua}
+\section{\texorpdfstring{\textbf{💧Balance de Agua}}{💧Balance de Agua}}\label{balance-de-agua}
 
 \subsection{\texorpdfstring{\textbf{ET} - Evapotranspiración}{ET - Evapotranspiración}}\label{et---evapotranspiraciuxf3n}
 
@@ -364,13 +394,13 @@ NDSI = Green - SWIR / Green + SWIR\hspace{0pt}
 
 Estos umbrales pueden ajustarse según la resolución y el sensor utilizado.
 
-\section{\texorpdfstring{\textbf{Calor Sensible}}{Calor Sensible}}\label{calor-sensible}
+\section{\texorpdfstring{\textbf{🌡️ Calor Sensible}}{🌡️ Calor Sensible}}\label{calor-sensible}
 
 \subsection{\texorpdfstring{\textbf{LST} -Temperatura Superficial}{LST -Temperatura Superficial}}\label{lst--temperatura-superficial}
 
 La temperatura de la superficie terrestre (LST, por sus siglas en inglés) se refiere a la temperatura registrada en la capa superior de la superficie terrestre o de los cuerpos de agua, tal como es detectada por sensores remotos. LST se estima a partir de la radiancia térmica captada en el espectro del infrarrojo térmico, y es una variable clave en el análisis de procesos como el balance energético, la evapotranspiración, la sequía, el estrés hídrico y el monitoreo urbano y agrícola.
 
-\section{\texorpdfstring{\textbf{Nutrientes / Aerosoles}}{Nutrientes / Aerosoles}}\label{nutrientes-aerosoles}
+\section{\texorpdfstring{\textbf{💨 Nutrientes / Aerosoles}}{💨 Nutrientes / Aerosoles}}\label{nutrientes-aerosoles}
 
 \subsection{\texorpdfstring{\textbf{ARSL} - Profundidad óptica atmosférica de aerosoles}{ARSL - Profundidad óptica atmosférica de aerosoles}}\label{arsl---profundidad-uxf3ptica-atmosfuxe9rica-de-aerosoles}
 
@@ -382,17 +412,29 @@ Selecciona con qué sensor quieres trabajar. Los sensores disponibles poseen dis
 
 \includegraphics{assets/sensor_es.png}
 
-\section{\texorpdfstring{\textbf{MODIS 250 m, 16 días}}{MODIS 250 m, 16 días}}\label{modis-250-m-16-duxedas}
+\section{\texorpdfstring{\textbf{🛰️MODIS 250 m, 16 días}}{🛰️MODIS 250 m, 16 días}}\label{modis-250-m-16-duxedas}
 
-MODIS (\emph{Moderate Resolution Imaging Spectroradiometer}) es un sensor a bordo de los satélites Terra y Aqua de la NASA. \textbf{Resolución espacial:} 250 metros (m). \textbf{Resolución temporal:} 16 días (se compilan imágenes cada 16 días en productos de composición). Para esta interfaz, se han utilizado los datos de las colecciones \textbf{MOD13Q1 006} (satélite MODIS Terra) y \textbf{MYD13Q1 006} (satélite MODIS Aqua). Estos satélites \textbf{proporcionan datos desde} el \textbf{24/02/2000 hasta la actualidad}, aunque la disponibilidad puede variar según la variable seleccionada.
+MODIS (\emph{Moderate Resolution Imaging Spectroradiometer}) es un sensor a bordo de los satélites Terra y Aqua de la NASA. \textbf{Resolución espacial:} 250 metros (m). \textbf{Resolución temporal:} 16 días (se compilan imágenes cada 16 días en productos de composición). Para esta interfaz, se han utilizado los datos de las colecciones \textbf{MOD13Q1 006} (satélite MODIS Terra) y \textbf{MYD13Q1 006} (satélite MODIS Aqua).
 
-\section{\texorpdfstring{\textbf{Landsat 30 m, \textgreater{} 16 días}}{Landsat 30 m, \textgreater{} 16 días}}\label{landsat-30-m-16-duxedas}
+Estos satélites \textbf{proporcionan datos desde} el \textbf{24/02/2000 hasta la actualidad}, aunque la disponibilidad puede variar según la variable seleccionada.
 
-La serie \textbf{Landsat} es operada por la NASA y el USGS. Estos datos incluyen Landsat 5, 6, 8 y 9. \textbf{Resolución espacial:} 30 metros. \textbf{Resolución temporal:} Mayor a 8 días, ya que dependiendo del satélite tienen un período de revisita de 8 o 16 días cada uno. El \textbf{rango de fechas} cubierto va desde \textbf{1984 hasta la actualidad}, dependiendo de la disponibilidad de cada satélite: \textbf{Landsat 5} (16/03/1984 - 05/05/2012), \textbf{Landsat 7} (28/05/1999 - actualidad, con limitaciones desde 31/05/2003 por la falla del ETM+), \textbf{Landsat 8} (18/03/2013 - presente) y \textbf{Landsat 9} (31/10/2021 - presente). Entre el \textbf{05/05/2012 y el 18/03/2013}, no hay datos disponibles debido a la interrupción en la captura de imágenes de Landsat 7. Aunque este satélite siguió operando, su utilidad estaba limitada desde 2003 por una falla en el Escáner de Línea de Mejora (ETM+). Debido a esta limitación, a partir de 2003 sus datos no se consideran en el rango completo de fechas disponibles.
+\section{\texorpdfstring{\textbf{🛰️Landsat 30 m, \textgreater{} 16 días}}{🛰️Landsat 30 m, \textgreater{} 16 días}}\label{landsat-30-m-16-duxedas}
 
-\section{\texorpdfstring{\textbf{Sentinel-2 10m, 5 días}}{Sentinel-2 10m, 5 días}}\label{sentinel-2-10m-5-duxedas}
+La serie \textbf{Landsat} es operada por la NASA y el USGS. Estos datos incluyen Landsat 5, 6, 8 y 9. \textbf{Resolución espacial:} 30 metros. \textbf{Resolución temporal:} Mayor a 8 días, ya que dependiendo del satélite tienen un período de revisita de 8 o 16 días cada uno.
 
-El programa \textbf{Sentinel-2} es operado por la Agencia Espacial Europea (ESA) y forma parte del programa Copernicus. \textbf{Resolución espacial:} 10 metros. \textbf{Resolución temporal:} 5 días. En esta interfaz, utilizamos el producto SR Harmonized, un producto de Reflectancia de Superficie (SR) ajustado para garantizar la coherencia entre los sensores de Sentinel-2A y Sentinel-2B mediante corrección atmosférica, ajuste espectral y normalización de datos. El \textbf{rango de fechas} de este sensor va desde \textbf{28/03/2017 hasta la actualidad.}
+El \textbf{rango de fechas} cubierto va desde \textbf{1984 hasta la actualidad}, dependiendo de la disponibilidad de cada satélite:
+\textbf{Landsat 5} (16/03/1984 - 05/05/2012)
+\textbf{Landsat 7} (28/05/1999 - actualidad, con limitaciones desde 31/05/2003 por la falla del ETM+)
+\textbf{Landsat 8} (18/03/2013 - presente)
+\textbf{Landsat 9} (31/10/2021 - presente)
+
+Entre el \textbf{05/05/2012 y el 18/03/2013}, no hay datos disponibles debido a la interrupción en la captura de imágenes de Landsat 7. Aunque este satélite siguió operando, su utilidad estaba limitada desde 2003 por una falla en el Escáner de Línea de Mejora (ETM+). Debido a esta limitación, a partir de 2003 sus datos no se consideran en el rango completo de fechas disponibles.
+
+\section{\texorpdfstring{\textbf{🛰️Sentinel-2 10m, 5 días}}{🛰️Sentinel-2 10m, 5 días}}\label{sentinel-2-10m-5-duxedas}
+
+El programa \textbf{Sentinel-2} es operado por la Agencia Espacial Europea (ESA) y forma parte del programa Copernicus. \textbf{Resolución espacial:} 10 metros. \textbf{Resolución temporal:} 5 días. En esta interfaz, utilizamos el producto SR Harmonized, un producto de Reflectancia de Superficie (SR) ajustado para garantizar la coherencia entre los sensores de Sentinel-2A y Sentinel-2B mediante corrección atmosférica, ajuste espectral y normalización de datos.
+
+El \textbf{rango de fechas} de este sensor va desde \textbf{28/03/2017 hasta la actualidad.}
 
 \chapter{Unidad de agregación temporal}\label{ud-agregacion-temporal}
 
@@ -513,7 +555,9 @@ Genera y visualiza los gráficos asociados a los mapas resultantes de tu Región
 
 \includegraphics{assets/graphs_es.png}
 
-\section{\texorpdfstring{\textbf{Gráfico Pixel} Genera y visualiza los gráficos asociados a un píxel seleccionado con tu cursor. Cuando pinchas en un punto de tu área de estudio, esta opción te mostrará los datos correspondientes a su Latitud, Longitud, m/píxel (muestra la resolución del mapa en ese nivel de zoom, en metros por píxel) y el nombre de la capa que estás visualizando.}{Gráfico Pixel Genera y visualiza los gráficos asociados a un píxel seleccionado con tu cursor. Cuando pinchas en un punto de tu área de estudio, esta opción te mostrará los datos correspondientes a su Latitud, Longitud, m/píxel (muestra la resolución del mapa en ese nivel de zoom, en metros por píxel) y el nombre de la capa que estás visualizando.}}\label{gruxe1fico-pixel-genera-y-visualiza-los-gruxe1ficos-asociados-a-un-puxedxel-seleccionado-con-tu-cursor.-cuando-pinchas-en-un-punto-de-tu-uxe1rea-de-estudio-esta-opciuxf3n-te-mostraruxe1-los-datos-correspondientes-a-su-latitud-longitud-mpuxedxel-muestra-la-resoluciuxf3n-del-mapa-en-ese-nivel-de-zoom-en-metros-por-puxedxel-y-el-nombre-de-la-capa-que-estuxe1s-visualizando.}
+\section{\texorpdfstring{\textbf{Gráfico Pixel}}{Gráfico Pixel}}\label{gruxe1fico-pixel}
+
+Genera y visualiza los gráficos asociados a un píxel seleccionado con tu cursor. Cuando pinchas en un punto de tu área de estudio, esta opción te mostrará los datos correspondientes a su Latitud, Longitud, m/píxel (muestra la resolución del mapa en ese nivel de zoom, en metros por píxel) y el nombre de la capa que estás visualizando.
 
 \includegraphics{assets/chart_pixel_es.png}
 

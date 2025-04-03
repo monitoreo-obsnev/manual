@@ -19,3 +19,7 @@ description: "Documentación de la herramienta MonitorEO-OBSNEV."
 Este manual de usuario proporciona una guía completa para el uso de MonitorEO-OBSNEV, incluyendo la descripción de funcionalidades, navegación por la interfaz, selección de parámetros y visualización de resultados.
 
 Este proyecto ha sido desarrollado en el marco del trabajo del Observatorio de Cambio Global de Sierra Nevada, de la Universidad de Granada, a través del proyecto EVEREST (PID2023-151939OB-I00), financiado por el Ministerio de Ciencia, Innovación y Universidades (MICIU) / Agencia Estatal de Investigación (AEI) 10.13039/501100011033, y cofinanciado por el Fondo Europeo de Desarrollo Regional (FEDER/ERDF – Unión Europea).
+
+![](assets/logo-obs.png)
+![](assets/logo-ugr.png)
+![](assets/logo-ministerio.png)

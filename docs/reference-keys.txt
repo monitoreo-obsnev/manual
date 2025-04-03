@@ -1,10 +1,10 @@
 intro
 interfaz
 idiomas
-es-español
-en-inglés
-fr-francés
-de-alemán
+es
+en
+fr
+de
 area-estudio
 dibujar-tu-región-de-interés-roi---region-of-interest
 asset-público
@@ -60,4 +60,4 @@ calcular
 seleccionar-capa
 añadir-al-mapa
 gráfico-roi
-gráfico-pixel-genera-y-visualiza-los-gráficos-asociados-a-un-píxel-seleccionado-con-tu-cursor.-cuando-pinchas-en-un-punto-de-tu-área-de-estudio-esta-opción-te-mostrará-los-datos-correspondientes-a-su-latitud-longitud-mpíxel-muestra-la-resolución-del-mapa-en-ese-nivel-de-zoom-en-metros-por-píxel-y-el-nombre-de-la-capa-que-estás-visualizando.
+gráfico-pixel
