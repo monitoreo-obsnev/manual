@@ -23,7 +23,7 @@
 <meta name="author" content="Observatorio de Cambio Global de Sierra Nevada (Universidad de Granada)" />
 
 
-<meta name="date" content="2025-04-02" />
+<meta name="date" content="2025-04-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="periodo.html"/>
-<link rel="next" href="variable-especifica.html"/>
+<link rel="next" href="sensor.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -83,10 +83,10 @@
 <li class="chapter" data-level="5" data-path="fechas.html"><a href="fechas.html"><i class="fa fa-check"></i><b>5</b> Fechas de inicio y fin</a></li>
 <li class="chapter" data-level="6" data-path="periodo.html"><a href="periodo.html"><i class="fa fa-check"></i><b>6</b> Selección de un intervalo de meses específico</a></li>
 <li class="chapter" data-level="7" data-path="tipo-variable.html"><a href="tipo-variable.html"><i class="fa fa-check"></i><b>7</b> Tipo de variable de interés</a></li>
-<li class="chapter" data-level="8" data-path="variable-especifica.html"><a href="variable-especifica.html"><i class="fa fa-check"></i><b>8</b> Variable específica</a></li>
-<li class="chapter" data-level="9" data-path="sensor.html"><a href="sensor.html"><i class="fa fa-check"></i><b>9</b> Sensor satelital</a></li>
-<li class="chapter" data-level="10" data-path="agregacion-temporal.html"><a href="agregacion-temporal.html"><i class="fa fa-check"></i><b>10</b> Unidad temporal de agregación</a></li>
-<li class="chapter" data-level="11" data-path="agregacion-espacial.html"><a href="agregacion-espacial.html"><i class="fa fa-check"></i><b>11</b> Métrica de agregación espacial</a></li>
+<li class="chapter" data-level="8" data-path="sensor.html"><a href="sensor.html"><i class="fa fa-check"></i><b>8</b> Sensor satelital</a></li>
+<li class="chapter" data-level="9" data-path="ud-agregacion-temporal.html"><a href="ud-agregacion-temporal.html"><i class="fa fa-check"></i><b>9</b> Unidad de agregación temporal</a></li>
+<li class="chapter" data-level="10" data-path="agregacion-temporal.html"><a href="agregacion-temporal.html"><i class="fa fa-check"></i><b>10</b> Métrica de agregación temporal</a></li>
+<li class="chapter" data-level="11" data-path="agregacion-temporal-interanual.html"><a href="agregacion-temporal-interanual.html"><i class="fa fa-check"></i><b>11</b> Métrica de agregación temporal interanual</a></li>
 <li class="chapter" data-level="12" data-path="filtrado-nubes.html"><a href="filtrado-nubes.html"><i class="fa fa-check"></i><b>12</b> Filtrado de nubes</a></li>
 <li class="chapter" data-level="13" data-path="mapas-graficos.html"><a href="mapas-graficos.html"><i class="fa fa-check"></i><b>13</b> Generar mapas y gráficos de resultados</a></li>
 <li class="divider"></li>
@@ -111,46 +111,152 @@
             <section class="normal" id="section-">
 <div id="tipo-variable" class="section level1 hasAnchor" number="7">
 <h1><span class="header-section-number">7</span> Tipo de variable de interés<a href="tipo-variable.html#tipo-variable" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Selecciona la variable de estudio. Las variables se clasifican en grandes categorías de <a href="https://geobon.org/ebvs/what-are-ebvs/">EBVs</a> <strong>(Variables Esenciales de Biodiversidad)</strong>, relacionadas con el funcionamiento y estructura de los ecosistemas. <strong>MonitorEO-OBSNEV</strong> incluye:</p>
+<p>Selecciona la variable de estudio. Las variables se clasifican en grandes categorías de <a href="https://geobon.org/ebvs/what-are-ebvs/">EBVs</a> {target=“_blank”} <strong>(Variables Esenciales de Biodiversidad)</strong>, relacionadas con el funcionamiento y estructura de los ecosistemas. <strong>MonitorEO-OBSNEV</strong> incluye:</p>
+<p><img src="assets/variables.png" /></p>
 <ul>
-<li><strong>Carbono Orgánico (Producción Primaria):</strong>
+<li><h4 id="carbono-orgánico-producción-primaria" class="hasAnchor"><strong>Carbono Orgánico (Producción Primaria):</strong><a href="tipo-variable.html#carbono-orgánico-producción-primaria" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ul>
-<li><strong>NDVI</strong> - Normalized Difference Vegetation Index.<br />
-</li>
-<li><strong>EVI</strong> - Índice de Vegetación Mejorado.<br />
-</li>
-<li><strong>Chl-a</strong> - Concentración de clorofila.<br />
-</li>
+<li><strong>NDVI</strong> - Índice de Vegetación de Diferencia Normalizada</li>
 </ul></li>
-<li><strong>Balance de Radiación:</strong>
+</ul>
+<p>El Índice de Vegetación de Diferencia Normalizada (NDVI, por sus siglas en inglés; Tucker y Sellers, 1986) es un indicador espectral ampliamente utilizado para cuantificar la cobertura y el estado de la vegetación mediante sensores remotos. Se calcula a partir de la diferencia entre la reflectancia en el infrarrojo cercano (NIR) y la reflectancia en el rojo (RED), normalizada por su suma:</p>
+<p>NDV I= NIR- RED / NIR + RED</p>
+<p>Este índice toma valores entre -1 y 1. Valores cercanos a 1 indican vegetación densa y vigorosa, mientras que valores cercanos a -1 corresponden a superficies no vegetadas, como cuerpos de agua, nieve o áreas urbanas.</p>
 <ul>
-<li><strong>ALB</strong> - Albedo.<br />
-</li>
-</ul></li>
-<li><strong>Balance de Agua:</strong>
+<li><strong>EVI</strong> - Índice de Vegetación Mejorado.</li>
+</ul>
+<p>El Índice de Vegetación Mejorado (EVI, por sus siglas en inglés; Huete et al., 1999) es un indicador espectral desarrollado para optimizar la estimación de la cobertura y condición de la vegetación a partir de datos de teledetección. A diferencia de índices tradicionales como el NDVI, el EVI incorpora factores de corrección atmosférica y una compensación por la influencia del fondo del suelo, lo que mejora su sensibilidad en áreas con alta densidad de vegetación, baja cobertura vegetal o condiciones atmosféricas complejas.</p>
+<p>La fórmula general del EVI es la siguiente:</p>
+<p>EVI=G⋅ NIR−RED / NIR+C1​⋅RED−C2​⋅BLUE+L</p>
+<p>donde:</p>
 <ul>
-<li><strong>ET</strong> - Evapotranspiración<br />
+<li>NIR: reflectancia en el infrarrojo cercano<br />
 </li>
-<li><strong>LE</strong> - Calor Latente<br />
+<li>RED: reflectancia en el rojo<br />
 </li>
-<li><strong>LSWI</strong> - Índice de Agua Superficial Terrestre<br />
+<li>BLUE: reflectancia en el azul<br />
 </li>
-<li><strong>NDWI</strong> - Índice de Agua de Diferencia Normalizada<br />
+<li>G: factor de ganancia (generalmente 2.5)<br />
 </li>
-<li><strong>NDSI</strong> - Índice de Nieve de Diferencia Normalizada<br />
+<li>L: factor de corrección del suelo (1.0)<br />
 </li>
-</ul></li>
-<li><strong>Calor Sensible:</strong>
+<li>C1 y C2​: coeficientes de corrección atmosférica (6.0 y 7.5, respectivamente)</li>
+</ul>
+<p>Los valores del EVI varían entre -1 y 1. Valores cercanos a 1 indican una vegetación densa y saludable, mientras que valores negativos o bajos reflejan áreas sin vegetación, como cuerpos de agua, zonas urbanizadas o superficies nevadas.</p>
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Valor de EVI</th>
+<th align="center">Interpretación ecológica</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>&lt; 0.0</strong></td>
+<td align="center">Agua, nieve, nubes, áreas no vegetadas</td>
+</tr>
+<tr class="even">
+<td><strong>0.0 – 0.1</strong></td>
+<td align="center">Suelos desnudos, desiertos, áreas urbanas, rocas</td>
+</tr>
+<tr class="odd">
+<td><strong>0.1 – 0.2</strong></td>
+<td align="center">Vegetación escasa, pastizales áridos, matorral abierto</td>
+</tr>
+<tr class="even">
+<td><strong>0.2 – 0.3</strong></td>
+<td align="center">Pastizales, agricultura de secano, sabanas</td>
+</tr>
+<tr class="odd">
+<td><strong>0.3 – 0.5</strong></td>
+<td align="center">Bosques abiertos, zonas agrícolas activas (cultivos en crecimiento)</td>
+</tr>
+<tr class="even">
+<td><strong>0.5 – 0.7</strong></td>
+<td align="center">Bosques templados densos, cultivos con alta cobertura vegetal</td>
+</tr>
+<tr class="odd">
+<td><strong>&gt; 0.7</strong></td>
+<td align="center">Bosques tropicales, selvas, vegetación muy densa</td>
+</tr>
+</tbody>
+</table>
 <ul>
-<li><strong>LST</strong> -Temperatura Superficial.<br />
-</li>
+<li><strong>Chl-a</strong> - Concentración de clorofila.</li>
+</ul>
+<p>El índice de clorofila-a se utiliza para estimar la concentración de clorofila-a en cuerpos de agua como océanos, lagos y ríos. La clorofila-a es el principal pigmento fotosintético presente en el fitoplancton, por lo que su concentración actúa como un indicador indirecto de la biomasa algal y de la productividad primaria en ecosistemas acuáticos, siendo un indicador clave para evaluar la calidad del agua y la salud de los ecosistemas acuáticos (Gitelson et al., 1993; IOCCG, 2000).</p>
+<ul>
+<li><h4 id="balance-de-radiación" class="hasAnchor"><strong>Balance de Radiación:</strong><a href="tipo-variable.html#balance-de-radiación" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li><strong>ALB</strong> - Albedo.</li>
 </ul></li>
+</ul>
+<p>El albedo es la fracción de la radiación solar incidente que es reflejada por una superficie sin ser absorbida. Se trata de un parámetro adimensional que varía entre 0 (absorción total) y 1 (reflexión total). Un albedo elevado indica que la superficie refleja una gran proporción de la energía solar recibida, como ocurre en superficies altamente reflectantes como la nieve o el hielo. En contraste, un albedo bajo implica una mayor absorción de radiación, característica de superficies oscuras como áreas urbanas, suelos húmedos o cuerpos de agua.<br />
+El albedo desempeña un papel clave en el balance energético terrestre y en procesos relacionados con el clima global, ya que influye directamente en la cantidad de energía que entra y se retiene en el sistema climático.</p>
+<ul>
+<li><h4 id="balance-de-agua" class="hasAnchor"><strong>Balance de Agua:</strong><a href="tipo-variable.html#balance-de-agua" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li><strong>ET</strong> - Evapotranspiración</li>
+</ul></li>
+</ul>
+<p>Estimación de la cantidad de agua que se evapora de la superficie terrestre y se transpira por las plantas. Generada a partir del modelo Mu et al. (2011), que implementa un enfoque basado en la ecuación de Penman-Monteith, adaptada para sensores remotos. Permite comprender el ciclo del agua, evaluar la disponibilidad de agua en una región y monitorear los recursos hídricos.</p>
+<ul>
+<li><strong>LE</strong> - Calor Latente</li>
+</ul>
+<p>Estimación indirecta de la energía consumida por la evapotranspiración. Durante el proceso, se requiere energía para romper o formar enlaces entre las moléculas de la sustancia, lo que resulta en la liberación o absorción de calor. El calor latente desempeña un papel fundamental en el ciclo del agua, ya que la evaporación y la condensación son procesos clave en la formación de nubes, la precipitación y la regulación del clima.</p>
+<ul>
+<li><strong>LSWI</strong> - Índice de Agua Superficial Terrestre</li>
+</ul>
+<p>El LSWI (Land Surface Water Index) es un índice espectral utilizado para detectar y evaluar la presencia de humedad en la superficie terrestre, particularmente en la vegetación y el suelo. Se basa en la diferencia entre la reflectancia en el infrarrojo cercano (NIR) y el infrarrojo de onda corta (SWIR), que son sensibles al contenido de agua en la vegetación y el suelo.</p>
+<p>LSWI = NIR- SWIR / NIR + SWIR​</p>
+<ul>
+<li><p>NIR: Banda de infrarrojo cercano.</p></li>
+<li><p>SWIR: Banda de infrarrojo de onda corta.</p></li>
+</ul>
+<p><strong>Valores altos</strong> → alta humedad superficial, suelos húmedos, vegetación con alto contenido de agua, humedales o áreas agrícolas irrigadas.</p>
+<p><strong>Valores bajos</strong> → condiciones secas, vegetación estresada o suelos áridos.</p>
+<ul>
+<li><strong>NDWI</strong> - Índice de Agua de Diferencia Normalizada</li>
+</ul>
+<p>El NDWI es un índice espectral diseñado para detectar y cuantificar la presencia de agua en la superficie terrestre. Se basa en la diferencia de reflectancia entre el infrarrojo cercano (NIR) y el verde (Green), aprovechando la fuerte absorción del agua en el NIR y su alta reflectancia en el visible.</p>
+<p>NDWI = Green - NIR / Green + NIR​</p>
+<ul>
+<li>Green: Banda del verde.<br />
+</li>
+<li>NIR: Banda del infrarrojo cercano</li>
+</ul>
+<p><strong>NDWI &gt; 0</strong> → presencia de <strong>agua superficial</strong> (ríos, lagos, embalses, zonas inundadas)<br />
+<strong>NDWI &lt; 0</strong> → superficies <strong>terrestres sin agua</strong> (vegetación, suelo desnudo, áreas urbanas)</p>
+<ul>
+<li><strong>NDSI</strong> - Índice de Nieve de Diferencia Normalizada</li>
+</ul>
+<p>El NDSI es un indicador espectral utilizado para detectar la presencia y extensión de nieve en la superficie terrestre. Se basa en las características reflectivas distintivas de la nieve, que refleja fuertemente en el espectro visible (banda verde) y absorbe significativamente en el infrarrojo de onda corta (SWIR), en contraste con la mayoría de los demás tipos de cobertura terrestre.</p>
+<p>NDSI = Green - SWIR / Green + SWIR​</p>
+<ul>
+<li><strong>Green</strong>: Banda del verde.<br />
+</li>
+<li><strong>SWIR</strong>: Banda del infrarrojo de onda corta.</li>
+</ul>
+<p><strong>NDSI &gt; 0.4</strong> → alta probabilidad de presencia de <strong>nieve o hielo.</strong><br />
+<strong>NDSI &lt; 0.2</strong> → generalmente indica <strong>ausencia de nieve.</strong></p>
+<p>Estos umbrales pueden ajustarse según la resolución y el sensor utilizado.</p>
+<ul>
+<li><h4 id="calor-sensible" class="hasAnchor"><strong>Calor Sensible:</strong><a href="tipo-variable.html#calor-sensible" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li><strong>LST</strong> -Temperatura Superficial.</li>
+</ul></li>
+</ul>
+<p>La temperatura de la superficie terrestre (LST, por sus siglas en inglés) se refiere a la temperatura registrada en la capa superior de la superficie terrestre o de los cuerpos de agua, tal como es detectada por sensores remotos. LST se estima a partir de la radiancia térmica captada en el espectro del infrarrojo térmico, y es una variable clave en el análisis de procesos como el balance energético, la evapotranspiración, la sequía, el estrés hídrico y el monitoreo urbano y agrícola.</p>
+<ul>
 <li><strong>Nutrientes / Aerosoles:</strong>
 <ul>
 <li><strong>ARSL</strong> - Profundidad óptica atmosférica de aerosoles.</li>
 </ul></li>
 </ul>
-<p>Añadimos la descripción detallada de cada índice? la tengo <a href="https://docs.google.com/document/d/1iYMDXfh4uQ9vuNyansFqoBuk0M9Hi5Vo_4U-cOyEGcY/edit?tab=t.0"><strong>aquí</strong></a></p>
 
 </div>
             </section>
@@ -159,7 +265,7 @@
         </div>
       </div>
 <a href="periodo.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="variable-especifica.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="sensor.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

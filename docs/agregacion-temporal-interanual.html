@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>13 Generar mapas y gráficos de resultados | Manual de usuario de MonitorEO-OBSNEV</title>
+  <title>11 Métrica de agregación temporal interanual | Manual de usuario de MonitorEO-OBSNEV</title>
   <meta name="description" content="Documentación de la herramienta MonitorEO-OBSNEV." />
   <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="13 Generar mapas y gráficos de resultados | Manual de usuario de MonitorEO-OBSNEV" />
+  <meta property="og:title" content="11 Métrica de agregación temporal interanual | Manual de usuario de MonitorEO-OBSNEV" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Documentación de la herramienta MonitorEO-OBSNEV." />
   <meta name="github-repo" content="monitoreo-obsnev/manual" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="13 Generar mapas y gráficos de resultados | Manual de usuario de MonitorEO-OBSNEV" />
+  <meta name="twitter:title" content="11 Métrica de agregación temporal interanual | Manual de usuario de MonitorEO-OBSNEV" />
   
   <meta name="twitter:description" content="Documentación de la herramienta MonitorEO-OBSNEV." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="filtrado-nubes.html"/>
-
+<link rel="prev" href="agregacion-temporal.html"/>
+<link rel="next" href="filtrado-nubes.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -109,13 +109,21 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="mapas-graficos" class="section level1 hasAnchor" number="13">
-<h1><span class="header-section-number">13</span> Generar mapas y gráficos de resultados<a href="mapas-graficos.html#mapas-graficos" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p><strong>1 - Calcular:</strong> Al hacer clic en el botón se generará el resultado según tu selección previa.</p>
-<p><strong>2- Seleccionar capa</strong>: En la sección aparecerán todas las capas/mapas generados durante el cálculo. Para visualizar una capa específica, selecciónala en <strong>“2- Seleccionar capa”</strong> y haz clic en <strong>“3 - Añadir al mapa”</strong>.</p>
-<p><strong>3 - Añadir al mapa:</strong> Dibuja en el mapa la capa seleccionada.</p>
-<p><strong>4 -</strong> <strong>Gráfico</strong> <strong>ROI.</strong> Genera y visualiza los gráficos asociados a los mapas resultantes de tu Región de Interés (ROI por su siglas en inglés).</p>
-<p><strong>5 -</strong> <strong>Gráfico Pixel.</strong> Genera y visualiza los gráficos asociados a un píxel seleccionado con tu cursor. Cuando pinchas en un punto de tu área de estudio, esta opción te mostrará los datos correspondientes a su Latitud, Longitud, m/píxel (muestra la resolución del mapa en ese nivel de zoom, en metros por píxel) y el nombre de la capa que estás visualizando.</p>
+<div id="agregacion-temporal-interanual" class="section level1 hasAnchor" number="11">
+<h1><span class="header-section-number">11</span> Métrica de agregación temporal interanual<a href="agregacion-temporal-interanual.html#agregacion-temporal-interanual" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Selecciona el método de agregación temporal para ejecutar tu análisis. Los métodos de <strong>agregación temporal</strong> permiten <strong>resumir datos</strong> en períodos de tiempo utilizando diferentes técnicas estadísticas llamadas <strong>reductores</strong>.</p>
+<ul>
+<li><strong>Media:</strong> Calcula el <strong>promedio</strong> de los valores por año dentro del periodo de tiempo seleccionado.<br />
+</li>
+<li><strong>Mediana</strong>: Calcula el <strong>valor central</strong> de los valores por año dentro del periodo de tiempo seleccionado. Es más resistente a valores extremos que la media.<br />
+</li>
+<li><strong>Mínimo:</strong> Calcula el <strong>valor más bajo</strong> por año en un periodo de tiempo.<br />
+</li>
+<li><strong>Máximo:</strong> Calcula el <strong>valor más alto</strong> por año en un periodo de tiempo.<br />
+</li>
+<li><strong>No calcular:</strong> No calcula agregaciones temporales por años.</li>
+</ul>
+<p><img src="assets/interannualAggregation.png" /></p>
 
 </div>
             </section>
@@ -123,8 +131,8 @@
           </div>
         </div>
       </div>
-<a href="filtrado-nubes.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="agregacion-temporal.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="filtrado-nubes.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -155,7 +163,7 @@ gitbook.start({
     "size": 2
   },
   "edit": {
-    "link": "https://github.com/monitoreo-obsnev/manual/issues12-mapas-graficos.Rmd",
+    "link": "https://github.com/monitoreo-obsnev/manual/issues10-agregacion-interanual.Rmd",
     "text": "Edit"
   },
   "history": {

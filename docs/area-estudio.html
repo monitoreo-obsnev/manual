@@ -23,7 +23,7 @@
 <meta name="author" content="Observatorio de Cambio Global de Sierra Nevada (Universidad de Granada)" />
 
 
-<meta name="date" content="2025-04-02" />
+<meta name="date" content="2025-04-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -83,10 +83,10 @@
 <li class="chapter" data-level="5" data-path="fechas.html"><a href="fechas.html"><i class="fa fa-check"></i><b>5</b> Fechas de inicio y fin</a></li>
 <li class="chapter" data-level="6" data-path="periodo.html"><a href="periodo.html"><i class="fa fa-check"></i><b>6</b> Selección de un intervalo de meses específico</a></li>
 <li class="chapter" data-level="7" data-path="tipo-variable.html"><a href="tipo-variable.html"><i class="fa fa-check"></i><b>7</b> Tipo de variable de interés</a></li>
-<li class="chapter" data-level="8" data-path="variable-especifica.html"><a href="variable-especifica.html"><i class="fa fa-check"></i><b>8</b> Variable específica</a></li>
-<li class="chapter" data-level="9" data-path="sensor.html"><a href="sensor.html"><i class="fa fa-check"></i><b>9</b> Sensor satelital</a></li>
-<li class="chapter" data-level="10" data-path="agregacion-temporal.html"><a href="agregacion-temporal.html"><i class="fa fa-check"></i><b>10</b> Unidad temporal de agregación</a></li>
-<li class="chapter" data-level="11" data-path="agregacion-espacial.html"><a href="agregacion-espacial.html"><i class="fa fa-check"></i><b>11</b> Métrica de agregación espacial</a></li>
+<li class="chapter" data-level="8" data-path="sensor.html"><a href="sensor.html"><i class="fa fa-check"></i><b>8</b> Sensor satelital</a></li>
+<li class="chapter" data-level="9" data-path="ud-agregacion-temporal.html"><a href="ud-agregacion-temporal.html"><i class="fa fa-check"></i><b>9</b> Unidad de agregación temporal</a></li>
+<li class="chapter" data-level="10" data-path="agregacion-temporal.html"><a href="agregacion-temporal.html"><i class="fa fa-check"></i><b>10</b> Métrica de agregación temporal</a></li>
+<li class="chapter" data-level="11" data-path="agregacion-temporal-interanual.html"><a href="agregacion-temporal-interanual.html"><i class="fa fa-check"></i><b>11</b> Métrica de agregación temporal interanual</a></li>
 <li class="chapter" data-level="12" data-path="filtrado-nubes.html"><a href="filtrado-nubes.html"><i class="fa fa-check"></i><b>12</b> Filtrado de nubes</a></li>
 <li class="chapter" data-level="13" data-path="mapas-graficos.html"><a href="mapas-graficos.html"><i class="fa fa-check"></i><b>13</b> Generar mapas y gráficos de resultados</a></li>
 <li class="divider"></li>
@@ -114,13 +114,10 @@
 <p><strong>Selecciona ROI– Elige tu área de estudio.</strong></p>
 <p>En esta sección puedes definir la <strong>región de interés (ROI)</strong> sobre la que se realizará el análisis. Tienes varias opciones disponibles para seleccionar o cargar tu área de estudio:</p>
 <p><img src="assets/ROI.png" /></p>
-<div id="dibujar-tu-región-de-interés-roi---region-of-interest" class="section level4 hasAnchor" number="4.0.0.1">
-<h4><span class="header-section-number">4.0.0.1</span> <strong>4.1. 🖊️ Dibujar tu región de interés (ROI - Region of Interest)</strong><a href="#dibujar-tu-región-de-interés-roi---region-of-interest" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><strong>4.1. 🖊️ Dibujar tu región de interés (ROI - Region of Interest)</strong></p>
 <p>Puedes dibujar regiones manualmente usando esta opción. Cuando dibujas una región (punto, línea o polígono), esta se almacena como un objeto Geometry que aparecerá como capa en la parte superior izquierda del mapa.</p>
 <p><img src="assets/Drawing.png" /></p>
-</div>
-<div id="asset-público" class="section level4 hasAnchor" number="4.0.0.2">
-<h4><span class="header-section-number">4.0.0.2</span> <strong>4.2. 📂 Asset público</strong><a href="#asset-público" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><strong>4.2. 📂 Asset público</strong></p>
 <p>Puedes cargar un área de estudio que haya sido previamente subida a Google Earth Engine, indicando en la app la ruta del asset, es decir, la dirección única donde se encuentra almacenado el recurso dentro de tu cuenta de GEE (puede tratarse de una imagen, colección, tabla o carpeta).</p>
 <p>Esta ruta suele tener el siguiente formato:</p>
 <ul>
@@ -132,22 +129,22 @@ Debes asegurarte de:</p>
 <li>Copiar y pegar correctamente esta ruta en la app o en el script para que el recurso pueda cargarse sin errores.</li>
 </ul>
 <p><img src="assets/asset1.png" /></p>
-<p>Compartir el asset como público.</p>
+<ul>
+<li>Compartir el asset como público.</li>
+</ul>
 <p><img src="assets/asset_2.png" /></p>
-</div>
-<div id="punto-específico-y-radio" class="section level4 hasAnchor" number="4.0.0.3">
-<h4><span class="header-section-number">4.0.0.3</span> <strong>4.3. 📌Punto específico y radio</strong><a href="#punto-específico-y-radio" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><strong>4.3. 📌Punto específico y radio</strong></p>
 <p>Puedes introducir coordenadas de <strong>latitud</strong> y <strong>longitud</strong> para definir una ubicación exacta sobre la superficie terrestre. A partir de ese punto, se puede generar un área circular (<strong>buffer</strong>) cuyo <strong>radio, en metros, es definido por el usuario</strong>. Esta funcionalidad permite delimitar zonas de interés alrededor de un punto específico para su análisis.</p>
 <p><img src="assets/buffer.png" />
-#### <strong>4.4. 🏞️ Parque Nacional</strong></p>
+<strong>4.4. 🏞️ Parque Nacional</strong></p>
 <p>Puedes seleccionar como área de estudio cualquiera de los <strong>Parques Nacionales de España y Portugal</strong> disponibles en la plataforma.</p>
 <p><img src="assets/np.png" />
-#### <strong>4.5. 🌍 Base de datos mundial sobre zonas protegidas WDPA</strong></p>
+<strong>4.5. 🌍 Base de datos mundial sobre zonas protegidas WDPA</strong></p>
 <p>World Database on Protected Areas (WDPA), es la fuente más completa y actualizada de información geoespacial sobre áreas protegidas a nivel global. Gestionada por ONU Medio Ambiente y el Centro de Monitoreo de la Conservación del Medio Ambiente (UNEP-WCMC), proporciona datos detallados sobre parques nacionales, reservas naturales y otras zonas protegidas.</p>
 <p>Para seleccionar un área protegida mediante su ID, puedes acceder a la base de datos a través del sitio web oficial de Protected Planet (<a href="https://www.protectedplanet.net/">🔗 protectedplanet.net</a>). Allí, puedes buscar áreas protegidas por nombre, país o categoría de protección y obtener su identificador único (WDPA ID).</p>
 <p><img src="assets/WDPA.png" />
 <img src="assets/WDPA2.png" />
-#### <strong>4.6. 📁 Elige un proyecto</strong></p>
+<strong>4.6. 📁 Elige un proyecto</strong></p>
 <p>Puedes seleccionar como área de estudio las zonas asociadas a los distintos proyectos desarrollados en el marco de <strong>OBSNEV</strong>. Cada uno de ellos define áreas específicas con distintos enfoques temáticos:</p>
 <ul>
 <li><strong>EarthCul</strong>: Áreas de influencia socioeconómica de los Parques Nacionales de montaña en España y Portugal.<br />
@@ -160,7 +157,6 @@ Debes asegurarte de:</p>
 </ul>
 <p><img src="assets/PROJECTS.png" /></p>
 
-</div>
 </div>
             </section>
 

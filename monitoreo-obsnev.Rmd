@@ -265,7 +265,7 @@ Selecciona con qué sensor quieres trabajar. Los sensores disponibles poseen dis
 
 <!--chapter:end:07-sensor.Rmd-->
 
-# Unidad de agregación temporal {#agregacion-temporal}
+# Unidad de agregación temporal {#ud-agregacion-temporal}
 
 Selecciona el intervalo temporal sobre el cual deseas realizar los cálculos. Puedes mantener la **resolución temporal original del sensor** o aplicar una **agregación periódica** para facilitar el análisis:
 

@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>9 Sensor satelital | Manual de usuario de MonitorEO-OBSNEV</title>
+  <title>8 Sensor satelital | Manual de usuario de MonitorEO-OBSNEV</title>
   <meta name="description" content="Documentación de la herramienta MonitorEO-OBSNEV." />
   <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="9 Sensor satelital | Manual de usuario de MonitorEO-OBSNEV" />
+  <meta property="og:title" content="8 Sensor satelital | Manual de usuario de MonitorEO-OBSNEV" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Documentación de la herramienta MonitorEO-OBSNEV." />
   <meta name="github-repo" content="monitoreo-obsnev/manual" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="9 Sensor satelital | Manual de usuario de MonitorEO-OBSNEV" />
+  <meta name="twitter:title" content="8 Sensor satelital | Manual de usuario de MonitorEO-OBSNEV" />
   
   <meta name="twitter:description" content="Documentación de la herramienta MonitorEO-OBSNEV." />
   
@@ -23,15 +23,15 @@
 <meta name="author" content="Observatorio de Cambio Global de Sierra Nevada (Universidad de Granada)" />
 
 
-<meta name="date" content="2025-04-02" />
+<meta name="date" content="2025-04-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="variable-especifica.html"/>
-<link rel="next" href="agregacion-temporal.html"/>
+<link rel="prev" href="tipo-variable.html"/>
+<link rel="next" href="ud-agregacion-temporal.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -83,10 +83,10 @@
 <li class="chapter" data-level="5" data-path="fechas.html"><a href="fechas.html"><i class="fa fa-check"></i><b>5</b> Fechas de inicio y fin</a></li>
 <li class="chapter" data-level="6" data-path="periodo.html"><a href="periodo.html"><i class="fa fa-check"></i><b>6</b> Selección de un intervalo de meses específico</a></li>
 <li class="chapter" data-level="7" data-path="tipo-variable.html"><a href="tipo-variable.html"><i class="fa fa-check"></i><b>7</b> Tipo de variable de interés</a></li>
-<li class="chapter" data-level="8" data-path="variable-especifica.html"><a href="variable-especifica.html"><i class="fa fa-check"></i><b>8</b> Variable específica</a></li>
-<li class="chapter" data-level="9" data-path="sensor.html"><a href="sensor.html"><i class="fa fa-check"></i><b>9</b> Sensor satelital</a></li>
-<li class="chapter" data-level="10" data-path="agregacion-temporal.html"><a href="agregacion-temporal.html"><i class="fa fa-check"></i><b>10</b> Unidad temporal de agregación</a></li>
-<li class="chapter" data-level="11" data-path="agregacion-espacial.html"><a href="agregacion-espacial.html"><i class="fa fa-check"></i><b>11</b> Métrica de agregación espacial</a></li>
+<li class="chapter" data-level="8" data-path="sensor.html"><a href="sensor.html"><i class="fa fa-check"></i><b>8</b> Sensor satelital</a></li>
+<li class="chapter" data-level="9" data-path="ud-agregacion-temporal.html"><a href="ud-agregacion-temporal.html"><i class="fa fa-check"></i><b>9</b> Unidad de agregación temporal</a></li>
+<li class="chapter" data-level="10" data-path="agregacion-temporal.html"><a href="agregacion-temporal.html"><i class="fa fa-check"></i><b>10</b> Métrica de agregación temporal</a></li>
+<li class="chapter" data-level="11" data-path="agregacion-temporal-interanual.html"><a href="agregacion-temporal-interanual.html"><i class="fa fa-check"></i><b>11</b> Métrica de agregación temporal interanual</a></li>
 <li class="chapter" data-level="12" data-path="filtrado-nubes.html"><a href="filtrado-nubes.html"><i class="fa fa-check"></i><b>12</b> Filtrado de nubes</a></li>
 <li class="chapter" data-level="13" data-path="mapas-graficos.html"><a href="mapas-graficos.html"><i class="fa fa-check"></i><b>13</b> Generar mapas y gráficos de resultados</a></li>
 <li class="divider"></li>
@@ -109,25 +109,37 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="sensor" class="section level1 hasAnchor" number="9">
-<h1><span class="header-section-number">9</span> Sensor satelital<a href="sensor.html#sensor" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Selecciona con qué sensor quieres trabajar. Los sensores disponibles poseen distinta resolución temporal y espacial. Dependiendo de la variable elegida, obtendrás disponibilidad de datos para unos u otros sensores. Todos sensores disponibles son:</p>
+<div id="sensor" class="section level1 hasAnchor" number="8">
+<h1><span class="header-section-number">8</span> Sensor satelital<a href="sensor.html#sensor" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Selecciona con qué sensor quieres trabajar. Los sensores disponibles poseen distinta resolución temporal y espacial. Dependiendo de la variable elegida, obtendrás disponibilidad de datos para unos u otros sensores.</p>
+<p><img src="assets/sensor.png" /></p>
 <ul>
-<li><strong>MODIS 250 m, 16 días.</strong> MODIS (<em>Moderate Resolution Imaging Spectroradiometer</em>) es un sensor a bordo de los satélites Terra y Aqua de la NASA. <strong>Resolución espacial:</strong> 250 metros (m). <strong>Resolución temporal:</strong> 16 días (se compilan imágenes cada 16 días en productos de composición).<br />
-</li>
-<li><strong>Landsat 30 m, &gt; 8 días.</strong> La serie <strong>Landsat</strong> es operada por la NASA y el USGS. Estos datos incluyen Landsat 5, 6, 8 y 9. <strong>Resolución espacial:</strong> 30 metros. <strong>Resolución temporal:</strong> Mayor a 8 días, ya que dependiendo del satélite tienen un período de revisita de 8 o 16 días cada uno.<br />
-</li>
-<li><strong>Sentinel-2 10m, 5 días</strong>. El programa <strong>Sentinel-2</strong> es operado por la Agencia Espacial Europea (ESA) y forma parte del programa Copernicus. <strong>Resolución espacial:</strong> 10 metros. <strong>Resolución temporal:</strong> 5 días.</li>
+<li><h4 id="modis-250-m-16-días." class="hasAnchor"><strong>MODIS 250 m, 16 días.</strong><a href="sensor.html#modis-250-m-16-días." class="anchor-section" aria-label="Anchor link to header"></a></h4></li>
 </ul>
+<div id="modis-moderate-resolution-imaging-spectroradiometer-es-un-sensor-a-bordo-de-los-satélites-terra-y-aqua-de-la-nasa.-resolución-espacial-250-metros-m.-resolución-temporal-16-días-se-compilan-imágenes-cada-16-días-en-productos-de-composición.-para-esta-interfaz-se-han-utilizado-los-datos-de-las-colecciones-mod13q1-006-satélite-modis-terra-y-myd13q1-006-satélite-modis-aqua.-estos-satélites-proporcionan-datos-desde-el-24022000-hasta-la-actualidad-aunque-la-disponibilidad-puede-variar-según-la-variable-seleccionada." class="section level4 hasAnchor" number="8.0.0.1">
+<h4><span class="header-section-number">8.0.0.1</span> MODIS (<em>Moderate Resolution Imaging Spectroradiometer</em>) es un sensor a bordo de los satélites Terra y Aqua de la NASA. <strong>Resolución espacial:</strong> 250 metros (m). <strong>Resolución temporal:</strong> 16 días (se compilan imágenes cada 16 días en productos de composición). Para esta interfaz, se han utilizado los datos de las colecciones <strong>MOD13Q1 006</strong> (satélite MODIS Terra) y <strong>MYD13Q1 006</strong> (satélite MODIS Aqua). Estos satélites <strong>proporcionan datos desde</strong> el <strong>24/02/2000 hasta la actualidad</strong>, aunque la disponibilidad puede variar según la variable seleccionada.<a href="sensor.html#modis-moderate-resolution-imaging-spectroradiometer-es-un-sensor-a-bordo-de-los-satélites-terra-y-aqua-de-la-nasa.-resolución-espacial-250-metros-m.-resolución-temporal-16-días-se-compilan-imágenes-cada-16-días-en-productos-de-composición.-para-esta-interfaz-se-han-utilizado-los-datos-de-las-colecciones-mod13q1-006-satélite-modis-terra-y-myd13q1-006-satélite-modis-aqua.-estos-satélites-proporcionan-datos-desde-el-24022000-hasta-la-actualidad-aunque-la-disponibilidad-puede-variar-según-la-variable-seleccionada." class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li><h4 id="landsat-30-m-16-días." class="hasAnchor"><strong>Landsat 30 m, &gt; 16 días.</strong><a href="sensor.html#landsat-30-m-16-días." class="anchor-section" aria-label="Anchor link to header"></a></h4></li>
+</ul>
+</div>
+<div id="la-serie-landsat-es-operada-por-la-nasa-y-el-usgs.-estos-datos-incluyen-landsat-5-6-8-y-9.-resolución-espacial-30-metros.-resolución-temporal-mayor-a-8-días-ya-que-dependiendo-del-satélite-tienen-un-período-de-revisita-de-8-o-16-días-cada-uno.-el-rango-de-fechas-cubierto-va-desde-1984-hasta-la-actualidad-dependiendo-de-la-disponibilidad-de-cada-satélite-landsat-5-16031984---05052012-landsat-7-28051999---actualidad-con-limitaciones-desde-31052003-por-la-falla-del-etm-landsat-8-18032013---presente-y-landsat-9-31102021---presente.-entre-el-05052012-y-el-18032013-no-hay-datos-disponibles-debido-a-la-interrupción-en-la-captura-de-imágenes-de-landsat-7.-aunque-este-satélite-siguió-operando-su-utilidad-estaba-limitada-desde-2003-por-una-falla-en-el-escáner-de-línea-de-mejora-etm.-debido-a-esta-limitación-a-partir-de-2003-sus-datos-no-se-consideran-en-el-rango-completo-de-fechas-disponibles." class="section level4 hasAnchor" number="8.0.0.2">
+<h4><span class="header-section-number">8.0.0.2</span> La serie <strong>Landsat</strong> es operada por la NASA y el USGS. Estos datos incluyen Landsat 5, 6, 8 y 9. <strong>Resolución espacial:</strong> 30 metros. <strong>Resolución temporal:</strong> Mayor a 8 días, ya que dependiendo del satélite tienen un período de revisita de 8 o 16 días cada uno. El <strong>rango de fechas</strong> cubierto va desde <strong>1984 hasta la actualidad</strong>, dependiendo de la disponibilidad de cada satélite: <strong>Landsat 5</strong> (16/03/1984 - 05/05/2012), <strong>Landsat 7</strong> (28/05/1999 - actualidad, con limitaciones desde 31/05/2003 por la falla del ETM+), <strong>Landsat 8</strong> (18/03/2013 - presente) y <strong>Landsat 9</strong> (31/10/2021 - presente). Entre el <strong>05/05/2012 y el 18/03/2013</strong>, no hay datos disponibles debido a la interrupción en la captura de imágenes de Landsat 7. Aunque este satélite siguió operando, su utilidad estaba limitada desde 2003 por una falla en el Escáner de Línea de Mejora (ETM+). Debido a esta limitación, a partir de 2003 sus datos no se consideran en el rango completo de fechas disponibles.<a href="sensor.html#la-serie-landsat-es-operada-por-la-nasa-y-el-usgs.-estos-datos-incluyen-landsat-5-6-8-y-9.-resolución-espacial-30-metros.-resolución-temporal-mayor-a-8-días-ya-que-dependiendo-del-satélite-tienen-un-período-de-revisita-de-8-o-16-días-cada-uno.-el-rango-de-fechas-cubierto-va-desde-1984-hasta-la-actualidad-dependiendo-de-la-disponibilidad-de-cada-satélite-landsat-5-16031984---05052012-landsat-7-28051999---actualidad-con-limitaciones-desde-31052003-por-la-falla-del-etm-landsat-8-18032013---presente-y-landsat-9-31102021---presente.-entre-el-05052012-y-el-18032013-no-hay-datos-disponibles-debido-a-la-interrupción-en-la-captura-de-imágenes-de-landsat-7.-aunque-este-satélite-siguió-operando-su-utilidad-estaba-limitada-desde-2003-por-una-falla-en-el-escáner-de-línea-de-mejora-etm.-debido-a-esta-limitación-a-partir-de-2003-sus-datos-no-se-consideran-en-el-rango-completo-de-fechas-disponibles." class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li><h4 id="sentinel-2-10m-5-días." class="hasAnchor"><strong>Sentinel-2 10m, 5 días</strong>.<a href="sensor.html#sentinel-2-10m-5-días." class="anchor-section" aria-label="Anchor link to header"></a></h4></li>
+</ul>
+</div>
+<div id="el-programa-sentinel-2-es-operado-por-la-agencia-espacial-europea-esa-y-forma-parte-del-programa-copernicus.-resolución-espacial-10-metros.-resolución-temporal-5-días.-en-esta-interfaz-utilizamos-el-producto-sr-harmonized-un-producto-de-reflectancia-de-superficie-sr-ajustado-para-garantizar-la-coherencia-entre-los-sensores-de-sentinel-2a-y-sentinel-2b-mediante-corrección-atmosférica-ajuste-espectral-y-normalización-de-datos.-el-rango-de-fechas-de-este-sensor-va-desde-28032017-hasta-la-actualidad." class="section level4 hasAnchor" number="8.0.0.3">
+<h4><span class="header-section-number">8.0.0.3</span> El programa <strong>Sentinel-2</strong> es operado por la Agencia Espacial Europea (ESA) y forma parte del programa Copernicus. <strong>Resolución espacial:</strong> 10 metros. <strong>Resolución temporal:</strong> 5 días. En esta interfaz, utilizamos el producto SR Harmonized, un producto de Reflectancia de Superficie (SR) ajustado para garantizar la coherencia entre los sensores de Sentinel-2A y Sentinel-2B mediante corrección atmosférica, ajuste espectral y normalización de datos. El <strong>rango de fechas</strong> de este sensor va desde <strong>28/03/2017 hasta la actualidad.</strong><a href="sensor.html#el-programa-sentinel-2-es-operado-por-la-agencia-espacial-europea-esa-y-forma-parte-del-programa-copernicus.-resolución-espacial-10-metros.-resolución-temporal-5-días.-en-esta-interfaz-utilizamos-el-producto-sr-harmonized-un-producto-de-reflectancia-de-superficie-sr-ajustado-para-garantizar-la-coherencia-entre-los-sensores-de-sentinel-2a-y-sentinel-2b-mediante-corrección-atmosférica-ajuste-espectral-y-normalización-de-datos.-el-rango-de-fechas-de-este-sensor-va-desde-28032017-hasta-la-actualidad." class="anchor-section" aria-label="Anchor link to header"></a></h4>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="variable-especifica.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="agregacion-temporal.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="tipo-variable.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ud-agregacion-temporal.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -158,7 +170,7 @@ gitbook.start({
     "size": 2
   },
   "edit": {
-    "link": "https://github.com/monitoreo-obsnev/manual/issues08-sensor.Rmd",
+    "link": "https://github.com/monitoreo-obsnev/manual/issues07-sensor.Rmd",
     "text": "Edit"
   },
   "history": {
