@@ -1,10 +1,6 @@
 intro
 interfaz
 idiomas
-es
-en
-fr
-de
 area-estudio
 dibujar-tu-región-de-interés-roi---region-of-interest
 asset-público

@@ -4,16 +4,16 @@
 
 ![](assets/Idiomas.png)
 
-## **es** 
+- **es** 
 Español
 
-## **en** 
+- **en** 
 English
 
-## **fr** 
+- **fr** 
 Français
 
-## **de** 
+- **de** 
 Deutsch
 
 
