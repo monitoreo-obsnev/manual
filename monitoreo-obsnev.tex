@@ -80,14 +80,14 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
-  pdftitle={12-references},
+  pdftitle={Manual de usuario de MonitorEO-OBSNEV},
   pdfauthor={Observatorio de Cambio Global de Sierra Nevada (Universidad de Granada)},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
-\title{12-references}
+\title{Manual de usuario de MonitorEO-OBSNEV}
 \author{Observatorio de Cambio Global de Sierra Nevada (Universidad de Granada)}
-\date{2025-04-03}
+\date{2025-04-04}
 
 \begin{document}
 \maketitle
@@ -102,7 +102,14 @@
 
 Este manual de usuario proporciona una guía completa para el uso de MonitorEO-OBSNEV, incluyendo la descripción de funcionalidades, navegación por la interfaz, selección de parámetros y visualización de resultados.
 
-Este proyecto ha sido desarrollado en el marco del trabajo del Observatorio de Cambio Global de Sierra Nevada, de la Universidad de Granada, a través del proyecto EVEREST (PID2023-151939OB-I00), financiado por el Ministerio de Ciencia, Innovación y Universidades (MICIU) / Agencia Estatal de Investigación (AEI) 10.13039/501100011033, y cofinanciado por el Fondo Europeo de Desarrollo Regional (FEDER/ERDF -- Unión Europea).
+Este proyecto ha sido desarrollado en el marco del trabajo del Observatorio de Cambio Global de Sierra Nevada, de la Universidad de Granada, a través de los proyectos:
+
+\begin{itemize}
+\item
+  EVEREST (PID2023-151939OB-I00), financiado por el Ministerio de Ciencia, Innovación y Universidades (MICIU) / Agencia Estatal de Investigación (AEI) 10.13039/501100011033, y cofinanciado por el Fondo Europeo de Desarrollo Regional (FEDER/ERDF -- Unión Europea).
+\item
+  ``Earth observations for the characterisation and monitoring of ecosystem functioning in Sierra Nevada (Spain)'' (C-EXP-074-UGR23), que ha sido cofinanciado por el Programa FEDER 2014-2020 y la Consejería de Economía, Conocimiento, Empresas y Universidad de la Junta de Andalucía.
+\end{itemize}
 
 \includegraphics{assets/logo-obs.png}
 \includegraphics{assets/logo-ugr.png}
@@ -124,21 +131,20 @@ MonitorEO-OBSNEV integra colecciones de datos satelitales, herramientas de anál
 
 \includegraphics{assets/Idiomas.png}
 
-\section{\texorpdfstring{\textbf{es}}{es}}\label{es}
-
-Español
-
-\section{\texorpdfstring{\textbf{en}}{en}}\label{en}
-
-English
-
-\section{\texorpdfstring{\textbf{fr}}{fr}}\label{fr}
-
-Français
-
-\section{\texorpdfstring{\textbf{de}}{de}}\label{de}
-
-Deutsch
+\begin{itemize}
+\item
+  \textbf{es}
+  Español
+\item
+  \textbf{en}
+  English
+\item
+  \textbf{fr}
+  Français
+\item
+  \textbf{de}
+  Deutsch
+\end{itemize}
 
 \chapter{Área de estudio}\label{area-estudio}
 
@@ -167,12 +173,12 @@ Esta ruta suele tener el siguiente formato:
 \end{itemize}
 
 \includegraphics{assets/asset_es.png}
-Debes asegurarte de:
+Desde tu cuenta de Google Earth Engien, debes asegurarte de:
 
 \begin{itemize}
 \tightlist
 \item
-  Copiar y pegar correctamente esta ruta en la app o en el script para que el recurso pueda cargarse sin errores.
+  Copiar y pegar correctamente esta ruta para que el recurso pueda cargarse sin errores.
 \end{itemize}
 
 \includegraphics{assets/asset1_es.png}
@@ -414,13 +420,21 @@ Selecciona con qué sensor quieres trabajar. Los sensores disponibles poseen dis
 
 \section{\texorpdfstring{\textbf{🛰️MODIS 250 m, 16 días}}{🛰️MODIS 250 m, 16 días}}\label{modis-250-m-16-duxedas}
 
-MODIS (\emph{Moderate Resolution Imaging Spectroradiometer}) es un sensor a bordo de los satélites Terra y Aqua de la NASA. \textbf{Resolución espacial:} 250 metros (m). \textbf{Resolución temporal:} 16 días (se compilan imágenes cada 16 días en productos de composición). Para esta interfaz, se han utilizado los datos de las colecciones \textbf{MOD13Q1 006} (satélite MODIS Terra) y \textbf{MYD13Q1 006} (satélite MODIS Aqua).
+MODIS (\emph{Moderate Resolution Imaging Spectroradiometer}) es un sensor a bordo de los satélites Terra y Aqua de la NASA.
+
+\textbf{Resolución espacial:} Depende de la variable seleccionada. Pueden ser datos a 250m, 1km, 4km\ldots{} Esta información te aparecerá en la pestaña ``Sensor'' una vez hayas seleccionado tu variable.
+\textbf{Resolución temporal:} Depende de la variable seleccionada. Pueden ser datos diarios, cada 8 días o cada 16 días. Esta información te aparecerá en la pestaña ``Sensor'' una vez hayas seleccionado tu variable.
+
+Para esta interfaz, se han utilizado los datos de las colecciones \textbf{MODIS Terra}.
 
 Estos satélites \textbf{proporcionan datos desde} el \textbf{24/02/2000 hasta la actualidad}, aunque la disponibilidad puede variar según la variable seleccionada.
 
 \section{\texorpdfstring{\textbf{🛰️Landsat 30 m, \textgreater{} 16 días}}{🛰️Landsat 30 m, \textgreater{} 16 días}}\label{landsat-30-m-16-duxedas}
 
-La serie \textbf{Landsat} es operada por la NASA y el USGS. Estos datos incluyen Landsat 5, 6, 8 y 9. \textbf{Resolución espacial:} 30 metros. \textbf{Resolución temporal:} Mayor a 8 días, ya que dependiendo del satélite tienen un período de revisita de 8 o 16 días cada uno.
+La serie \textbf{Landsat} es operada por la NASA y el USGS. Estos datos incluyen Landsat 5, 6, 8 y 9.
+
+\textbf{Resolución espacial:} 30 metros.
+\textbf{Resolución temporal:} Mayor a 16 días, ya que dependiendo del satélite tienen un período de revisita de 8 o 16 días cada uno.
 
 El \textbf{rango de fechas} cubierto va desde \textbf{1984 hasta la actualidad}, dependiendo de la disponibilidad de cada satélite:
 \textbf{Landsat 5} (16/03/1984 - 05/05/2012)
@@ -432,7 +446,12 @@ Entre el \textbf{05/05/2012 y el 18/03/2013}, no hay datos disponibles debido a 
 
 \section{\texorpdfstring{\textbf{🛰️Sentinel-2 10m, 5 días}}{🛰️Sentinel-2 10m, 5 días}}\label{sentinel-2-10m-5-duxedas}
 
-El programa \textbf{Sentinel-2} es operado por la Agencia Espacial Europea (ESA) y forma parte del programa Copernicus. \textbf{Resolución espacial:} 10 metros. \textbf{Resolución temporal:} 5 días. En esta interfaz, utilizamos el producto SR Harmonized, un producto de Reflectancia de Superficie (SR) ajustado para garantizar la coherencia entre los sensores de Sentinel-2A y Sentinel-2B mediante corrección atmosférica, ajuste espectral y normalización de datos.
+El programa \textbf{Sentinel-2} es operado por la Agencia Espacial Europea (ESA) y forma parte del programa Copernicus.
+
+\textbf{Resolución espacial:} 10 metros.
+\textbf{Resolución temporal:} 5 días.
+
+En esta interfaz, utilizamos el producto \textbf{SR Harmonized}, un producto de Reflectancia de Superficie (SR) ajustado para garantizar la coherencia entre los sensores de Sentinel-2A y Sentinel-2B mediante corrección atmosférica, ajuste espectral y normalización de datos.
 
 El \textbf{rango de fechas} de este sensor va desde \textbf{28/03/2017 hasta la actualidad.}
 

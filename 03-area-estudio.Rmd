@@ -23,9 +23,9 @@ Esta ruta suele tener el siguiente formato:
 * **`users/tu_usuario/nombre_del_asset`**
 
 ![](assets/asset_es.png)
-Debes asegurarte de:	
+Desde tu cuenta de Google Earth Engien, debes asegurarte de:	
 
-* Copiar y pegar correctamente esta ruta en la app o en el script para que el recurso pueda cargarse sin errores.
+* Copiar y pegar correctamente esta ruta para que el recurso pueda cargarse sin errores.
 
 ![](assets/asset1_es.png)
 
