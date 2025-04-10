@@ -20,7 +20,10 @@ Resume los datos por mes.
 
 Genera una única observación agregada por año.
 
-La agregación temporal permite suavizar variaciones de corto plazo, facilitar comparaciones entre periodos y reducir la influencia de datos atípicos o nublados.
+La agregación temporal permite suavizar variaciones de corto plazo, facilitar
+comparaciones entre periodos, reducir la influencia de datos atípicos o evitar la
+perdida de información ocasionado por la presencia de nubes en el área de interés en
+fechas concretas.
 
 
 

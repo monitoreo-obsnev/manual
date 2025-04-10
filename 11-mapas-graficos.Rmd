@@ -21,7 +21,7 @@ Dibuja en el mapa la capa seleccionada.
 
 ## **Gráfico ROI** 
 
-Genera y visualiza los gráficos asociados a los mapas resultantes de tu Región de Interés (ROI por su siglas en inglés).
+Genera y visualiza los gráficos asociados a los mapas resultantes de tu Región de Interés (ROI por su siglas en inglés). Genera un calculo promedio.
 
 ![](assets/graphs_es.png)
 

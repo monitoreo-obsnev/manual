@@ -57,4 +57,3 @@ seleccionar-capa
 añadir-al-mapa
 gráfico-roi
 gráfico-pixel
-referencias

@@ -2,7 +2,8 @@
 
 **Selecciona ROI– Elige tu área de estudio.** 
 
-En esta sección puedes definir la **región de interés (ROI)** sobre la que se realizará el análisis. Tienes varias opciones disponibles para seleccionar o cargar tu área de estudio:
+En esta sección puedes definir la **región de interés (ROI)** sobre la que se realizará el análisis. Tienes varias opciones disponibles para seleccionar o cargar tu área de estudio. Por defecto, la herramienta está configurada para dibujar polígonos personalizados. Para cambiar el tipo de geometría (por ejemplo, a punto o rectángulo), accede al menú de opciones de dibujo antes de definir la región de interés.
+
 
 ![](assets/ROI_es.png)
 
@@ -38,7 +39,16 @@ Desde tu cuenta de Google Earth Engien, debes asegurarte de:
 
 Puedes introducir coordenadas de **latitud** y **longitud** para definir una ubicación exacta sobre la superficie terrestre. A partir de ese punto, se puede generar un área circular (**buffer**) cuyo **radio, en metros, es definido por el usuario**. Esta funcionalidad permite delimitar zonas de interés alrededor de un punto específico para su análisis. 
 
-![](assets/buffer_es.png)
+Latitud: Ingresa la coordenada decimal de latitud (por ejemplo: -37.6009).
+Usa el punto (.) como separador decimal. No uses comas ni símbolos adicionales.
+
+Longitud: Ingresa la coordenada decimal de longitud (por ejemplo: -63.854). 
+También debe estar en formato decimal con punto. Recuerda tener en cuenta el símbolo negativo si es necesario.
+
+Radio: Introduce el radio en metros (por ejemplo: 1000 para un kilómetro).
+
+
+![](assets/buffer_es1.png)
 
 ## **🏞️ Parque Nacional**
 
