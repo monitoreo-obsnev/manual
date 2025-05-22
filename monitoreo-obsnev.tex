@@ -87,7 +87,7 @@
 
 \title{Manual de usuario de MonitorEO-OBSNEV}
 \author{Observatorio de Cambio Global de Sierra Nevada (Universidad de Granada)}
-\date{2025-04-10}
+\date{2025-05-22}
 
 \begin{document}
 \maketitle
@@ -160,20 +160,61 @@ Puedes dibujar regiones manualmente usando esta opción. Cuando dibujas una regi
 
 \includegraphics{assets/dibujado.png}
 
-\section{\texorpdfstring{\textbf{📂 Asset público}}{📂 Asset público}}\label{asset-puxfablico}
+\section{\texorpdfstring{📂 \textbf{Uso de un Asset Público o Propio}}{📂 Uso de un Asset Público o Propio}}\label{uso-de-un-asset-puxfablico-o-propio}
 
-Puedes cargar un área de estudio que haya sido previamente subida a Google Earth Engine, indicando en la app la ruta del asset, es decir, la dirección única donde se encuentra almacenado el recurso dentro de tu cuenta de GEE (puede tratarse de una imagen, colección, tabla o carpeta).
+Para cargar un asset (como tu área de estudio, por ejemplo, un shapefile), necesitas tener una cuenta activa en \textbf{Google Earth Engine (GEE)}. Si aún no tienes una cuenta, puedes crearla fácilmente siguiendo esta guía paso a paso: \href{https://ecoinfugr.github.io/ecoinformatica/sesiones/teledeteccion/register_GEE_jml.html}{Cómo registrarse en Google Earth Engine}.
 
-Esta ruta suele tener el siguiente formato:
+Una vez que tu cuenta esté activa, podrás subir tus propios datos espaciales en GEE siguiendo estos pasos:
+
+\subsection{1. Accede a la herramienta de subida}\label{accede-a-la-herramienta-de-subida}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Ve a \href{https://code.earthengine.google.com}{Google Earth Engine Code Editor}.
+\item
+  En la esquina izquierda, haz clic en el ícono de \textbf{Assets} .
+\item
+  Haz clic en el botón \textbf{NEW}.
+\end{enumerate}
+
+\section{\texorpdfstring{\protect\includegraphics{assets/gee2.png}}{}}\label{section}
+
+\subsection{2. Sube el archivo}\label{sube-el-archivo}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Elige el tipo de archivo: \textbf{Image (raster)} o \textbf{Table (vector)}.
+\item
+  Selecciona el archivo desde tu pc.
+\item
+  Define la \textbf{carpeta de destino} dentro de tus assets (ejemplo: \texttt{users/tu\_usuario/mi\_asset}).
+\item
+  Haz clic en \textbf{UPLOAD}.
+\end{enumerate}
+
+\section{\texorpdfstring{\protect\includegraphics{assets/gee1.png}}{}}\label{section-1}
+
+\subsection{3. Espera el procesamiento}\label{espera-el-procesamiento}
 
 \begin{itemize}
 \tightlist
 \item
-  \textbf{\texttt{users/tu\_usuario/nombre\_del\_asset}}
+  El archivo pasará por un proceso de \textbf{subida}.
+\item
+  Puedes ver el estado en la sección de \textbf{Tasks}.
+\item
+  Una vez procesado, el asset estará disponible en tu cuenta de GEE.
 \end{itemize}
 
-\includegraphics{assets/asset_es.png}
-Desde tu cuenta de Google Earth Engien, debes asegurarte de:
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{4. Usa el asset en MonitorEO}\label{usa-el-asset-en-monitoreo}
+
+Una vez subido, debes asegurarte de:
 
 \begin{itemize}
 \tightlist
@@ -190,6 +231,17 @@ Desde tu cuenta de Google Earth Engien, debes asegurarte de:
 \end{itemize}
 
 \includegraphics{assets/asset_2.png}
+
+A continuación, salimos de GEE y nos vamos de nuevo a la app MonitorEO. Ahí indica la ruta del asset, es decir, la dirección única donde se encuentra almacenado el recurso dentro de tu cuenta de GEE.
+Esta ruta suele tener el siguiente formato:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{\texttt{users/tu\_usuario/nombre\_del\_asset}}
+\end{itemize}
+
+\includegraphics{assets/asset_es.png}
 
 \section{\texorpdfstring{\textbf{📌Punto específico y radio}}{📌Punto específico y radio}}\label{punto-especuxedfico-y-radio}
 

@@ -15,16 +15,43 @@ Puedes dibujar regiones manualmente usando esta opción. Cuando dibujas una regi
 ![](assets/dibujado.png)
 
 
-## **📂 Asset público**
+## 📂 **Uso de un Asset Público o Propio**
 
-Puedes cargar un área de estudio que haya sido previamente subida a Google Earth Engine, indicando en la app la ruta del asset, es decir, la dirección única donde se encuentra almacenado el recurso dentro de tu cuenta de GEE (puede tratarse de una imagen, colección, tabla o carpeta).
+Para cargar un asset (como tu área de estudio, por ejemplo, un shapefile), necesitas tener una cuenta activa en **Google Earth Engine (GEE)**. Si aún no tienes una cuenta, puedes crearla fácilmente siguiendo esta guía paso a paso: [Cómo registrarse en Google Earth Engine](https://ecoinfugr.github.io/ecoinformatica/sesiones/teledeteccion/register_GEE_jml.html).
 
-Esta ruta suele tener el siguiente formato:
+Una vez que tu cuenta esté activa, podrás subir tus propios datos espaciales en GEE siguiendo estos pasos:
 
-* **`users/tu_usuario/nombre_del_asset`**
 
-![](assets/asset_es.png)
-Desde tu cuenta de Google Earth Engien, debes asegurarte de:	
+### 1. Accede a la herramienta de subida
+
+1. Ve a [Google Earth Engine Code Editor](https://code.earthengine.google.com).
+2. En la esquina izquierda, haz clic en el ícono de **Assets** .
+3. Haz clic en el botón **NEW**.
+
+![](assets/gee2.png)
+---
+
+### 2. Sube el archivo
+
+1. Elige el tipo de archivo: **Image (raster)** o **Table (vector)**.
+2. Selecciona el archivo desde tu pc.
+3. Define la **carpeta de destino** dentro de tus assets (ejemplo: `users/tu_usuario/mi_asset`).
+4. Haz clic en **UPLOAD**.
+
+![](assets/gee1.png)
+---
+
+### 3. Espera el procesamiento
+
+- El archivo pasará por un proceso de **subida**.
+- Puedes ver el estado en la sección de **Tasks**.
+- Una vez procesado, el asset estará disponible en tu cuenta de GEE.
+
+---
+
+### 4. Usa el asset en MonitorEO
+
+Una vez subido, debes asegurarte de:	
 
 * Copiar y pegar correctamente esta ruta para que el recurso pueda cargarse sin errores.
 
@@ -34,6 +61,13 @@ Desde tu cuenta de Google Earth Engien, debes asegurarte de:
 
 
 ![](assets/asset_2.png)
+
+A continuación, salimos de GEE y nos vamos de nuevo a la app MonitorEO. Ahí indica la ruta del asset, es decir, la dirección única donde se encuentra almacenado el recurso dentro de tu cuenta de GEE.
+Esta ruta suele tener el siguiente formato:
+
+* **`users/tu_usuario/nombre_del_asset`**
+
+![](assets/asset_es.png)
 
 ## **📌Punto específico y radio**
 
