@@ -38,7 +38,7 @@ Este sistema ha sido diseñado para la observación, análisis y evaluación de 
 
 MonitorEO-OBSNEV integra colecciones de datos satelitales, herramientas de análisis geoespacial y una interfaz interactiva que facilita su uso tanto en estudios científicos como en aplicaciones de gestión.
 
-![](assets/InterfazMonitorEO_es.png)
+![](assets/InterfazMonitorEO.png)
 
 <!--chapter:end:01-interfaz.Rmd-->
 
@@ -46,7 +46,7 @@ MonitorEO-OBSNEV integra colecciones de datos satelitales, herramientas de anál
 
 🌐 Selecciona el idioma de la interfaz. Están disponibles las siguientes opciones:
 
-![](assets/Idiomas.png)
+![](assets/Language.png)
 
 - **es** 
 Español
@@ -118,7 +118,7 @@ Una vez subido, debes asegurarte de:
 
 * Copiar y pegar correctamente esta ruta para que el recurso pueda cargarse sin errores.
 
-![](assets/asset1_es.png)
+![](assets/asset1.png)
 
 * Compartir el asset como público.
 
@@ -130,7 +130,7 @@ Esta ruta suele tener el siguiente formato:
 
 * **`users/tu_usuario/nombre_del_asset`**
 
-![](assets/asset_es.png)
+![](assets/asset.png)
 
 ## **📌Punto específico y radio**
 
@@ -145,13 +145,13 @@ También debe estar en formato decimal con punto. Recuerda tener en cuenta el s�
 Radio: Introduce el radio en metros (por ejemplo: 1000 para un kilómetro).
 
 
-![](assets/buffer_es1.png)
+![](assets/buffer.png)
 
 ## **🏞️ Parque Nacional**
 
 Puedes seleccionar como área de estudio cualquiera de los **Parques Nacionales de España y Portugal** disponibles en la plataforma.
 
-![](assets/np_es.png)
+![](assets/np.png)
 
 ## **🌍 Base de datos mundial sobre zonas protegidas WDPA** 
 
@@ -159,7 +159,7 @@ World Database on Protected Areas (WDPA), es la fuente más completa y actualiza
 
 Para seleccionar un área protegida mediante su ID, puedes acceder a la base de datos a través del sitio web oficial de Protected Planet ([🔗 protectedplanet.net](https://www.protectedplanet.net/)). Allí, puedes buscar áreas protegidas por nombre, país o categoría de protección y obtener su identificador único (WDPA ID).
 
-![](assets/WDPA_es.png)
+![](assets/WDPA.png)
 ![](assets/WDPA2.png)
 
 ## **📁 Elige un proyecto**
@@ -171,7 +171,7 @@ Puedes seleccionar como área de estudio las zonas asociadas a los distintos pro
 * **PRESINMED**  
 * **BioRefuges**
 
-![](assets/PROJECTS_es.png)
+![](assets/PROJECTS.png)
 
 <!--chapter:end:03-area-estudio.Rmd-->
 
@@ -179,7 +179,7 @@ Puedes seleccionar como área de estudio las zonas asociadas a los distintos pro
 
 Elige el rango de fechas para realizar tus cálculos. Primero, establece el **año de inicio** y el **año de fin**. Luego, selecciona el **mes y día de inicio**, así como el **mes y día de finalización** para definir el período de análisis.
 
-![](assets/dates_es.png)
+![](assets/dates.png)
 
 ## **📆Selección de un intervalo específico**
 
@@ -206,7 +206,7 @@ Se analizarán sólo los días comprendidos entre el 21 de marzo y el 21 de sept
 
 Selecciona la variable de estudio. Las variables se clasifican en grandes categorías de [EBVs](https://geobon.org/ebvs/what-are-ebvs/) {target=_blank} **(Variables Esenciales de Biodiversidad)**, relacionadas con el funcionamiento y estructura de los ecosistemas. **MonitorEO-OBSNEV** incluye:
 
-![](assets/variables_es.png)
+![](assets/variables.png)
 
 ## **🌱 Carbono Orgánico (Producción Primaria)** 
 
@@ -355,7 +355,7 @@ Unidades: sin unidad.
 
 Selecciona con qué sensor quieres trabajar. Los sensores disponibles poseen distinta resolución temporal y espacial. Dependiendo de la variable elegida, obtendrás disponibilidad de datos para unos u otros sensores. 
 
-![](assets/sensor_es.png)
+![](assets/sensor.png)
 
 ## **🛰️MODIS 250 m, 16 días**
 
@@ -401,7 +401,7 @@ El **rango de fechas** de este sensor va desde **28/03/2017 hasta la actualidad.
 
 Selecciona el intervalo temporal sobre el cual deseas realizar los cálculos. Puedes mantener la **resolución temporal original del sensor** o aplicar una **agregación periódica** para facilitar el análisis:
 
-![](assets/aggregation_es.png)
+![](assets/aggregation.png)
 
 ## **Original**
 
@@ -516,33 +516,33 @@ Puedes establecer un % de nubosidad, que eliminará las escenas o imágenes que 
 
 Al hacer clic en el botón se generará el resultado según tu selección previa.
 
-![](assets/message_es.png)
+![](assets/message.png)
 
 ## **Seleccionar capa**
 
 En la sección aparecerán todas las capas/mapas generados durante el cálculo. Para visualizar una capa específica, selecciónala en **"2- Seleccionar capa"** y haz clic en **"3 \- Añadir al mapa”**.
 
-![](assets/layers_es.png)
+![](assets/layers.png)
 
 ## **Añadir al mapa** 
 
 Dibuja en el mapa la capa seleccionada.
 
-![](assets/layers_es2.png)
-![](assets/leyenda_es.png)
+![](assets/layers_en.png)
+![](assets/leyenda.png)
 
 ## **Gráfico ROI** 
 
 Genera y visualiza los gráficos asociados a los mapas resultantes de tu Región de Interés (ROI por su siglas en inglés). Genera un calculo promedio.
 
-![](assets/graphs_es.png)
+![](assets/graphs.png)
 
 
 ## **Gráfico Pixel** 
 
 Genera y visualiza los gráficos asociados a un píxel seleccionado con tu cursor. Cuando pinchas en un punto de tu área de estudio, esta opción te mostrará los datos correspondientes a su Latitud, Longitud, m/píxel (muestra la resolución del mapa en ese nivel de zoom, en metros por píxel) y el nombre de la capa que estás visualizando.
 
-![](assets/chart_pixel_es.png)
+![](assets/chart_pixel_en.png)
 
 
 <!--chapter:end:11-mapas-graficos.Rmd-->

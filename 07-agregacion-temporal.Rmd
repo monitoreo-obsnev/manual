@@ -2,7 +2,7 @@
 
 Selecciona el intervalo temporal sobre el cual deseas realizar los cálculos. Puedes mantener la **resolución temporal original del sensor** o aplicar una **agregación periódica** para facilitar el análisis:
 
-![](assets/aggregation_es.png)
+![](assets/aggregation.png)
 
 ## **Original**
 

@@ -52,7 +52,7 @@ Una vez subido, debes asegurarte de:
 
 * Copiar y pegar correctamente esta ruta para que el recurso pueda cargarse sin errores.
 
-![](assets/asset1_es.png)
+![](assets/asset1.png)
 
 * Compartir el asset como público.
 
@@ -64,7 +64,7 @@ Esta ruta suele tener el siguiente formato:
 
 * **`users/tu_usuario/nombre_del_asset`**
 
-![](assets/asset_es.png)
+![](assets/asset.png)
 
 ## **📌Punto específico y radio**
 
@@ -79,13 +79,13 @@ También debe estar en formato decimal con punto. Recuerda tener en cuenta el s�
 Radio: Introduce el radio en metros (por ejemplo: 1000 para un kilómetro).
 
 
-![](assets/buffer_es1.png)
+![](assets/buffer.png)
 
 ## **🏞️ Parque Nacional**
 
 Puedes seleccionar como área de estudio cualquiera de los **Parques Nacionales de España y Portugal** disponibles en la plataforma.
 
-![](assets/np_es.png)
+![](assets/np.png)
 
 ## **🌍 Base de datos mundial sobre zonas protegidas WDPA** 
 
@@ -93,7 +93,7 @@ World Database on Protected Areas (WDPA), es la fuente más completa y actualiza
 
 Para seleccionar un área protegida mediante su ID, puedes acceder a la base de datos a través del sitio web oficial de Protected Planet ([🔗 protectedplanet.net](https://www.protectedplanet.net/)). Allí, puedes buscar áreas protegidas por nombre, país o categoría de protección y obtener su identificador único (WDPA ID).
 
-![](assets/WDPA_es.png)
+![](assets/WDPA.png)
 ![](assets/WDPA2.png)
 
 ## **📁 Elige un proyecto**
@@ -105,4 +105,4 @@ Puedes seleccionar como área de estudio las zonas asociadas a los distintos pro
 * **PRESINMED**  
 * **BioRefuges**
 
-![](assets/PROJECTS_es.png)
+![](assets/PROJECTS.png)

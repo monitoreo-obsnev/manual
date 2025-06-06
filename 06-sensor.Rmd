@@ -2,7 +2,7 @@
 
 Selecciona con qué sensor quieres trabajar. Los sensores disponibles poseen distinta resolución temporal y espacial. Dependiendo de la variable elegida, obtendrás disponibilidad de datos para unos u otros sensores. 
 
-![](assets/sensor_es.png)
+![](assets/sensor.png)
 
 ## **🛰️MODIS 250 m, 16 días**
 

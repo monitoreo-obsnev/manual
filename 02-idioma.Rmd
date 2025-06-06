@@ -2,7 +2,7 @@
 
 🌐 Selecciona el idioma de la interfaz. Están disponibles las siguientes opciones:
 
-![](assets/Idiomas.png)
+![](assets/Language.png)
 
 - **es** 
 Español

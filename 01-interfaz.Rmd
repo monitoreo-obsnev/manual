@@ -6,4 +6,4 @@ Este sistema ha sido diseñado para la observación, análisis y evaluación de 
 
 MonitorEO-OBSNEV integra colecciones de datos satelitales, herramientas de análisis geoespacial y una interfaz interactiva que facilita su uso tanto en estudios científicos como en aplicaciones de gestión.
 
-![](assets/InterfazMonitorEO_es.png)
+![](assets/InterfazMonitorEO.png)

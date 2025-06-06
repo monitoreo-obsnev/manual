@@ -2,7 +2,7 @@
 
 Elige el rango de fechas para realizar tus cálculos. Primero, establece el **año de inicio** y el **año de fin**. Luego, selecciona el **mes y día de inicio**, así como el **mes y día de finalización** para definir el período de análisis.
 
-![](assets/dates_es.png)
+![](assets/dates.png)
 
 ## **📆Selección de un intervalo específico**
 

@@ -2,7 +2,7 @@
 
 Selecciona la variable de estudio. Las variables se clasifican en grandes categorías de [EBVs](https://geobon.org/ebvs/what-are-ebvs/) {target=_blank} **(Variables Esenciales de Biodiversidad)**, relacionadas con el funcionamiento y estructura de los ecosistemas. **MonitorEO-OBSNEV** incluye:
 
-![](assets/variables_es.png)
+![](assets/variables.png)
 
 ## **🌱 Carbono Orgánico (Producción Primaria)** 
 
