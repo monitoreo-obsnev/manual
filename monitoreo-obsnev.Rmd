@@ -95,7 +95,6 @@ Una vez que tu cuenta esté activa, podrás subir tus propios datos espaciales e
 3. Haz clic en el botón **NEW**.
 
 ![](assets/gee2.png)
----
 
 ### 2. Sube el archivo
 
@@ -105,7 +104,6 @@ Una vez que tu cuenta esté activa, podrás subir tus propios datos espaciales e
 4. Haz clic en **UPLOAD**.
 
 ![](assets/gee1.png)
----
 
 ### 3. Espera el procesamiento
 
@@ -113,7 +111,6 @@ Una vez que tu cuenta esté activa, podrás subir tus propios datos espaciales e
 - Puedes ver el estado en la sección de **Tasks**.
 - Una vez procesado, el asset estará disponible en tu cuenta de GEE.
 
----
 
 ### 4. Usa el asset en MonitorEO
 
