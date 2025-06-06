@@ -22,7 +22,7 @@ Para cargar un asset (como tu área de estudio, por ejemplo, un shapefile), nece
 Una vez que tu cuenta esté activa, podrás subir tus propios datos espaciales en GEE siguiendo estos pasos:
 
 
-### 1. Accede a la herramienta de subida
+### Accede a la herramienta de subida
 
 1. Ve a [Google Earth Engine Code Editor](https://code.earthengine.google.com).
 2. En la esquina izquierda, haz clic en el ícono de **Assets** .
@@ -30,7 +30,7 @@ Una vez que tu cuenta esté activa, podrás subir tus propios datos espaciales e
 
 ![](assets/gee2.png)
 
-### 2. Sube el archivo
+### Sube el archivo
 
 1. Elige el tipo de archivo: **Image (raster)** o **Table (vector)**.
 2. Selecciona el archivo desde tu pc.
@@ -39,14 +39,14 @@ Una vez que tu cuenta esté activa, podrás subir tus propios datos espaciales e
 
 ![](assets/gee1.png)
 
-### 3. Espera el procesamiento
+### Espera el procesamiento
 
 - El archivo pasará por un proceso de **subida**.
 - Puedes ver el estado en la sección de **Tasks**.
 - Una vez procesado, el asset estará disponible en tu cuenta de GEE.
 
 
-### 4. Usa el asset en MonitorEO
+### Usa el asset en MonitorEO
 
 Una vez subido, debes asegurarte de:	
 
