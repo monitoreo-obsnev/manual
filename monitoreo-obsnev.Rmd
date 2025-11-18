@@ -1,6 +1,6 @@
 --- 
 title: "Manual de usuario de MonitorEO-OBSNEV"
-author: "Observatorio de Cambio Global de Sierra Nevada (Universidad de Granada)"
+author: "Cazorla, P.B., Guerrero, P., Alcaraz-Segura, D., Navarro, C., Bello, T., Postma, T., Zamora, R., Martínez-López, J."
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
@@ -27,6 +27,7 @@ Este proyecto ha sido desarrollado en el marco del trabajo del Observatorio de C
 ![](assets/logo-obs.png)
 ![](assets/logo-ugr.png)
 ![](assets/logo-ministerio.png)
+![](assets/ugr23_feder.jpeg)
 
 <!--chapter:end:index.Rmd-->
 
