@@ -79,13 +79,13 @@
 \urlstyle{same}
 \hypersetup{
   pdftitle={Manual de usuario de MonitorEO-OBSNEV},
-  pdfauthor={Observatorio de Cambio Global de Sierra Nevada (Universidad de Granada)},
+  pdfauthor={Cazorla, P.B., Guerrero, P., Alcaraz-Segura, D., Navarro, C., Bello, T., Postma, T., Zamora, R., Martínez-López, J.},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
 \title{Manual de usuario de MonitorEO-OBSNEV}
-\author{Observatorio de Cambio Global de Sierra Nevada (Universidad de Granada)}
-\date{2025-04-03}
+\author{Cazorla, P.B., Guerrero, P., Alcaraz-Segura, D., Navarro, C., Bello, T., Postma, T., Zamora, R., Martínez-López, J.}
+\date{2025-12-03}
 
 \begin{document}
 \maketitle
@@ -96,7 +96,20 @@
 }
 \chapter{Introducción}\label{intro}
 
-\href{https://sl.ugr.es/monitoreoobsnev}{MonitorEO-OBSNEV} \{target=``\_blank''\} es una herramienta de análisis de variables derivadas de teledetección satelital basada en Google Earth Engine desarrollada por el Observatorio de Cambio Global de Sierra Nevada (Universidad de Granada).
+\href{https://sl.ugr.es/monitoreoobsnev}{MonitorEO-OBSNEV} es una herramienta de análisis de variables derivadas de teledetección satelital basada en Google Earth Engine desarrollada por el Observatorio de Cambio Global de Sierra Nevada (Universidad de Granada).
+
+Este manual de usuario proporciona una guía completa para el uso de MonitorEO-OBSNEV, incluyendo la descripción de funcionalidades, navegación por la interfaz, selección de parámetros y visualización de resultados.
+
+Este proyecto ha sido desarrollado en el marco del trabajo del Observatorio de Cambio Global de Sierra Nevada, de la Universidad de Granada, a través de los proyectos:
+
+\begin{itemize}
+\item
+  EVEREST (PID2023-151939OB-I00), financiado por el Ministerio de Ciencia, Innovación y Universidades (MICIU) / Agencia Estatal de Investigación (AEI) 10.13039/501100011033, y cofinanciado por el Fondo Europeo de Desarrollo Regional (FEDER/ERDF -- Unión Europea).
+\item
+  ``Earth observations for the characterisation and monitoring of ecosystem functioning in Sierra Nevada (Spain)'' (C-EXP-074-UGR23), que ha sido cofinanciado por el Programa FEDER 2014-2020 y la Consejería de Economía, Conocimiento, Empresas y Universidad de la Junta de Andalucía.
+\end{itemize}
+
+\includegraphics[width=6.77083in,height=\textheight,keepaspectratio]{assets/logo_monitoreoobsnev.png}
 
 \chapter{Interfaz de MonitorEO-OBSNEV}\label{interfaz}
 
@@ -105,56 +118,102 @@ La interfaz gráfica del \textbf{Laboratorio de Investigación Virtual MonitorEO
 Este sistema ha sido diseñado para la observación, análisis y evaluación de \textbf{variables esenciales de la biodiversidad (Essential Biodiversity Variables, EBVs)} vinculadas al funcionamiento y la estructura de los ecosistemas. La interfaz permite la exploración espacial y temporal de estas variables en diferentes regiones del planeta, con especial énfasis en áreas protegidas de montaña.
 
 MonitorEO-OBSNEV integra colecciones de datos satelitales, herramientas de análisis geoespacial y una interfaz interactiva que facilita su uso tanto en estudios científicos como en aplicaciones de gestión.
-\pandocbounded{\includegraphics[keepaspectratio]{assets/InterfazMonitorEO_es.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{assets/InterfazMonitorEO.png}}
 
 \chapter{Idiomas}\label{idiomas}
 
 🌐 Selecciona el idioma de la interfaz. Están disponibles las siguientes opciones:
 
+\pandocbounded{\includegraphics[keepaspectratio]{assets/Language.png}}
+
 \begin{itemize}
 \item
-  \textbf{es} -- Español
+  \textbf{es}
+  Español
 \item
-  \textbf{en} -- English
+  \textbf{en}
+  English
 \item
-  \textbf{de} -- Alemán
+  \textbf{fr}
+  Français
+\item
+  \textbf{de}
+  Deutsch
 \end{itemize}
-
-\pandocbounded{\includegraphics[keepaspectratio]{assets/Language.png}}
 
 \chapter{Área de estudio}\label{area-estudio}
 
 \textbf{Selecciona ROI-- Elige tu área de estudio.}
 
-En esta sección puedes definir la \textbf{región de interés (ROI)} sobre la que se realizará el análisis. Tienes varias opciones disponibles para seleccionar o cargar tu área de estudio:
+En esta sección puedes definir la \textbf{región de interés (ROI)} sobre la que se realizará el análisis. Tienes varias opciones disponibles para seleccionar o cargar tu área de estudio. Por defecto, la herramienta está configurada para dibujar polígonos personalizados. Para cambiar el tipo de geometría (por ejemplo, a punto o rectángulo), accede al menú de opciones de dibujo antes de definir la región de interés.
 
-\pandocbounded{\includegraphics[keepaspectratio]{assets/ROI.png}}
+\pandocbounded{\includegraphics[keepaspectratio]{assets/ROI_es.png}}
 
-\textbf{4.1. 🖊️ Dibujar tu región de interés (ROI - Region of Interest)}
+\section{\texorpdfstring{\textbf{🖊️ Dibujar tu región de interés (ROI - Region of Interest)}}{🖊️ Dibujar tu región de interés (ROI - Region of Interest)}}\label{dibujar-tu-regiuxf3n-de-interuxe9s-roi---region-of-interest}
 
 Puedes dibujar regiones manualmente usando esta opción. Cuando dibujas una región (punto, línea o polígono), esta se almacena como un objeto Geometry que aparecerá como capa en la parte superior izquierda del mapa.
 
-\pandocbounded{\includegraphics[keepaspectratio]{assets/Drawing.png}}
+\pandocbounded{\includegraphics[keepaspectratio]{assets/dibujado.png}}
 
-\textbf{4.2. 📂 Asset público}
+\section{\texorpdfstring{📂 \textbf{Uso de un Asset Público o Propio}}{📂 Uso de un Asset Público o Propio}}\label{uso-de-un-asset-puxfablico-o-propio}
 
-Puedes cargar un área de estudio que haya sido previamente subida a Google Earth Engine, indicando en la app la ruta del asset, es decir, la dirección única donde se encuentra almacenado el recurso dentro de tu cuenta de GEE (puede tratarse de una imagen, colección, tabla o carpeta).
+Para cargar un asset (como tu área de estudio, por ejemplo, un shapefile), necesitas tener una cuenta activa en \textbf{Google Earth Engine (GEE)}. Si aún no tienes una cuenta, puedes crearla fácilmente siguiendo esta guía paso a paso: \href{https://ecoinfugr.github.io/ecoinformatica/sesiones/teledeteccion/register_GEE_jml.html}{Cómo registrarse en Google Earth Engine}.
 
-Esta ruta suele tener el siguiente formato:
+Una vez que tu cuenta esté activa, podrás subir tus propios datos espaciales en GEE siguiendo estos pasos:
+
+\subsection{Accede a la herramienta de subida}\label{accede-a-la-herramienta-de-subida}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Ve a \href{https://code.earthengine.google.com}{Google Earth Engine Code Editor}.
+\item
+  En la esquina izquierda, haz clic en el ícono de \textbf{Assets} .
+\item
+  Haz clic en el botón \textbf{NEW}.
+\end{enumerate}
+
+\pandocbounded{\includegraphics[keepaspectratio]{assets/gee2.png}}
+
+\subsection{Sube el archivo}\label{sube-el-archivo}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Elige el tipo de archivo: \textbf{Image (raster)} o \textbf{Table (vector)}.
+\item
+  Selecciona el archivo desde tu pc.
+\item
+  Define la \textbf{carpeta de destino} dentro de tus assets (ejemplo: \texttt{users/tu\_usuario/mi\_asset}).
+\item
+  Haz clic en \textbf{UPLOAD}.
+\end{enumerate}
+
+\pandocbounded{\includegraphics[keepaspectratio]{assets/gee1.png}}
+
+\subsection{Espera el procesamiento}\label{espera-el-procesamiento}
 
 \begin{itemize}
 \tightlist
 \item
-  \textbf{\texttt{users/tu\_usuario/nombre\_del\_asset}}
+  El archivo pasará por un proceso de \textbf{subida}.
+\item
+  Puedes ver el estado en la sección de \textbf{Tasks}.
+\item
+  Una vez procesado, el asset estará disponible en tu cuenta de GEE.
 \end{itemize}
 
-\pandocbounded{\includegraphics[keepaspectratio]{assets/asset.png}}
-Debes asegurarte de:
+\subsection{Usa el asset en MonitorEO}\label{usa-el-asset-en-monitoreo}
+
+Una vez subido, debes asegurarte de:
 
 \begin{itemize}
 \tightlist
 \item
-  Copiar y pegar correctamente esta ruta en la app o en el script para que el recurso pueda cargarse sin errores.
+  Copiar y pegar correctamente esta ruta para que el recurso pueda cargarse sin errores.
 \end{itemize}
 
 \pandocbounded{\includegraphics[keepaspectratio]{assets/asset1.png}}
@@ -167,17 +226,38 @@ Debes asegurarte de:
 
 \pandocbounded{\includegraphics[keepaspectratio]{assets/asset_2.png}}
 
-\textbf{4.3. 📌Punto específico y radio}
+A continuación, salimos de GEE y nos vamos de nuevo a la app MonitorEO. Ahí indica la ruta del asset, es decir, la dirección única donde se encuentra almacenado el recurso dentro de tu cuenta de GEE.
+Esta ruta suele tener el siguiente formato:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{\texttt{users/tu\_usuario/nombre\_del\_asset}}
+\end{itemize}
+
+\pandocbounded{\includegraphics[keepaspectratio]{assets/asset.png}}
+
+\section{\texorpdfstring{\textbf{📌Punto específico y radio}}{📌Punto específico y radio}}\label{punto-especuxedfico-y-radio}
 
 Puedes introducir coordenadas de \textbf{latitud} y \textbf{longitud} para definir una ubicación exacta sobre la superficie terrestre. A partir de ese punto, se puede generar un área circular (\textbf{buffer}) cuyo \textbf{radio, en metros, es definido por el usuario}. Esta funcionalidad permite delimitar zonas de interés alrededor de un punto específico para su análisis.
 
+Latitud: Ingresa la coordenada decimal de latitud (por ejemplo: -37.6009).
+Usa el punto (.) como separador decimal. No uses comas ni símbolos adicionales.
+
+Longitud: Ingresa la coordenada decimal de longitud (por ejemplo: -63.854).
+También debe estar en formato decimal con punto. Recuerda tener en cuenta el símbolo negativo si es necesario.
+
+Radio: Introduce el radio en metros (por ejemplo: 1000 para un kilómetro).
+
 \pandocbounded{\includegraphics[keepaspectratio]{assets/buffer.png}}
-\textbf{4.4. 🏞️ Parque Nacional}
+
+\section{\texorpdfstring{\textbf{🏞️ Parque Nacional}}{🏞️ Parque Nacional}}\label{parque-nacional}
 
 Puedes seleccionar como área de estudio cualquiera de los \textbf{Parques Nacionales de España y Portugal} disponibles en la plataforma.
 
 \pandocbounded{\includegraphics[keepaspectratio]{assets/np.png}}
-\textbf{4.5. 🌍 Base de datos mundial sobre zonas protegidas WDPA}
+
+\section{\texorpdfstring{\textbf{🌍 Base de datos mundial sobre zonas protegidas WDPA}}{🌍 Base de datos mundial sobre zonas protegidas WDPA}}\label{base-de-datos-mundial-sobre-zonas-protegidas-wdpa}
 
 World Database on Protected Areas (WDPA), es la fuente más completa y actualizada de información geoespacial sobre áreas protegidas a nivel global. Gestionada por ONU Medio Ambiente y el Centro de Monitoreo de la Conservación del Medio Ambiente (UNEP-WCMC), proporciona datos detallados sobre parques nacionales, reservas naturales y otras zonas protegidas.
 
@@ -185,7 +265,8 @@ Para seleccionar un área protegida mediante su ID, puedes acceder a la base de 
 
 \pandocbounded{\includegraphics[keepaspectratio]{assets/WDPA.png}}
 \pandocbounded{\includegraphics[keepaspectratio]{assets/WDPA2.png}}
-\textbf{4.6. 📁 Elige un proyecto}
+
+\section{\texorpdfstring{\textbf{📁 Elige un proyecto}}{📁 Elige un proyecto}}\label{elige-un-proyecto}
 
 Puedes seleccionar como área de estudio las zonas asociadas a los distintos proyectos desarrollados en el marco de \textbf{OBSNEV}. Cada uno de ellos define áreas específicas con distintos enfoques temáticos:
 
@@ -209,48 +290,51 @@ Elige el rango de fechas para realizar tus cálculos. Primero, establece el \tex
 
 \pandocbounded{\includegraphics[keepaspectratio]{assets/dates.png}}
 
-\chapter{Selección de un intervalo de meses específico}\label{periodo}
+\section{\texorpdfstring{\textbf{📆Selección de un intervalo específico}}{📆Selección de un intervalo específico}}\label{selecciuxf3n-de-un-intervalo-especuxedfico}
+
+La herramienta permite seleccionar un \textbf{intervalo específico dentro del año} para realizar un análisis estacional.
+
+Al activar la opción \textbf{``Utilice solo los días de este periodo del año''}, se delimita un rango de fechas (por ejemplo, del \textbf{21 de marzo al 21 de septiembre)} que se aplicará a \textbf{cada año} del periodo seleccionado (por ejemplo, de 2001 a 2020).
+
+Esto permite analizar únicamente ciertos meses o estaciones, como \textbf{primaveras, veranos, o estaciones de crecimiento.}
+
+Si seleccionas:
 
 \begin{itemize}
 \tightlist
 \item
-  \textbf{Selección de un intervalo específico}
+  Año inicio: 2001\\
+\item
+  Año fin: 2020\\
+\item
+  Desde: 21/03\\
+\item
+  Hasta: 21/09
 \end{itemize}
 
-Al activar la casilla \textbf{``Utilice sólo los días de este periodo del año''} se realiza un \textbf{cómputo estacional}, es decir, se establece un rango temporal específico dentro del periodo de años seleccionado previamente. P.ej. todas las primaveras de 2001 a 2020 (Año inicio 2001 - Año fin 2020, Desde 21/03 - Hasta 21-09).
-
-\pandocbounded{\includegraphics[keepaspectratio]{assets/dates.png}}
+Se analizarán sólo los días comprendidos entre el 21 de marzo y el 21 de septiembre en cada uno de esos años, excluyendo el resto.
 
 \chapter{Tipo de variable de interés}\label{tipo-variable}
 
-Selecciona la variable de estudio. Las variables se clasifican en grandes categorías de \href{https://geobon.org/ebvs/what-are-ebvs/}{EBVs} \{target=``\_blank''\} \textbf{(Variables Esenciales de Biodiversidad)}, relacionadas con el funcionamiento y estructura de los ecosistemas. \textbf{MonitorEO-OBSNEV} incluye:
+Selecciona la variable de estudio. Las variables se clasifican en grandes categorías de \href{https://geobon.org/ebvs/what-are-ebvs/}{EBVs} \{target=\_blank\} \textbf{(Variables Esenciales de Biodiversidad)}, relacionadas con el funcionamiento y estructura de los ecosistemas. \textbf{MonitorEO-OBSNEV} incluye:
 
 \pandocbounded{\includegraphics[keepaspectratio]{assets/variables.png}}
 
-\begin{itemize}
-\item ~
-  \subsubsection{\texorpdfstring{\textbf{Carbono Orgánico (Producción Primaria):}}{Carbono Orgánico (Producción Primaria):}}\label{carbono-orguxe1nico-producciuxf3n-primaria}
+\section{\texorpdfstring{\textbf{🌱 Carbono Orgánico (Producción Primaria)}}{🌱 Carbono Orgánico (Producción Primaria)}}\label{carbono-orguxe1nico-producciuxf3n-primaria}
 
-  \begin{itemize}
-  \tightlist
-  \item
-    \textbf{NDVI} - Índice de Vegetación de Diferencia Normalizada
-  \end{itemize}
-\end{itemize}
+\subsection{\texorpdfstring{\textbf{NDVI} - Índice de Vegetación de Diferencia Normalizada}{NDVI - Índice de Vegetación de Diferencia Normalizada}}\label{ndvi---uxedndice-de-vegetaciuxf3n-de-diferencia-normalizada}
 
-El Índice de Vegetación de Diferencia Normalizada (NDVI, por sus siglas en inglés; Tucker y Sellers, 1986) es un indicador espectral ampliamente utilizado para cuantificar la cobertura y el estado de la vegetación mediante sensores remotos. Se calcula a partir de la diferencia entre la reflectancia en el infrarrojo cercano (NIR) y la reflectancia en el rojo (RED), normalizada por su suma:
+El Índice de Vegetación de Diferencia Normalizada (NDVI, por sus siglas en inglés) es un indicador espectral ampliamente utilizado para cuantificar la cobertura y el estado de la vegetación mediante sensores remotos. Se calcula a partir de la diferencia entre la reflectancia en el infrarrojo cercano (NIR) y la reflectancia en el rojo (RED), normalizada por su suma:
 
 NDV I= NIR- RED / NIR + RED
 
 Este índice toma valores entre -1 y 1. Valores cercanos a 1 indican vegetación densa y vigorosa, mientras que valores cercanos a -1 corresponden a superficies no vegetadas, como cuerpos de agua, nieve o áreas urbanas.
 
-\begin{itemize}
-\tightlist
-\item
-  \textbf{EVI} - Índice de Vegetación Mejorado.
-\end{itemize}
+Unidades: sin unidad.
 
-El Índice de Vegetación Mejorado (EVI, por sus siglas en inglés; Huete et al., 1999) es un indicador espectral desarrollado para optimizar la estimación de la cobertura y condición de la vegetación a partir de datos de teledetección. A diferencia de índices tradicionales como el NDVI, el EVI incorpora factores de corrección atmosférica y una compensación por la influencia del fondo del suelo, lo que mejora su sensibilidad en áreas con alta densidad de vegetación, baja cobertura vegetal o condiciones atmosféricas complejas.
+\subsection{\texorpdfstring{\textbf{EVI} - Índice de Vegetación Mejorado}{EVI - Índice de Vegetación Mejorado}}\label{evi---uxedndice-de-vegetaciuxf3n-mejorado}
+
+El Índice de Vegetación Mejorado (EVI, por sus siglas en inglés) es un indicador espectral desarrollado para optimizar la estimación de la cobertura y condición de la vegetación a partir de datos de teledetección. A diferencia de índices tradicionales como el NDVI, el EVI incorpora factores de corrección atmosférica y una compensación por la influencia del fondo del suelo, lo que mejora su sensibilidad en áreas con alta densidad de vegetación, baja cobertura vegetal o condiciones atmosféricas complejas.
 
 La fórmula general del EVI es la siguiente:
 
@@ -298,54 +382,38 @@ Interpretación ecológica
 \textbf{\textgreater{} 0.7} & Bosques tropicales, selvas, vegetación muy densa \\
 \end{longtable}
 
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Chl-a} - Concentración de clorofila.
-\end{itemize}
+Unidades: sin unidad.
+
+\subsection{\texorpdfstring{\textbf{Chl-a} - Concentración de clorofila}{Chl-a - Concentración de clorofila}}\label{chl-a---concentraciuxf3n-de-clorofila}
 
 El índice de clorofila-a se utiliza para estimar la concentración de clorofila-a en cuerpos de agua como océanos, lagos y ríos. La clorofila-a es el principal pigmento fotosintético presente en el fitoplancton, por lo que su concentración actúa como un indicador indirecto de la biomasa algal y de la productividad primaria en ecosistemas acuáticos, siendo un indicador clave para evaluar la calidad del agua y la salud de los ecosistemas acuáticos (Gitelson et al., 1993; IOCCG, 2000).
 
-\begin{itemize}
-\item ~
-  \subsubsection{\texorpdfstring{\textbf{Balance de Radiación:}}{Balance de Radiación:}}\label{balance-de-radiaciuxf3n}
+Unidades: mg m-3.
 
-  \begin{itemize}
-  \tightlist
-  \item
-    \textbf{ALB} - Albedo.
-  \end{itemize}
-\end{itemize}
+\section{\texorpdfstring{\textbf{🌞 Balance de Radiación}}{🌞 Balance de Radiación}}\label{balance-de-radiaciuxf3n}
+
+\subsection{\texorpdfstring{\textbf{ALB} - Albedo}{ALB - Albedo}}\label{alb---albedo}
 
 El albedo es la fracción de la radiación solar incidente que es reflejada por una superficie sin ser absorbida. Se trata de un parámetro adimensional que varía entre 0 (absorción total) y 1 (reflexión total). Un albedo elevado indica que la superficie refleja una gran proporción de la energía solar recibida, como ocurre en superficies altamente reflectantes como la nieve o el hielo. En contraste, un albedo bajo implica una mayor absorción de radiación, característica de superficies oscuras como áreas urbanas, suelos húmedos o cuerpos de agua.\\
 El albedo desempeña un papel clave en el balance energético terrestre y en procesos relacionados con el clima global, ya que influye directamente en la cantidad de energía que entra y se retiene en el sistema climático.
 
-\begin{itemize}
-\item ~
-  \subsubsection{\texorpdfstring{\textbf{Balance de Agua:}}{Balance de Agua:}}\label{balance-de-agua}
+Unidades: sin unidad.
 
-  \begin{itemize}
-  \tightlist
-  \item
-    \textbf{ET} - Evapotranspiración
-  \end{itemize}
-\end{itemize}
+\section{\texorpdfstring{\textbf{💧Balance de Agua}}{💧Balance de Agua}}\label{balance-de-agua}
+
+\subsection{\texorpdfstring{\textbf{ET} - Evapotranspiración}{ET - Evapotranspiración}}\label{et---evapotranspiraciuxf3n}
 
 Estimación de la cantidad de agua que se evapora de la superficie terrestre y se transpira por las plantas. Generada a partir del modelo Mu et al.~(2011), que implementa un enfoque basado en la ecuación de Penman-Monteith, adaptada para sensores remotos. Permite comprender el ciclo del agua, evaluar la disponibilidad de agua en una región y monitorear los recursos hídricos.
 
-\begin{itemize}
-\tightlist
-\item
-  \textbf{LE} - Calor Latente
-\end{itemize}
+Unidades: Kj/m\^{}2/8days
+
+\subsection{\texorpdfstring{\textbf{LE} - Calor Latente}{LE - Calor Latente}}\label{le---calor-latente}
 
 Estimación indirecta de la energía consumida por la evapotranspiración. Durante el proceso, se requiere energía para romper o formar enlaces entre las moléculas de la sustancia, lo que resulta en la liberación o absorción de calor. El calor latente desempeña un papel fundamental en el ciclo del agua, ya que la evaporación y la condensación son procesos clave en la formación de nubes, la precipitación y la regulación del clima.
 
-\begin{itemize}
-\tightlist
-\item
-  \textbf{LSWI} - Índice de Agua Superficial Terrestre
-\end{itemize}
+Unidades: J/m\^{}2/day
+
+\subsection{\texorpdfstring{\textbf{LSWI} - Índice de Agua Superficial Terrestre}{LSWI - Índice de Agua Superficial Terrestre}}\label{lswi---uxedndice-de-agua-superficial-terrestre}
 
 El LSWI (Land Surface Water Index) es un índice espectral utilizado para detectar y evaluar la presencia de humedad en la superficie terrestre, particularmente en la vegetación y el suelo. Se basa en la diferencia entre la reflectancia en el infrarrojo cercano (NIR) y el infrarrojo de onda corta (SWIR), que son sensibles al contenido de agua en la vegetación y el suelo.
 
@@ -362,13 +430,11 @@ LSWI = NIR- SWIR / NIR + SWIR\hspace{0pt}
 
 \textbf{Valores bajos} → condiciones secas, vegetación estresada o suelos áridos.
 
-\begin{itemize}
-\tightlist
-\item
-  \textbf{NDWI} - Índice de Agua de Diferencia Normalizada
-\end{itemize}
+Unidades: sin unidad.
 
-El NDWI es un índice espectral diseñado para detectar y cuantificar la presencia de agua en la superficie terrestre. Se basa en la diferencia de reflectancia entre el infrarrojo cercano (NIR) y el verde (Green), aprovechando la fuerte absorción del agua en el NIR y su alta reflectancia en el visible.
+\subsection{\texorpdfstring{\textbf{NDWI} - Índice de Agua de Diferencia Normalizada}{NDWI - Índice de Agua de Diferencia Normalizada}}\label{ndwi---uxedndice-de-agua-de-diferencia-normalizada}
+
+El NDWI ( Normalized Difference Water Index) es un índice espectral diseñado para detectar y cuantificar la presencia de agua en la superficie terrestre. Se basa en la diferencia de reflectancia entre el infrarrojo cercano (NIR) y el verde (Green), aprovechando la fuerte absorción del agua en el NIR y su alta reflectancia en el visible.
 
 NDWI = Green - NIR / Green + NIR\hspace{0pt}
 
@@ -383,13 +449,11 @@ NDWI = Green - NIR / Green + NIR\hspace{0pt}
 \textbf{NDWI \textgreater{} 0} → presencia de \textbf{agua superficial} (ríos, lagos, embalses, zonas inundadas)\\
 \textbf{NDWI \textless{} 0} → superficies \textbf{terrestres sin agua} (vegetación, suelo desnudo, áreas urbanas)
 
-\begin{itemize}
-\tightlist
-\item
-  \textbf{NDSI} - Índice de Nieve de Diferencia Normalizada
-\end{itemize}
+Unidades: sin unidad.
 
-El NDSI es un indicador espectral utilizado para detectar la presencia y extensión de nieve en la superficie terrestre. Se basa en las características reflectivas distintivas de la nieve, que refleja fuertemente en el espectro visible (banda verde) y absorbe significativamente en el infrarrojo de onda corta (SWIR), en contraste con la mayoría de los demás tipos de cobertura terrestre.
+\subsection{\texorpdfstring{\textbf{NDSI} - Índice de Nieve de Diferencia Normalizada}{NDSI - Índice de Nieve de Diferencia Normalizada}}\label{ndsi---uxedndice-de-nieve-de-diferencia-normalizada}
+
+El NDSI ( Normalized Difference Snow Index) es un indicador espectral utilizado para detectar la presencia y extensión de nieve en la superficie terrestre. Se basa en las características reflectivas distintivas de la nieve, que refleja fuertemente en el espectro visible (banda verde) y absorbe significativamente en el infrarrojo de onda corta (SWIR), en contraste con la mayoría de los demás tipos de cobertura terrestre.
 
 NDSI = Green - SWIR / Green + SWIR\hspace{0pt}
 
@@ -406,30 +470,23 @@ NDSI = Green - SWIR / Green + SWIR\hspace{0pt}
 
 Estos umbrales pueden ajustarse según la resolución y el sensor utilizado.
 
-\begin{itemize}
-\item ~
-  \subsubsection{\texorpdfstring{\textbf{Calor Sensible:}}{Calor Sensible:}}\label{calor-sensible}
+Unidades: sin unidad.
 
-  \begin{itemize}
-  \tightlist
-  \item
-    \textbf{LST} -Temperatura Superficial.
-  \end{itemize}
-\end{itemize}
+\section{\texorpdfstring{\textbf{🌡️ Calor Sensible}}{🌡️ Calor Sensible}}\label{calor-sensible}
+
+\subsection{\texorpdfstring{\textbf{LST} -Temperatura Superficial}{LST -Temperatura Superficial}}\label{lst--temperatura-superficial}
 
 La temperatura de la superficie terrestre (LST, por sus siglas en inglés) se refiere a la temperatura registrada en la capa superior de la superficie terrestre o de los cuerpos de agua, tal como es detectada por sensores remotos. LST se estima a partir de la radiancia térmica captada en el espectro del infrarrojo térmico, y es una variable clave en el análisis de procesos como el balance energético, la evapotranspiración, la sequía, el estrés hídrico y el monitoreo urbano y agrícola.
 
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Nutrientes / Aerosoles:}
+Unidades: ºC.
 
-  \begin{itemize}
-  \tightlist
-  \item
-    \textbf{ARSL} - Profundidad óptica atmosférica de aerosoles.
-  \end{itemize}
-\end{itemize}
+\section{\texorpdfstring{\textbf{💨 Nutrientes / Aerosoles}}{💨 Nutrientes / Aerosoles}}\label{nutrientes-aerosoles}
+
+\subsection{\texorpdfstring{\textbf{ARSL} - Profundidad óptica atmosférica de aerosoles}{ARSL - Profundidad óptica atmosférica de aerosoles}}\label{arsl---profundidad-uxf3ptica-atmosfuxe9rica-de-aerosoles}
+
+Cantidad de aerosoles en la columna total atmosférica. Sirve para cuantificar cuánta carga de aerosoles hay en la atmósfera. El espesor óptico total de los aerosoles se refiere a todos los tipos de aerosol mientras que algunos productos de satélite dan información sobre el espesor óptico de un tipo de aerosol en concreto, como por ejemplo, el espesor óptico debido al polvo, que cuantifica la carga de polvo en la columna atmosférica.
+
+Unidades: sin unidad.
 
 \chapter{Sensor satelital}\label{sensor}
 
@@ -437,109 +494,170 @@ Selecciona con qué sensor quieres trabajar. Los sensores disponibles poseen dis
 
 \pandocbounded{\includegraphics[keepaspectratio]{assets/sensor.png}}
 
-\begin{itemize}
-\item ~
-  \subsubsection{\texorpdfstring{\textbf{MODIS 250 m, 16 días.}}{MODIS 250 m, 16 días.}}\label{modis-250-m-16-duxedas.}
-\end{itemize}
+\section{\texorpdfstring{\textbf{🛰️MODIS 250 m, 16 días}}{🛰️MODIS 250 m, 16 días}}\label{modis-250-m-16-duxedas}
 
-\subsubsection{\texorpdfstring{MODIS (\emph{Moderate Resolution Imaging Spectroradiometer}) es un sensor a bordo de los satélites Terra y Aqua de la NASA. \textbf{Resolución espacial:} 250 metros (m). \textbf{Resolución temporal:} 16 días (se compilan imágenes cada 16 días en productos de composición). Para esta interfaz, se han utilizado los datos de las colecciones \textbf{MOD13Q1 006} (satélite MODIS Terra) y \textbf{MYD13Q1 006} (satélite MODIS Aqua). Estos satélites \textbf{proporcionan datos desde} el \textbf{24/02/2000 hasta la actualidad}, aunque la disponibilidad puede variar según la variable seleccionada.}{MODIS (Moderate Resolution Imaging Spectroradiometer) es un sensor a bordo de los satélites Terra y Aqua de la NASA. Resolución espacial: 250 metros (m). Resolución temporal: 16 días (se compilan imágenes cada 16 días en productos de composición). Para esta interfaz, se han utilizado los datos de las colecciones MOD13Q1 006 (satélite MODIS Terra) y MYD13Q1 006 (satélite MODIS Aqua). Estos satélites proporcionan datos desde el 24/02/2000 hasta la actualidad, aunque la disponibilidad puede variar según la variable seleccionada.}}\label{modis-moderate-resolution-imaging-spectroradiometer-es-un-sensor-a-bordo-de-los-satuxe9lites-terra-y-aqua-de-la-nasa.-resoluciuxf3n-espacial-250-metros-m.-resoluciuxf3n-temporal-16-duxedas-se-compilan-imuxe1genes-cada-16-duxedas-en-productos-de-composiciuxf3n.-para-esta-interfaz-se-han-utilizado-los-datos-de-las-colecciones-mod13q1-006-satuxe9lite-modis-terra-y-myd13q1-006-satuxe9lite-modis-aqua.-estos-satuxe9lites-proporcionan-datos-desde-el-24022000-hasta-la-actualidad-aunque-la-disponibilidad-puede-variar-seguxfan-la-variable-seleccionada.}
+MODIS (\emph{Moderate Resolution Imaging Spectroradiometer}) es un sensor a bordo de los satélites Terra y Aqua de la NASA.
 
-\begin{itemize}
-\item ~
-  \subsubsection{\texorpdfstring{\textbf{Landsat 30 m, \textgreater{} 16 días.}}{Landsat 30 m, \textgreater{} 16 días.}}\label{landsat-30-m-16-duxedas.}
-\end{itemize}
+\textbf{Resolución espacial:} Depende de la variable seleccionada. Pueden ser datos a 250m, 1km, 4km\ldots{} Esta información te aparecerá en la pestaña ``Sensor'' una vez hayas seleccionado tu variable.
+\textbf{Resolución temporal:} Depende de la variable seleccionada. Pueden ser datos diarios, cada 8 días o cada 16 días. Esta información te aparecerá en la pestaña ``Sensor'' una vez hayas seleccionado tu variable.
 
-\subsubsection{\texorpdfstring{La serie \textbf{Landsat} es operada por la NASA y el USGS. Estos datos incluyen Landsat 5, 6, 8 y 9. \textbf{Resolución espacial:} 30 metros. \textbf{Resolución temporal:} Mayor a 8 días, ya que dependiendo del satélite tienen un período de revisita de 8 o 16 días cada uno. El \textbf{rango de fechas} cubierto va desde \textbf{1984 hasta la actualidad}, dependiendo de la disponibilidad de cada satélite: \textbf{Landsat 5} (16/03/1984 - 05/05/2012), \textbf{Landsat 7} (28/05/1999 - actualidad, con limitaciones desde 31/05/2003 por la falla del ETM+), \textbf{Landsat 8} (18/03/2013 - presente) y \textbf{Landsat 9} (31/10/2021 - presente). Entre el \textbf{05/05/2012 y el 18/03/2013}, no hay datos disponibles debido a la interrupción en la captura de imágenes de Landsat 7. Aunque este satélite siguió operando, su utilidad estaba limitada desde 2003 por una falla en el Escáner de Línea de Mejora (ETM+). Debido a esta limitación, a partir de 2003 sus datos no se consideran en el rango completo de fechas disponibles.}{La serie Landsat es operada por la NASA y el USGS. Estos datos incluyen Landsat 5, 6, 8 y 9. Resolución espacial: 30 metros. Resolución temporal: Mayor a 8 días, ya que dependiendo del satélite tienen un período de revisita de 8 o 16 días cada uno. El rango de fechas cubierto va desde 1984 hasta la actualidad, dependiendo de la disponibilidad de cada satélite: Landsat 5 (16/03/1984 - 05/05/2012), Landsat 7 (28/05/1999 - actualidad, con limitaciones desde 31/05/2003 por la falla del ETM+), Landsat 8 (18/03/2013 - presente) y Landsat 9 (31/10/2021 - presente). Entre el 05/05/2012 y el 18/03/2013, no hay datos disponibles debido a la interrupción en la captura de imágenes de Landsat 7. Aunque este satélite siguió operando, su utilidad estaba limitada desde 2003 por una falla en el Escáner de Línea de Mejora (ETM+). Debido a esta limitación, a partir de 2003 sus datos no se consideran en el rango completo de fechas disponibles.}}\label{la-serie-landsat-es-operada-por-la-nasa-y-el-usgs.-estos-datos-incluyen-landsat-5-6-8-y-9.-resoluciuxf3n-espacial-30-metros.-resoluciuxf3n-temporal-mayor-a-8-duxedas-ya-que-dependiendo-del-satuxe9lite-tienen-un-peruxedodo-de-revisita-de-8-o-16-duxedas-cada-uno.-el-rango-de-fechas-cubierto-va-desde-1984-hasta-la-actualidad-dependiendo-de-la-disponibilidad-de-cada-satuxe9lite-landsat-5-16031984---05052012-landsat-7-28051999---actualidad-con-limitaciones-desde-31052003-por-la-falla-del-etm-landsat-8-18032013---presente-y-landsat-9-31102021---presente.-entre-el-05052012-y-el-18032013-no-hay-datos-disponibles-debido-a-la-interrupciuxf3n-en-la-captura-de-imuxe1genes-de-landsat-7.-aunque-este-satuxe9lite-siguiuxf3-operando-su-utilidad-estaba-limitada-desde-2003-por-una-falla-en-el-escuxe1ner-de-luxednea-de-mejora-etm.-debido-a-esta-limitaciuxf3n-a-partir-de-2003-sus-datos-no-se-consideran-en-el-rango-completo-de-fechas-disponibles.}
+Para esta interfaz, se han utilizado los datos de las colecciones \textbf{MODIS Terra}.
 
-\begin{itemize}
-\item ~
-  \subsubsection{\texorpdfstring{\textbf{Sentinel-2 10m, 5 días}.}{Sentinel-2 10m, 5 días.}}\label{sentinel-2-10m-5-duxedas.}
-\end{itemize}
+Estos satélites \textbf{proporcionan datos desde} el \textbf{24/02/2000 hasta la actualidad}, aunque la disponibilidad puede variar según la variable seleccionada.
 
-\subsubsection{\texorpdfstring{El programa \textbf{Sentinel-2} es operado por la Agencia Espacial Europea (ESA) y forma parte del programa Copernicus. \textbf{Resolución espacial:} 10 metros. \textbf{Resolución temporal:} 5 días. En esta interfaz, utilizamos el producto SR Harmonized, un producto de Reflectancia de Superficie (SR) ajustado para garantizar la coherencia entre los sensores de Sentinel-2A y Sentinel-2B mediante corrección atmosférica, ajuste espectral y normalización de datos. El \textbf{rango de fechas} de este sensor va desde \textbf{28/03/2017 hasta la actualidad.}}{El programa Sentinel-2 es operado por la Agencia Espacial Europea (ESA) y forma parte del programa Copernicus. Resolución espacial: 10 metros. Resolución temporal: 5 días. En esta interfaz, utilizamos el producto SR Harmonized, un producto de Reflectancia de Superficie (SR) ajustado para garantizar la coherencia entre los sensores de Sentinel-2A y Sentinel-2B mediante corrección atmosférica, ajuste espectral y normalización de datos. El rango de fechas de este sensor va desde 28/03/2017 hasta la actualidad.}}\label{el-programa-sentinel-2-es-operado-por-la-agencia-espacial-europea-esa-y-forma-parte-del-programa-copernicus.-resoluciuxf3n-espacial-10-metros.-resoluciuxf3n-temporal-5-duxedas.-en-esta-interfaz-utilizamos-el-producto-sr-harmonized-un-producto-de-reflectancia-de-superficie-sr-ajustado-para-garantizar-la-coherencia-entre-los-sensores-de-sentinel-2a-y-sentinel-2b-mediante-correcciuxf3n-atmosfuxe9rica-ajuste-espectral-y-normalizaciuxf3n-de-datos.-el-rango-de-fechas-de-este-sensor-va-desde-28032017-hasta-la-actualidad.}
+\section{\texorpdfstring{\textbf{🛰️Landsat 30 m, \textgreater{} 16 días}}{🛰️Landsat 30 m, \textgreater{} 16 días}}\label{landsat-30-m-16-duxedas}
+
+La serie \textbf{Landsat} es operada por la NASA y el USGS. Estos datos incluyen Landsat 5, 7, 8 y 9.
+
+\textbf{Resolución espacial:} 30 metros.
+\textbf{Resolución temporal:} Mayor a 16 días, ya que dependiendo del satélite tienen un período de revisita de 8 o 16 días cada uno.
+
+El \textbf{rango de fechas} cubierto va desde \textbf{1984 hasta la actualidad}, dependiendo de la disponibilidad de cada satélite:
+\textbf{Landsat 5} (16/03/1984 - 05/05/2012)
+\textbf{Landsat 7} (28/05/1999 - actualidad, con limitaciones desde 31/05/2003 por la falla del ETM+)
+\textbf{Landsat 8} (18/03/2013 - presente)
+\textbf{Landsat 9} (31/10/2021 - presente)
+
+Entre el \textbf{05/05/2012 y el 18/03/2013}, no hay datos disponibles debido a la interrupción en la captura de imágenes de Landsat 7. Aunque este satélite siguió operando, su utilidad estaba limitada desde 2003 por una falla en el Escáner de Línea de Mejora (ETM+). Debido a esta limitación, a partir de 2003 sus datos no se consideran en el rango completo de fechas disponibles.
+
+\section{\texorpdfstring{\textbf{🛰️Sentinel-2 10m, 5 días}}{🛰️Sentinel-2 10m, 5 días}}\label{sentinel-2-10m-5-duxedas}
+
+El programa \textbf{Sentinel-2} es operado por la Agencia Espacial Europea (ESA) y forma parte del programa Copernicus.
+
+\textbf{Resolución espacial:} 10 metros.
+\textbf{Resolución temporal:} 5 días.
+
+En esta interfaz, utilizamos el producto \textbf{SR Harmonized}, un producto de Reflectancia de Superficie (SR) ajustado para garantizar la coherencia entre los sensores de Sentinel-2A y Sentinel-2B mediante corrección atmosférica, ajuste espectral y normalización de datos.
+
+El \textbf{rango de fechas} de este sensor va desde \textbf{28/03/2017 hasta la actualidad.}
 
 \chapter{Unidad de agregación temporal}\label{ud-agregacion-temporal}
 
 Selecciona el intervalo temporal sobre el cual deseas realizar los cálculos. Puedes mantener la \textbf{resolución temporal original del sensor} o aplicar una \textbf{agregación periódica} para facilitar el análisis:
 
-\begin{itemize}
-\item
-  \textbf{Original}: utiliza la frecuencia nativa del sensor (por ejemplo, diaria, 5 días, 16 días, etc.).
-\item
-  \textbf{Cada 16 días}: agrupa las observaciones disponibles en intervalos de 16 días.
-\item
-  \textbf{Mensual}: resume los datos por mes.
-\item
-  \textbf{Anual}: genera una única observación agregada por año.
-\end{itemize}
-
-La agregación temporal permite suavizar variaciones de corto plazo, facilitar comparaciones entre periodos y reducir la influencia de datos atípicos o nublados.
-
 \pandocbounded{\includegraphics[keepaspectratio]{assets/aggregation.png}}
+
+\section{\texorpdfstring{\textbf{Original}}{Original}}\label{original}
+
+Utiliza la frecuencia nativa del sensor (por ejemplo, diaria, 5 días, 16 días, etc.).
+
+\section{\texorpdfstring{\textbf{Cada 16 días}}{Cada 16 días}}\label{cada-16-duxedas}
+
+Agrupa las observaciones disponibles en intervalos de 16 días.
+
+\section{\texorpdfstring{\textbf{Mensual}}{Mensual}}\label{mensual}
+
+Resume los datos por mes.
+
+\section{\texorpdfstring{\textbf{Anual}}{Anual}}\label{anual}
+
+Genera una única observación agregada por año.
+
+La agregación temporal permite suavizar variaciones de corto plazo, facilitar
+comparaciones entre periodos, reducir la influencia de datos atípicos o evitar la
+perdida de información ocasionado por la presencia de nubes en el área de interés en
+fechas concretas.
 
 \chapter{Métrica de agregación temporal}\label{agregacion-temporal}
 
 Selecciona el \textbf{método de agregación temporal} que se aplicará al conjunto de datos. Esta opción permite \textbf{resumir series temporales} utilizando funciones estadísticas denominadas \textbf{reductores} (\emph{reducers}), entre los que se encuentran:
 
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Media:} Calcula el \textbf{promedio} de los valores dentro del período de tiempo seleccionado.\\
-\item
-  \textbf{Mediana}: Calcula el \textbf{valor central} en un conjunto de datos ordenados. Es más resistente a valores extremos que la media.\\
-\item
-  \textbf{Moda:} Calcula el \textbf{valor más frecuente} en un conjunto de datos.\\
-\item
-  \textbf{Mínimo:} Calcula el \textbf{valor más bajo} en un período de tiempo.\\
-\item
-  \textbf{Máximo:} Calcula el \textbf{valor más alto} en un período de tiempo.\\
-\item
-  \textbf{Percentil 10:} Encuentra el valor por debajo del cual está el \textbf{10\% de los datos}. Se usa para medir \textbf{valores bajos} o eventos extremos.\\
-\item
-  \textbf{Percentil 90:} Encuentra el valor por debajo del cual está el \textbf{90\% de los datos}. Se usa para medir \textbf{valores altos} o eventos extremos.
-\end{itemize}
-
 \pandocbounded{\includegraphics[keepaspectratio]{assets/aggregationTime.png}}
+
+\section{\texorpdfstring{\textbf{Media}}{Media}}\label{media}
+
+Calcula el \textbf{promedio} de los valores dentro del período de tiempo seleccionado.
+
+\section{\texorpdfstring{\textbf{Mediana}}{Mediana}}\label{mediana}
+
+Calcula el \textbf{valor central} en un conjunto de datos ordenados. Es más resistente a valores extremos que la media.
+
+\section{\texorpdfstring{\textbf{Moda}}{Moda}}\label{moda}
+
+Calcula el \textbf{valor más frecuente} en un conjunto de datos.
+
+\section{\texorpdfstring{\textbf{Mínimo}}{Mínimo}}\label{muxednimo}
+
+Calcula el \textbf{valor más bajo} en un período de tiempo.
+
+\section{\texorpdfstring{\textbf{Máximo}}{Máximo}}\label{muxe1ximo}
+
+Calcula el \textbf{valor más alto} en un período de tiempo.
+
+\section{\texorpdfstring{\textbf{Percentil 10}}{Percentil 10}}\label{percentil-10}
+
+Encuentra el valor por debajo del cual está el \textbf{10\% de los datos}. Se usa para medir \textbf{valores bajos} o eventos extremos.
+
+\section{\texorpdfstring{\textbf{Percentil 90}}{Percentil 90}}\label{percentil-90}
+
+Encuentra el valor por debajo del cual está el \textbf{90\% de los datos}. Se usa para medir \textbf{valores altos} o eventos extremos.
 
 \chapter{Métrica de agregación temporal interanual}\label{agregacion-temporal-interanual}
 
 Selecciona el método de agregación temporal para ejecutar tu análisis. Los métodos de \textbf{agregación temporal} permiten \textbf{resumir datos} en períodos de tiempo utilizando diferentes técnicas estadísticas llamadas \textbf{reductores}.
 
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Media:} Calcula el \textbf{promedio} de los valores por año dentro del periodo de tiempo seleccionado.\\
-\item
-  \textbf{Mediana}: Calcula el \textbf{valor central} de los valores por año dentro del periodo de tiempo seleccionado. Es más resistente a valores extremos que la media.\\
-\item
-  \textbf{Mínimo:} Calcula el \textbf{valor más bajo} por año en un periodo de tiempo.\\
-\item
-  \textbf{Máximo:} Calcula el \textbf{valor más alto} por año en un periodo de tiempo.\\
-\item
-  \textbf{No calcular:} No calcula agregaciones temporales por años.
-\end{itemize}
-
 \pandocbounded{\includegraphics[keepaspectratio]{assets/interannualAggregation.png}}
 
+\section{\texorpdfstring{\textbf{Media}}{Media}}\label{media-1}
+
+Calcula el \textbf{promedio} de los valores por año dentro del periodo de tiempo seleccionado.
+
+\section{\texorpdfstring{\textbf{Mediana}}{Mediana}}\label{mediana-1}
+
+Calcula el \textbf{valor central} de los valores por año dentro del periodo de tiempo seleccionado. Es más resistente a valores extremos que la media.
+
+\section{\texorpdfstring{\textbf{Mínimo}}{Mínimo}}\label{muxednimo-1}
+
+Calcula el \textbf{valor más bajo} por año en un periodo de tiempo.
+
+\section{\texorpdfstring{\textbf{Máximo}}{Máximo}}\label{muxe1ximo-1}
+
+Calcula el \textbf{valor más alto} por año en un periodo de tiempo.
+
+\section{\texorpdfstring{\textbf{No calcular}}{No calcular}}\label{no-calcular}
+
+No calcula agregaciones temporales por años.
+
 \chapter{Filtrado de nubes}\label{filtrado-nubes}
+
+\pandocbounded{\includegraphics[keepaspectratio]{assets/filter.png}}
 
 Al activar esta casilla, se aplicará un \textbf{filtrado de nubes por escena}. El filtrado de nubes por escena es un proceso utilizado en el análisis de imágenes satelitales para eliminar o reducir la interferencia causada por la presencia de nubes en cada imagen, mejorando la calidad de los datos. Como resultado, los análisis reflejarán con mayor precisión las características reales de la superficie terrestre.
 
 Puedes establecer un \% de nubosidad, que eliminará las escenas o imágenes que superen el umbral establecido.
 
-\pandocbounded{\includegraphics[keepaspectratio]{assets/filter.png}}
-
 \chapter{Generar mapas y gráficos de resultados}\label{mapas-graficos}
 
-\textbf{1 - Calcular:} Al hacer clic en el botón se generará el resultado según tu selección previa.
+\section{\texorpdfstring{\textbf{Calcular}}{Calcular}}\label{calcular}
 
-\textbf{2- Seleccionar capa}: En la sección aparecerán todas las capas/mapas generados durante el cálculo. Para visualizar una capa específica, selecciónala en \textbf{``2- Seleccionar capa''} y haz clic en \textbf{``3 - Añadir al mapa''}.
+Al hacer clic en el botón se generará el resultado según tu selección previa.
 
-\textbf{3 - Añadir al mapa:} Dibuja en el mapa la capa seleccionada.
+\pandocbounded{\includegraphics[keepaspectratio]{assets/message.png}}
 
-\textbf{4 -} \textbf{Gráfico} \textbf{ROI.} Genera y visualiza los gráficos asociados a los mapas resultantes de tu Región de Interés (ROI por su siglas en inglés).
+\section{\texorpdfstring{\textbf{Seleccionar capa}}{Seleccionar capa}}\label{seleccionar-capa}
 
-\textbf{5 -} \textbf{Gráfico Pixel.} Genera y visualiza los gráficos asociados a un píxel seleccionado con tu cursor. Cuando pinchas en un punto de tu área de estudio, esta opción te mostrará los datos correspondientes a su Latitud, Longitud, m/píxel (muestra la resolución del mapa en ese nivel de zoom, en metros por píxel) y el nombre de la capa que estás visualizando.
+En la sección aparecerán todas las capas/mapas generados durante el cálculo. Para visualizar una capa específica, selecciónala en \textbf{``2- Seleccionar capa''} y haz clic en \textbf{``3 - Añadir al mapa''}.
+
+\pandocbounded{\includegraphics[keepaspectratio]{assets/layers.png}}
+
+\section{\texorpdfstring{\textbf{Añadir al mapa}}{Añadir al mapa}}\label{auxf1adir-al-mapa}
+
+Dibuja en el mapa la capa seleccionada.
+
+\pandocbounded{\includegraphics[keepaspectratio]{assets/layers_en.png}}
+\pandocbounded{\includegraphics[keepaspectratio]{assets/leyenda.png}}
+
+\section{\texorpdfstring{\textbf{Gráfico ROI}}{Gráfico ROI}}\label{gruxe1fico-roi}
+
+Genera y visualiza los gráficos asociados a los mapas resultantes de tu Región de Interés (ROI por su siglas en inglés). Genera un calculo promedio.
+
+\pandocbounded{\includegraphics[keepaspectratio]{assets/graphs.png}}
+
+\section{\texorpdfstring{\textbf{Gráfico Pixel}}{Gráfico Pixel}}\label{gruxe1fico-pixel}
+
+Genera y visualiza los gráficos asociados a un píxel seleccionado con tu cursor. Cuando pinchas en un punto de tu área de estudio, esta opción te mostrará los datos correspondientes a su Latitud, Longitud, m/píxel (muestra la resolución del mapa en ese nivel de zoom, en metros por píxel) y el nombre de la capa que estás visualizando.
+
+\pandocbounded{\includegraphics[keepaspectratio]{assets/chart_pixel_en.png}}
 
 \bibliography{book.bib,packages.bib}
 

@@ -24,7 +24,5 @@ Este proyecto ha sido desarrollado en el marco del trabajo del Observatorio de C
 
 - “Earth observations for the characterisation and monitoring of ecosystem functioning in Sierra Nevada (Spain)” (C-EXP-074-UGR23), que ha sido cofinanciado por el Programa FEDER 2014-2020 y la Consejería de Economía, Conocimiento, Empresas y Universidad de la Junta de Andalucía.
 
-![](assets/logo-obs.png)
-![](assets/logo-ugr.png)
-![](assets/logo-ministerio.png)
-![](assets/ugr23_feder.jpeg)
+
+![](assets/logo_monitoreoobsnev.png){width=650px}
