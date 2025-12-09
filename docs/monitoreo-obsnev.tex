@@ -78,13 +78,18 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
-  pdftitle={Manual de usuario de MonitorEO-OBSNEV},
-  pdfauthor={Cazorla, P.B., Guerrero, P., Alcaraz-Segura, D., Navarro, C., Bello, T., Postma, T., Zamora, R., Martínez-López, J.},
+  pdftitle={Manual de usuario de MonitorEO-OBSNEV - Biore},
+  pdfauthor={Observatorio de Cambio Global de Sierra Nevada},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
+<<<<<<< HEAD
 \title{Manual de usuario de MonitorEO-OBSNEV}
 \author{Cazorla, P.B., Guerrero, P., Alcaraz-Segura, D., Navarro, C., Bello, T., Postma, T., Zamora, R., Martínez-López, J.}
+=======
+\title{Manual de usuario de MonitorEO-OBSNEV - Biore}
+\author{Observatorio de Cambio Global de Sierra Nevada}
+>>>>>>> a01edb76a4780c03a8ad45646308899f7fdb35ff
 \date{2025-12-09}
 
 \begin{document}
@@ -100,16 +105,15 @@
 
 Este manual de usuario proporciona una guía completa para el uso de MonitorEO-OBSNEV, incluyendo la descripción de funcionalidades, navegación por la interfaz, selección de parámetros y visualización de resultados.
 
-Este proyecto ha sido desarrollado en el marco del trabajo del Observatorio de Cambio Global de Sierra Nevada, de la Universidad de Granada, a través de los proyectos:
+Este proyecto ha sido desarrollado en el marco del trabajo del Observatorio de Cambio Global de Sierra Nevada, de la Universidad de Granada, a través del proyecto:
 
 \begin{itemize}
+\tightlist
 \item
-  EVEREST (PID2023-151939OB-I00), financiado por el Ministerio de Ciencia, Innovación y Universidades (MICIU) / Agencia Estatal de Investigación (AEI) 10.13039/501100011033, y cofinanciado por el Fondo Europeo de Desarrollo Regional (FEDER/ERDF -- Unión Europea).
-\item
-  ``Earth observations for the characterisation and monitoring of ecosystem functioning in Sierra Nevada (Spain)'' (C-EXP-074-UGR23), que ha sido cofinanciado por el Programa FEDER 2014-2020 y la Consejería de Economía, Conocimiento, Empresas y Universidad de la Junta de Andalucía.
+  Biorefuges
 \end{itemize}
 
-\includegraphics[width=6.77083in,height=\textheight,keepaspectratio]{assets/logo_monitoreoobsnev.png}
+\includegraphics[width=8.85417in,height=\textheight,keepaspectratio]{assets/logo_monitoreoobsnev.png}
 
 \chapter{Interfaz de MonitorEO-OBSNEV}\label{interfaz}
 
@@ -149,6 +153,10 @@ MonitorEO-OBSNEV integra colecciones de datos satelitales, herramientas de anál
 En esta sección puedes definir la \textbf{región de interés (ROI)} sobre la que se realizará el análisis. Tienes varias opciones disponibles para seleccionar o cargar tu área de estudio. Por defecto, la herramienta está configurada para dibujar polígonos personalizados. Para cambiar el tipo de geometría (por ejemplo, a punto o rectángulo), accede al menú de opciones de dibujo antes de definir la región de interés.
 
 \pandocbounded{\includegraphics[keepaspectratio]{assets/ROI_es.png}}
+
+\section{\texorpdfstring{\textbf{🌱️Bio-Refugios}}{🌱️Bio-Refugios}}\label{bio-refugios}
+
+Puedes seleccionar la cuenca de interés dentro del proyecto Bio-Refugios
 
 \section{\texorpdfstring{\textbf{🖊️ Dibujar tu región de interés (ROI - Region of Interest)}}{🖊️ Dibujar tu región de interés (ROI - Region of Interest)}}\label{dibujar-tu-regiuxf3n-de-interuxe9s-roi---region-of-interest}
 
@@ -479,6 +487,16 @@ Unidades: sin unidad.
 La temperatura de la superficie terrestre (LST, por sus siglas en inglés) se refiere a la temperatura registrada en la capa superior de la superficie terrestre o de los cuerpos de agua, tal como es detectada por sensores remotos. LST se estima a partir de la radiancia térmica captada en el espectro del infrarrojo térmico, y es una variable clave en el análisis de procesos como el balance energético, la evapotranspiración, la sequía, el estrés hídrico y el monitoreo urbano y agrícola.
 
 Unidades: ºC.
+
+\section{\texorpdfstring{\textbf{🌱 Modelos}}{🌱 Modelos}}\label{modelos}
+
+\subsection{Modelo de Pastos - PASSERA}\label{modelo-de-pastos---passera}
+
+Explicación del modelo de pastos
+
+\subsection{Modelo de Thed}\label{modelo-de-thed}
+
+Explicación del modelo de Thed
 
 \section{\texorpdfstring{\textbf{💨 Nutrientes / Aerosoles}}{💨 Nutrientes / Aerosoles}}\label{nutrientes-aerosoles}
 

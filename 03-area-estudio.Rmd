@@ -7,6 +7,10 @@ En esta sección puedes definir la **región de interés (ROI)** sobre la que se
 
 ![](assets/ROI_es.png)
 
+## **🌱️Bio-Refugios**
+
+Puedes seleccionar la cuenca de interés dentro del proyecto Bio-Refugios
+
 
 ## **🖊️ Dibujar tu región de interés (ROI \- Region of Interest)**
 

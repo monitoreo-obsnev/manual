@@ -2,6 +2,7 @@ intro
 interfaz
 idiomas
 area-estudio
+bio-refugios
 dibujar-tu-región-de-interés-roi---region-of-interest
 uso-de-un-asset-público-o-propio
 accede-a-la-herramienta-de-subida
@@ -29,6 +30,9 @@ ndwi---índice-de-agua-de-diferencia-normalizada
 ndsi---índice-de-nieve-de-diferencia-normalizada
 calor-sensible
 lst--temperatura-superficial
+modelos
+modelo-de-pastos---passera
+modelo-de-thed
 nutrientes-aerosoles
 arsl---profundidad-óptica-atmosférica-de-aerosoles
 sensor
