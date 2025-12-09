@@ -7,11 +7,6 @@ En esta sección puedes definir la **región de interés (ROI)** sobre la que se
 
 ![](assets/ROI_es.png)
 
-## **🌱️Bio-Refugios**
-
-Puedes seleccionar la cuenca de interés dentro del proyecto Bio-Refugios
-
-
 ## **🖊️ Dibujar tu región de interés (ROI \- Region of Interest)**
 
 Puedes dibujar regiones manualmente usando esta opción. Cuando dibujas una región (punto, línea o polígono), esta se almacena como un objeto Geometry que aparecerá como capa en la parte superior izquierda del mapa.

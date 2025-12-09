@@ -137,15 +137,6 @@ La temperatura de la superficie terrestre (LST, por sus siglas en inglés) se re
 
 Unidades: ºC.
 
-## **🌱 Modelos** 
-
-### Modelo de Pastos - PASSERA
-
-Explicación del modelo de pastos
-
-### Modelo de Thed
-
-Explicación del modelo de Thed
 
 ## **💨 Nutrientes / Aerosoles** 
 ### **ARSL** \- Profundidad óptica atmosférica de aerosoles
