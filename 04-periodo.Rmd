@@ -3,6 +3,9 @@
 Elige el rango de fechas para realizar tus cálculos. Primero, establece el **año de inicio** y el **año de fin**. Luego, selecciona el **mes y día de inicio**, así como el **mes y día de finalización** para definir el período de análisis.
 
 ![](assets/dates.png)
+## **📆Comparar con otro periodo**
+La herramienta permite seleccionar **dos periodos** para realizar un análisis comparativo de la misma variable, en el mismo ROI para esas dos fechas. Al seleccionar esta opción se mostrará en resultados dos mapas y dos gráficas, cada una con los resultados para cada periodo. El periodo 1 aparece en la parte inferior como "Ref. Map" y el periodo 2 aparece como "Comp. Map".
+
 
 ## **📆Selección de un intervalo específico**
 
